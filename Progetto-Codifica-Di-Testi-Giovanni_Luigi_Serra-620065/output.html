@@ -1,0 +1,1168 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "">
+<html lang="it">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Progetto di Codifica - del Grosso/Serra</title>
+    <link rel="stylesheet" type="text/css" href="stile.css"/>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>La rassegna settimanale</h1>
+      <p>A cura di Angelo Mario del Grosso e Giovanni Luigi Serra</p>
+      <p>Le opere trattate sono
+            <em>"Un Segreto"</em> e
+            <em>"L'essere troppo stimati"</em></p>
+      <nav id="opere-ancoraggio">
+        <ul>
+          <li>
+            <a href="#storia_un_segreto">Un segreto</a>
+          </li>
+          <li>
+            <a href="#articolo_essere_troppo_stimati">L'essere troppo stimati</a>
+          </li>
+          <li>
+            <a href="#sezione_notizie">Notizie</a>
+          </li>
+          <li>
+            <a href="#sezione_bibliografia">Bibliografia</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="toolbar-highlight">
+      <span class="toolbar-label">Evidenzia nel testo:</span>
+      <div class="toolbar-gruppo">
+        <button class="highlight-btn" data-tipo="persName">👤 Persone</button>
+        <select class="highlight-select" data-tipo="persName">
+          <option value="">— sottocategoria —</option>
+          <option value="#persName.reale">Reale</option>
+          <option value="#persName.fittizia">Fittizia</option>
+          <option value="#persName.storico">Storica</option>
+          <option value="#persName.generico">Generica</option>
+        </select>
+      </div>
+      <div class="toolbar-gruppo">
+        <button class="highlight-btn" data-tipo="placeName">📍 Luoghi</button>
+        <select class="highlight-select" data-tipo="placeName">
+          <option value="">— sottocategoria —</option>
+          <option value="#placeName.citta">Città</option>
+          <option value="#placeName.urbano">Urbano</option>
+          <option value="#placeName.via">Via/Vicolo</option>
+          <option value="#placeName.natura">Natura</option>
+          <option value="#placeName.montagna">Montagna</option>
+          <option value="#placeName.territorio">Territorio</option>
+          <option value="#placeName.regione">Regione</option>
+          <option value="#placeName.nazione">Nazione</option>
+          <option value="#placeName.storico">Storico</option>
+        </select>
+      </div>
+      <div class="toolbar-gruppo">
+        <button class="highlight-btn" data-tipo="orgName">🏛️ Organizzazioni</button>
+        <select class="highlight-select" data-tipo="orgName">
+          <option value="">— sottocategoria —</option>
+          <option value="#orgName.istituzione">Istituzione</option>
+          <option value="#orgName.editore">Editore</option>
+          <option value="#orgName.giornale">Giornale</option>
+          <option value="#orgName.tipografia">Tipografia</option>
+          <option value="#orgName.accademia">Accademia</option>
+          <option value="#orgName.militare">Militare</option>
+        </select>
+      </div>
+      <div class="toolbar-gruppo">
+        <button class="highlight-btn" data-tipo="term">📚 Termini</button>
+        <select class="highlight-select" data-tipo="term">
+          <option value="">— sottocategoria —</option>
+          <option value="#term.genere">Genere</option>
+          <option value="#term.volume">Volume</option>
+          <option value="#term.numero">Numero</option>
+          <option value="#term.etnia">Etnia</option>
+          <option value="#term.animale">Animale</option>
+          <option value="#term.cibo">Cibo</option>
+          <option value="#term.ruolo">Ruolo</option>
+          <option value="#term.caratteristica">Caratteristica</option>
+        </select>
+      </div>
+      <div class="toolbar-gruppo">
+        <button class="highlight-btn" data-tipo="term">⚖️ Morale</button>
+        <select class="highlight-select" data-tipo="term">
+          <option value="">— sottocategoria —</option>
+          <option value="#moral.positivo">Positivo</option>
+          <option value="#moral.negativo">Negativo</option>
+        </select>
+      </div>
+      <div class="toolbar-gruppo">
+        <button class="highlight-btn" data-tipo="term">🎭 Classe Sociale</button>
+        <select class="highlight-select" data-tipo="term">
+          <option value="">— sottocategoria —</option>
+          <option value="#socialclass.nobilta">Nobiltà</option>
+          <option value="#socialclass.borghesia">Borghesia</option>
+          <option value="#socialclass.indigente">Indigente</option>
+          <option value="#socialclass.militare">Militare (status)</option>
+        </select>
+      </div>
+      <div class="toolbar-gruppo">
+        <button class="highlight-btn" data-tipo="measure">📏 Misure</button>
+        <select class="highlight-select" data-tipo="measure">
+          <option value="">— sottocategoria —</option>
+          <option value="#measure.ricchezza">Ricchezza</option>
+          <option value="#measure.tempo">Tempo</option>
+          <option value="#measure.durata">Durata</option>
+          <option value="#measure.eta">Età</option>
+        </select>
+      </div>
+      <div class="toolbar-gruppo">
+        <button class="highlight-btn" data-tipo="term">🔤 Lingua</button>
+        <select class="highlight-select" data-tipo="term">
+          <option value="">— sottocategoria —</option>
+          <option value="#ling_regionali">Regionale</option>
+          <option value="#ling_storiche">Storica</option>
+        </select>
+      </div>
+      <div class="toolbar-gruppo">
+        <button class="highlight-btn" data-tipo="title">📖 Titoli</button>
+        <select class="highlight-select" data-tipo="title">
+          <option value="">— sottocategoria —</option>
+          <option value="#title.principale">Principale</option>
+          <option value="#title.secondario">Secondario</option>
+          <option value="#title.tradotto">Tradotto</option>
+        </select>
+      </div>
+      <div class="toolbar-gruppo">
+        <button class="highlight-btn" data-tipo="date">📅 Date</button>
+        <select class="highlight-select" data-tipo="date">
+          <option value="">— sottocategoria —</option>
+          <option value="#date.anno">Anno</option>
+        </select>
+      </div>
+    </div>
+    <div id="informazioni-rassegna">
+      <div class="scheda-card">
+        <p class="scheda-label">Testata</p>
+        <p class="scheda-titolo-principale" id="titolo-principale">La Rassegna Settimanale</p>
+        <p class="scheda-titolo-categoria" id="titolo-categoria">Di politica, scienza, lettere ed arti</p>
+      </div>
+      <div class="scheda-grid-2">
+        <div class="scheda-card-secondary">
+          <p class="scheda-label">Fondatori</p>
+          <p id="autore-1">Sidney Sonnino</p>
+          <p id="autore-2">Leopoldo Franchetti</p>
+        </div>
+        <div class="scheda-card-secondary">
+          <p class="scheda-label">Editore</p>
+          <p id="publisher">Università di Pisa</p>
+          <p id="pub-luogo">Pisa,
+            56127 -
+            Italia</p>
+        </div>
+      </div>
+      <div class="scheda-card">
+        <p class="scheda-label">Esemplare</p>
+        <table class="scheda-table">
+          <tr>
+            <td class="scheda-table-key">Conservato a</td>
+            <td id="conservazione">Firenze —
+              Biblioteca Nazionale Centrale</td>
+          </tr>
+          <tr>
+            <td class="scheda-table-key">Segnatura</td>
+            <td id="idno">RS-1881</td>
+          </tr>
+          <tr>
+            <td class="scheda-table-key">Volume</td>
+            <td id="volume">Vol. 8°</td>
+          </tr>
+          <tr>
+            <td class="scheda-table-key">Numero</td>
+            <td id="issue">N° 199</td>
+          </tr>
+          <tr>
+            <td class="scheda-table-key">Data</td>
+            <td id="data-pubblicazione">23 Ottobre 1881</td>
+          </tr>
+          <tr>
+            <td class="scheda-table-key">Supporto</td>
+            <td id="supporto">Carta stampata</td>
+          </tr>
+          <tr>
+            <td class="scheda-table-key">Layout</td>
+            <td id="layout"/>
+          </tr>
+          <tr>
+            <td class="scheda-table-key">Tipo</td>
+            <td id="tipo">Giornale</td>
+          </tr>
+        </table>
+      </div>
+      <div class="scheda-card">
+        <p class="scheda-label">Storia</p>
+        <div class="scheda-timeline">
+          <div class="scheda-evento">
+            <p class="scheda-evento-data" id="origin-date">6 Gennaio 1878</p>
+            <p class="scheda-evento-luogo" id="origin-place">Firenze</p>
+            <p class="scheda-evento-testo" id="origin-note">La rivista viene fondata a Firenze da Sidney Sonnino e Leopoldo Franchetti, con l'obiettivo di importare in Italia il modello dei periodici d'opinione britannici.</p>
+          </div>
+          <div class="scheda-evento">
+            <p class="scheda-evento-data" id="prov1-date">3 Novembre 1878</p>
+            <p class="scheda-evento-luogo" id="prov1-place">Roma</p>
+            <p class="scheda-evento-testo" id="prov1-note">Con il fascicolo n. 44 del primo anno, la direzione e l'amministrazione della rivista vengono trasferite definitivamente a Roma, in via delle Botteghe Oscure n. 32.</p>
+          </div>
+          <div class="scheda-evento">
+            <p class="scheda-evento-data" id="prov2-date">29 Gennaio 1882</p>
+            <p class="scheda-evento-testo" id="prov2-note">La pubblicazione in formato settimanale termina con il n. 213 (Vol. IX). Dal 1° febbraio 1882, l'iniziativa editoriale prosegue con la fusione nel quotidiano "La Rassegna".</p>
+          </div>
+        </div>
+      </div>
+      <div class="scheda-footer">
+        <p id="disponibilita">Opera ad accesso libero</p>
+        <p id="data-edizione">Febbraio 2026</p>
+        <p>
+          <a id="link-sito" href="https://rassegnasettimanale.animi.it/">
+            Sito ufficiale della Rassegna Settimanale
+          </a>
+        </p>
+      </div>
+    </div>
+    <div id="front">
+      <div id="title-page">
+        <h1 id="front-titolo">La Rassegna Settimanale</h1>
+        <p id="front-sottotitolo">Di politica, scienze, lettere ed arti.</p>
+        <p id="front-colophon"><span id="front-volume">Vol. 8°</span>,
+          <span id="front-luogo">Roma</span>,
+          <span id="front-data">23 Ottobre 1881</span>,
+          <span id="front-issue">N° 199</span></p>
+      </div>
+    </div>
+    <div id="storia_un_segreto">
+      <div id="un-segreto-head">
+        <h2 id="un-segreto-titolo">UN SEGRETO.</h2>
+      </div>
+      <div class="facsimile-layout">
+        <div class="facsimile-immagini">
+          <p class="facsimile-label">Facsimile</p>
+          <img class="facsimile-img" src="img/UNSEGRETO_page-0008.jpg" alt="Un segreto - p. 262"/>
+          <img class="facsimile-img" src="img/UNSEGRETO_page-0009.jpg" alt="Un segreto - p. 263"/>
+          <img class="facsimile-img" src="img/UNSEGRETO_page-0010.jpg" alt="Un segreto - p. 264"/>
+        </div>
+        <div class="facsimile-testo" id="un-segreto-body">
+          <span class="page-break" id="pb_199">
+      [p. 199]
+    </span>
+          <p class="paragrafo" id="p262_paragrafo_1">
+Nell’anno <span class="date" data-ana="#date.anno">1220 </span> della <span class="term">Salutifera Incarnazione</span>, regnando
+in <span class="placeName">Palermo</span> ed in <span class="placeName">Napoli</span> il grande e buon <span class="persName" data-ana="#persName.storico">re Federico II
+di <span class="placeName">Svevia</span></span>, accadde in <span class="placeName">Napoli</span> un caso stranissimo che non
+vi sarà discaro ascoltare, trattandosi di piacevole argomento.
+Simil novella non troverete nè in istorici, nè <span class="term" data-ana="#moral.positivo">in eleganti nar-
+ratori</span> ; io stessa la raccolsi rozza ed informe dalla tradi-
+zione popolare e voglio, narrandola a voi, consacrarla in
+questa scrittura, affinchè ne possano avere disadorna ma
+chiara notizia i più tardi <span class="distinct" data-type="arcaico">nepoti</span>, per cui si <span class="distinct" data-type="letterario">travaglia</span> e s'af-
+fatica ogni scrittore, disdegnoso del facile plauso contempo-
+raneo. Ma senza più intrattenervi in preliminari, avendo
+spiegata chiaramente la mia intenzione, ecco il caso.
+</p>
+          <p class="paragrafo" id="p262_paragrafo_2">
+Nello stretto <span class="placeName">vico dei Cortellari</span> che, come ognuno sa, ap-
+parteneva al <span class="orgName" data-ana="#orgName.istituzione">Seggio di Portanova</span>, vi era una casuccia
+<span class="term" data-ana="#term.caratteristica">magra</span> ed <span class="term" data-ana="#term.caratteristica">alta</span>, dalle piccole finestre, aventi i vetri <span class="term" data-ana="#term.caratteristica">sudici</span>
+ed impiombati. La porta di entrata era <span class="term" data-ana="#term.caratteristica">bassa</span> ed <span class="term" data-ana="#term.caratteristica">oscura</span>;
+<span class="term" data-ana="#term.caratteristica">sporca</span> e <span class="term" data-ana="#term.caratteristica">ripida</span> la scala; di rado si aprivano le finestruole.
+La gente vi passava dinanzi frettolosa, dando uno sguardo
+fra il collerico ed il pauroso, e borbottando fra i denti non so
+se una preghiera o una maledizione. In verità, nella casuccia
+abitava <span class="term" data-ana="#moral.negativo">gente mal famata</span>; al primo piano vi era un 
+<span class="term" data-ana="#moral.negativo">maledetto <span class="roleName">usuraio</span></span>, tosatore di monete d’oro; 
+al secondo una<span class="term" data-ana="#term.caratteristica">bella</span>giovane di quelle che sono la tentazione e la danna-
+zione dell’uomo; al terzo un marito ed una moglie, <span class="term" data-ana="#moral.negativo">brutti 
+ceffi</span> che di giorno erano fuori di casa a qualche ignoto ed
+equivoco mestiere e quando rincasavano, a notte piena, si
+battevano come la lana. Ma quello che formava lo sgomento
+dei <span class="term" data-ana="#term.ruolo">viandanti</span> non era specialmente il <span class="term" data-ana="#moral.negativo">tristo</span> <span class="roleName">usuraio</span>, lo
+sguardo<span class="term" data-ana="#term.caratteristica">provocante</span> della donna o gli strilli della <span class="term" data-ana="#term.ruolo">moglie</span>
+bastonata dal marito, ma era tutto questo insieme e prin-
+cipalmente il pensiero che all’ultimo piano della casa india-
+volata abitava <span class="persName" data-ana="#persName.fittizia">Cicho</span> il <span class="roleName">mago</span>. Le anime timorate di <span class="persName">Dio</span>
+si facevano il segno della croce che è anche quello della
+nostra salvazione e passavano oltre; gli spiriti mondani
+facevano le corna con la mano, si tastavano il ginocchio,
+pronunciavano qualche scongiuro e simili cose adoperavano
+che si credono atte a disperdere il malocchio. Sebbene
+<span class="persName" data-ana="#persName.fittizia">Cicho</span> uscisse molto raramente e raramente spalancasse le
+imposte della sua finestruola, il popolo sapendo della sua
+magia, del suo potere sovrumano, n’avea timore grandissimo.
+</p>
+          <p class="paragrafo" id="p262_paragrafo_3">
+Senza dubbio i misteriosi andamenti di <span class="persName" data-ana="#persName.fittizia">Cicho</span> davan fede
+di verità a quanto di lui si diceva. Chi fosse non si sapeva,
+nè donde venisse; sempre chiuso in casa; in apparenza
+privo d’amici o di parenti ; curvo nell'incedere, lento il passo,
+l’occhio fisso a terra, mormorando parole greche, latine o
+di qualche lingua demoniaca : parco nel conversare, ma non
+aspro nei modi, anzi sorridente nella bianca, fluente barba ;
+oscure ma nette le <span class="distinct" data-type="arcaico">vestimenta</span>. Invano, quando venne ad
+abitare nel <span class="placeName" data-ana="#placeName.via">vico Cortellari</span>, le femminette d’intorno s’infor-
+marono di lui, chiesero, osarono interrogarlo, fermarono il
+suo servo e adoperarono i mille mezzi che mai sempre
+consiglia alla donna la sua gran maestra e signora, la cu-
+riosità. Nulla potettero sapere, e <span class="persName" data-ana="#persName.fittizia">Cicho</span>, la sua origine,
+la sua famiglia, la sua vita, rimasero nelle tenebre <span class="choice" title="Originale: dello&#10;ignoto">dell’ignoto</span>. Ma in seguito, spiando, osservando, <em>escogitando,</em>
+si seppe che <span class="persName" data-ana="#persName.fittizia">Cicho</span> intendeva ad opere magiche : durante
+la notte, mai si spegneva la lampada della stanzuccia dove
+egli studiava su grossi volumi di manoscritto, chiusi a fer-
+maglio, tolti da una <span class="term">polverosa</span> <span class="term">scansia</span>: mai cessava di uscire
+dalla cappa <span class="term">nera</span> del suo focolare, un filo di fumo e la sua
+stanza era piena di storto, di lambicchi, di fornelli, di sin-
+golari coltelli in tutte le forme e di altri strumenti in ferro
+destinati ad usi ignoti. Si dicea che spesso <span class="persName" data-ana="#persName.fittizia">Cicho</span> passava
+ore intiere curvato sopra un pentolino che bolliva, bolliva
+e dove sicuramente danzavano le <span class="term" data-ana="#moral.negativo">maledette</span> <span class="term">infernali</span> erbe
+</p>
+          <p class="paragrafo" id="263_paragrafo_4">
+<span class="page-break" id="pb_263">
+      [p. 263]
+    </span> 
+
+che cagionavano <span class="term" data-ana="#moral.negativo">malsania</span>, <span class="term" data-ana="#moral.negativo">follia</span> e <span class="term" data-ana="#moral.negativo">morte</span>, sebbene il servo
+non comperasse in piazza che le <span class="term" data-ana="#term.cibo">erbe di cucina</span>, come <span class="term" data-ana="#term.cibo">maggiorana</span>, <span class="term" data-ana="#term.cibo">pomodoro</span>, <span class="term" data-ana="#term.cibo">basilico</span>, <span class="term" data-ana="#term.cibo">prezzemolo</span>, <span class="term" data-ana="#term.cibo">cipolle</span>, <span class="term" data-ana="#term.cibo">agli</span> ed al-
+tro. Ma si sa che gli stregoni vanno nei prati, nella notte
+del sabato, incantano la luna, chiamano il diavolo e col-
+gono le <span class="term" data-ana="#moral.negativo">erbaccie malefiche</span>. Si diceva altresì che <span class="persName" data-ana="#persName.fittizia">Cicho</span> ve-
+nisse fuori sul suo piccolo terrazzino, scuotendo dalle mani
+e dall’abito una <span class="term">polvere bianca</span> che certo doveva avvelenare
+l’aria : che spesso andasse a lavarsi le mani macchiate di
+rosso in un tinello di cui l’acqua si corrompeva. Quelle
+mani macchiate di rosso davano autorità ad <span class="term" data-ana="#moral.negativo">orribili sospetti</span>: tanto piu che si soggiungeva esservi spesso nel la-
+boratorio di <span class="persName" data-ana="#persName.fittizia">Cicho</span>, sul pavimento, larghe macchie di un
+rosso bruno, simili a pozze di sangue e che quello <span class="term" data-ana="#moral.negativo">stregone</span> si occupasse, nella notte, a tagliare
+coi suoi sottili coltelli, sopra una grande tavola di marmo,
+non so che di bianco e di delicato. <span class="term" data-ana="#term.cibo">Membra di bambini</span>, o
+<span class="term">gambe di rana</span>, o <span class="term" data-ana="#term.cibo">pelle di serpentelli</span> — ripeteva la gente.
+E quando camminava nella via, le comari ammiccavano e
+si davano delle gomitate nei fianchi, dicendo:
+</p>
+          <p class="paragrafo" id="263_paragrafo_5">
+— <span class="persName" data-ana="#persName.fittizia">Cicho</span> il <span class="term" data-ana="#term.ruolo">mago! </span><span class="persName" data-ana="#persName.fittizia">Cicho</span> il <span class="term" data-ana="#term.ruolo">mago!</span>
+— Cerca il modo di ridiventare giovane, il vecchione.
+— Vuol trovare l’oro, forse.
+— O quella pietra per cui s’ ha virtù, saggezza e
+lunga vita.
+— Che !! <span class="choice" title="Originale: chiama">Chiama</span> il diavolo per diventare <span class="persName" data-ana="#persName.storico">Gran Turco</span>.
+</p>
+          <p class="paragrafo" id="263_paragrafo_6">
+
+    <span class="persName" data-ana="#persName.fittizia">Cicho</span> ascoltava e tirava via, sorridendo. In fondo le
+    comari, avendone paura, non osavano maledirlo che sotto
+    voce; e ammonivano i bimbi a usargli rispetto. Lo <span class="term" data-ana="#term.ruolo">stre-
+    gone</span>, malgrado le voci temerarie, aveva aspetto di <span class="term" data-ana="#moral.positivo">galan-
+    tuomo</span> e quella tale aria di <span class="term" data-ana="#term.caratteristica">soddisfatto</span> raccoglimento di
+    chi medita una <span class="term" data-ana="#term.caratteristica">bella</span> e <span class="term" data-ana="#term.caratteristica">feconda</span> idea. Parea dicesse: verrà,
+    verrà il mio giorno, o gente ingrata. A chiarirvi un poco
+    il mistero ed a denudare la sua vita di quella parte <span class="term" data-ana="#term.caratteristica">so-
+    vrumana</span> che <span class="persName">Dio</span> non permette più sulla terra, poiché <span class="persName">Dio</span>
+    fa miracoli solamente per l’anima e non per il corpo, vi
+    dirò quanto segue, <span class="persName" data-ana="#persName.fittizia">Cicho</span> era stato a suo tempo <span class="term" data-ana="#measure.ricchezza">ricco</span>, ga-
+    <span class="term" data-ana="#term.caratteristica">gliardo</span> e <span class="term" data-ana="#term.caratteristica">bel</span> <span class="term" data-ana="#term.ruolo">garzone</span>, aveva saputo goder bene della salute,
+    della <span class="term" data-ana="#measure.eta">gioventù</span>, della <span class="term" data-ana="#measure.ricchezza">ricchezza</span>; amante, era stato amato;
+    aveva avuto palazzi, corridori di <span class="term" data-ana="#socialclass.nobilta">nobil sangue</span>, vestimenta
+    intessute d’oro; aveva goduto feste, conviti, balli, tornea-
+    menti, giostre; aveva assaporato col più vivo piacere baci
+    di donne, colpi di spada di cavalieri e <span class="term" data-ana="#term.cibo">vini</span> <span class="term" data-ana="#term.caratteristica">poderosi</span>. Quando
+    la sua <span class="term" data-ana="#measure.ricchezza">ricchezza</span> cominciò a dileguare, come sempre accade,
+    si allontanarono donne ed amici; ma <span class="persName" data-ana="#persName.fittizia">Cicho</span>, che aveva
+    fatta sugli scrittori antichi buona e larga provvista di filo
+    sofìa, non se ne <span class="term">accorò</span>. Sibbene, rimasto solo, con niuna
+    opera da compiere, lo prese vaghezza di rendersi utile agli
+    uomini. E dopo aver molto escogitato tutti i mezzi, ri-
+    cordando i suoi godimenti ed i suoi piaceri, entrò nella
+    persuasione dover lui ritrovare qualche cosa che concorresse
+    specialmente alla felicità del suo simile, felicità <span class="term" data-ana="#term.caratteristica">instabile</span> e
+    <span class="term" data-ana="#term.caratteristica">passeggiera</span>, a cui egli voleva dare un qualche fondamento.
+    Raffermato in questa intenzione comprò pergamene e vo-
+    lumi di manoscritto, li studiò lungamente, tentando e ri-
+    tentando ogni giorno prove novelle, sbagliando, ricomin-
+    ciando da capo, consumando le sue notti, il suo danaro ed
+    il carbone dei suoi fornelli. Per molto tempo la <span class="term" data-ana="#moral.negativo">mala for-
+    tuna</span> lo perseguitò e le sue esperienze riuscirono sempre
+    <span class="term" data-ana="#moral.negativo">fallaci</span>, ma non per questo venne meno la sua costanza. <span class="distinct" data-type="arcaico">Ei</span> la-
+    vorava per la felicità dell’uomo e cotale <span class="term" data-ana="#term.caratteristica">altissimo</span> scopo gli
+    era innanzi agli occhi come visione animatrice; alla fine,
+    dopo molti anni di travaglio, ei potè dire di aver raggiunto
+    la sua meta, gridando anche lui la parola del greco <span class="persName" data-ana="#persName.storico">Ar-
+    chimede</span>, di fronte a tanta scoperta. Poi, come usano gli
+    <span class="term" data-ana="#term.ruolo">inventori</span>, si occupò a vezzeggiare la sua scoperta, a ca-
+    rezzarla, a darle forme svariato, seducenti, a perfezionarla,
+    
+    in modo da poter dire agli uomini : Eccola qui, io ve la
+    dono bella e completa
+</p>
+          <p class="paragrafo" id="263_paragrafo_7">
+Ora accadile che sul terrazzino di <span class="persName" data-ana="#persName.fittizia">Cicho</span> il <span class="term" data-ana="#term.ruolo">mago</span> spor-
+gesse anche una porticina di una stanzaccia, dove abitava
+con suo marito <span class="persName" data-ana="#persName.fittizia">Jovanuella di Canzio</span>. Era costei <span class="term" data-ana="#term.caratteristica">maliziosa</span>,
+<span class="term" data-ana="#term.caratteristica">astuta</span> e <span class="term" data-ana="#term.caratteristica">linguacciuta</span> quanto mai femmina possa essere; e sua
+<span class="term" data-ana="#term.caratteristica">dilettosa</span> occupazione era conoscere i fatti del vicinato o per-
+trarne personale vantaggio o per malignarvi su. Non è a dire
+se la malvagia <span class="persName" data-ana="#moral.negativo #persName.fittizia">Jovanuella</span> spiasse continuamente <span class="persName" data-ana="#persName.fittizia">Cicho</span> il
+mago; che anzi si arrovellava di giorno e non aveva tregua
+nelle lenzuola alla notte, per la inappagata curiosità; e più
+non riusciva a saper nulla, più, per dispetto, lacerava la
+riputazione delle vicine e tormentava il marito <span class="persName" data-ana="#persName.fittizia">Giacomo</span>,
+guattero di cucina al <span class="term" data-ana="#term.caratteristica">real</span> palazzo. Ma non senza saviezza
+corrono dettami popolari, esprimenti che la donna ottiene sem-
+pre quello che vuole fortemente, e, malgrado le precauzioni
+di segretezza adoperate da <span class="persName" data-ana="#persName.fittizia">Cicho</span> il mago, malgrado le porte
+chiuse, le finestre sbarrate, la <span class="persName" data-ana="#persName.fittizia">Jovanuella</span> seppe il segreto
+dello stregone. Fosse stato per buco di serratura, per fes-
+sura di porta, per foro nel muro, o per altro, io non so.
+Ma è certo che un giorno, la trionfante <span class="persName" data-ana="#persName.fittizia">Jovannella</span> disse al
+<span class="term" data-ana="#term.caratteristica">guattero</span> marito:
+</p>
+          <p class="paragrafo" id="263_paragrafo_8">
+    — <span class="persName" data-ana="#persName.fittizia">Giacomo</span>, se hai ardire di uomo, la fortuna nostra è
+fatta.
+— Sei tu diventata <span class="term" data-ana="#term.ruolo">strega? Io mel sapeva</span>.
+— <span class="term" data-ana="#ling_regionali">Malann'aggia</span> la tua bocca sconsacrata! Ascolta. Vuoi
+tu dire al <span class="roleName">cuoco</span> di palazzo che io conosco una <span class="term" data-ana="#term.cibo">vivanda</span> di
+così nuova o tanto squisita fattura da meritare l’assaggio
+del <span class="roleName">re</span>?
+— Femmina, tu sei pazza.
+— Dio mi sradichi questa lingua che ho tanto cara, s’io
+mento.
+</p>
+          <p class="paragrafo" id="263_paragrafo_9">
+E con molte sue persuasioni lo indusse a parlarne col <span class="roleName">cuoco</span>, che a sua volta ne discusse col <span class="roleName">maggiordomo</span>, il quale
+ne tenne parola con un <span class="roleName">conte</span>, che osò dirne al <span class="roleName">re</span>. Piacque al
+re la novella e dette ordine che la moglie del <span class="roleName">guattero</span> si re-
+casse nelle reali cucine e componesse la prelibata <span class="term" data-ana="#term.cibo">vivanda</span>:
+infatti <span class="persName" data-ana="#persName.fittizia">Jovannella</span> accorse prontamente ed in tre ore ebbe
+tutto fatto. Ecco come: prese prima <span class="term" data-ana="#term.cibo">fior di farina</span>, lo impastò
+con poca <span class="term" data-ana="#term.cibo">acqua</span>, <span class="term" data-ana="#term.cibo">sale</span> e <span class="term" data-ana="#term.cibo">uova</span>, maneggiando la pasta <span class="term" data-ana="#term.caratteristica">lungamente</span>
+per raffinarla e per ridurla <span class="term" data-ana="#term.caratteristica">sottile sottile</span> come la tela;
+poi la tagliò con un suo <span class="term" data-ana="#term.caratteristica">coltellaccio</span> in piccole striscie, le ar-
+rotolò a forma di piccoli <span class="term" data-ana="#term.caratteristica">cannelli</span> e fattane una grande quan-
+tità, essendo la pasta <span class="term" data-ana="#term.caratteristica">morbida</span> ed <span class="term" data-ana="#term.caratteristica">umidiccia</span>, la mise a <span class="distinct" data-type="arcaico">rasciu-
+gare</span> al sole. Poi mise in un <span class="term" data-ana="#term.cibo">tegame</span>, <span class="term" data-ana="#term.cibo">strutto di porco</span>, <span class="term" data-ana="#term.cibo">cipolla tagliuzzata finissima</span> e <span class="term" data-ana="#term.cibo">sale</span>, lasciando friggere tutto; vi mise
+un grosso pezzo di <span class="term" data-ana="#term.cibo">carne</span> e quando lo vide <span class="term" data-ana="#term.caratteristica">crogiolato bene</span>,
+avendo acquistato un colore <span class="term" data-ana="#term.caratteristica">bruno-dorato</span>, versò nel <span class="term" data-ana="#term.cibo">tegame</span>
+il <span class="term" data-ana="#term.cibo">succo denso e rosso dei pomodori</span>, che aveva spremuti in
+uno staccio: coprì il <span class="term" data-ana="#term.cibo">tegame</span> e lasciò cuocere a fuoco lento,
+carne e <span class="term" data-ana="#term.cibo">salsa</span>.
+</p>
+          <p class="paragrafo" id="263_paragrafo_10">
+    Poi che l’ora del pranzo fu venuta, ella tenne preparata
+una caldaia di <span class="term" data-ana="#term.cibo">acqua bollente</span>, dove rovesciò i <span class="term" data-ana="#term.caratteristica">cannelli</span> di
+pasta: intanto che cuocevano, ella grattugiò una <span class="term" data-ana="#term.cibo">grande quantità di formaggio</span> che ha nume da <span class="placeName" data-ana="#placeName.citta">Parma</span> e
+si fabbrica in <span class="placeName" data-ana="#placeName.citta">Lodi</span>. Cotta a punto la pasta, la separò dal
+l’acqua ed in un bacile di maiolica la condì mano mano con
+una cucchiaiata di <span class="term" data-ana="#term.cibo">formaggio</span> ed una di <span class="term" data-ana="#term.cibo">salsa</span>. Così fu la
+famosa <span class="term" data-ana="#term.cibo">vivanda</span> che andò innanzi al <span class="roleName">grande Federico</span>, il
+quale ne rimase <span class="term" data-ana="#term.caratteristica">maravigliato</span> e <span class="term" data-ana="#term.caratteristica">compiaciuto</span>; e chiamata
+a sé la <span class="persName" data-ana="#persName.fittizia">Jovanuella di Cauzio</span>, le chiese come avesse potuto
+immaginare un <span class="term" data-ana="#term.caratteristica">connubio così armonioso e stupendo</span>. La
+rea femmina disse che ne aveva avuta rivelazione in sogno,
+da un <span class="roleName">angelo</span>: il gran <span class="roleName">re</span> volle che il suo <span class="roleName">cuoco</span> imparasse
+la ricetta e donò alla <span class="persName" data-ana="#persName.fittizia">Jovannella</span> cento monete d’oro, di-
+cendo che era molto a compensarsi colei, che per una sì
+grande parte aveva concorso alla felicità dell’uomo. Ma non
+<span class="page-break" id="pb_264">
+      [p. 264]
+    </span>
+fu questa solamente la fortuna di <span class="persName" data-ana="#persName.fittizia">Jovannella</span>, poiché ogni
+<span class="roleName">conte</span> ed ogni <span class="roleName">dignitario</span> volle avere la ricetta e mandò il
+proprio <span class="roleName">cuoco</span> ad imparare da lei, dandole <span class="term" data-ana="#term.caratteristica">grosso premio</span>;
+e dopo i dignitari vennero i <span class="rs" data-type="socialClass">ricchi borghesi</span> e poi i <span class="roleName">mercanti</span>
+e poi i <span class="rs" data-type="socialClass">lavoratori di giornata</span> e poi i <span class="rs" data-type="socialClass">poveri</span>, dando
+ognuno alla donna quel che poteva. Nel corso di sei mesi
+tutta <span class="placeName" data-ana="#placeName.citta">Napoli</span> si cibava dei <span class="term" data-ana="#term.cibo">deliziosi maccheroni — da <em><span class="term">macarus</span></em>, cibo divino</span> — e la <span class="persName" data-ana="#persName.fittizia">Jovannella</span> era <span class="term" data-ana="#measure.ricchezza">ricca</span>.
+</p>
+          <p class="paragrafo" id="264_paragrafo_11">
+Intanto <span class="persName" data-ana="#persName.fittizia">Cicho</span> il <span class="roleName">mago</span>, solo solo nella sua <span class="term" data-ana="#term.caratteristica">caraeruccia</span>, mo-
+dificava e variava la sua <span class="term" data-ana="#term.caratteristica">scoporta</span>. Pregustava il <span class="term" data-ana="#term.caratteristica">momento</span> in
+cui, fatto noto agli uomini il <span class="term" data-ana="#term.caratteristica">segreto</span>, gliene sarebbe venuta
+<span class="term" data-ana="#moral.positivo">gratitudine</span>, <span class="term" data-ana="#moral.positivo">ammirazione</span> e <span class="term" data-ana="#measure.ricchezza">fortuna</span>. Infine, non vale di più
+la scoperta di una nuova <span class="term" data-ana="#term.cibo">pietanza</span> che quella di un <span class="term" data-ana="#term.caratteristica">teorema
+ filosofico</span>? cheChe quella di una <span class="term" data-ana="#term.caratteristica">cometa</span>? cheChe quella di un nuovo
+<span class="term" data-ana="#term.caratteristica">insetto</span>? Bene dunque: e lodato senza fine sia l’uomo che la
+fa. Ma un giorno che il termine era vicino, <span class="persName" data-ana="#persName.fittizia">Cicho</span> il <span class="roleName">mago</span>
+uscì a passeggiare per la <span class="placeName" data-ana="#placeName.urbano">via del Molo</span>; arrivato presso la
+<span class="placeName" data-ana="#placeName.urbano">porta del Caputo</span> un <span class="term" data-ana="#term.caratteristica">noto odore</span> gli ferì le nari. Egli tremò
+e volle rincorarsi, <span class="term" data-ana="#term.caratteristica">pensando</span> che era <span class="term" data-ana="#term.caratteristica">inganno</span>. Ma, <span class="term" data-ana="#term.caratteristica">róso dall’ansietà</span>,
+entrò nella casa donde l’odore era venuto e domandò ad una <span class="roleName">donna</span> che badava ad un <span class="roleName">tegame</span>:
+</p>
+          <p class="paragrafo" id="264_paragrafo_12">
+— Che cucini tu?
+— <span class="term" data-ana="#term.cibo">Maccheroni</span>, vecchio.
+— Chi te le insegnò, donna?
+— <span class="persName" data-ana="#persName.fittizia">Jovannella di Canzio</span>.
+— E a lei?
+— Un angelo, dicono. Ella ne cucinò al <span class="roleName">re</span>; ne vollero
+<span class="roleName">i principi</span>, <span class="roleName">i conti</span>, tutta <span class="placeName" data-ana="#placeName.citta">Napoli</span>. In qualunque casa entrerai,
+o vecchio pallido e morente, troverai che vi bì cucinano <span class="term" data-ana="#term.cibo">maccheroni</span>. Hai fame? Vuoi tu <span class="term" data-ana="#term.caratteristica">cibartene</span>?
+— No. Addio.
+</p>
+          <p class="paragrafo" id="264_paragrafo_13">
+Entrato in varie case, trascinandosi a stento, <span class="persName" data-ana="#persName.fittizia">Cicho</span> il
+mago ebbe certezza dell’accaduto e del tradimento di <span class="persName" data-ana="#persName.fittizia">Jovannella</span>; il custode del <span class="placeName" data-ana="#placeName.storico">palazzo reale</span> gli ripetè la storiella.
+Allora, disperato d’ogni cosa, tornatosene alla sua casetta,
+rovesciò lambicchi, storte, <span class="term" data-ana="#term.cibo">tegami</span>, fornelli, forme e coltelli;
+ruppe, fracassò tutto; abbruciò volumi di chimica. E partis-
+sene solo ed ignorato, senza che mai più fosse veduto ri-
+tornare.
+</p>
+          <p class="paragrafo" id="264_paragrafo_14">
+Come è <span class="term" data-ana="#term.caratteristica">naturale</span>, la gente disse che il diavolo aveva por-
+tato via il mago. Ma venuta a morte la <span class="persName" data-ana="#persName.fittizia">Jovannella</span>, dopo una
+vita <span class="term" data-ana="#term.caratteristica">felice</span>, <span class="term" data-ana="#term.caratteristica">ricca</span> ed <span class="term" data-ana="#term.caratteristica">onorata</span>, come la godono per lo più i <span class="term" data-ana="#term.caratteristica">mal-
+vagi</span>, malgrado le massime morali in contrario, nella dispe-
+razione dell’<span class="term" data-ana="#term.caratteristica">agonia</span> confessò il suo peccato e morì urlando
+come una dannata. Neppure tarda giustizia fu resa a <span class="persName" data-ana="#persName.fittizia">Cicho</span>
+il mago; la leggenda soggiunge che nella casa dei <span class="placeName" data-ana="#placeName.storico">Cortellari</span>,
+dentro la stanzuccia del mago, alla notte del sabato, <span class="persName" data-ana="#persName.fittizia">Cicho</span> il
+mago ritorna a tagliare i suoi <span class="term" data-ana="#term.cibo">maccheroni</span>, <span class="persName" data-ana="#persName.fittizia">Jovannella di Canzio</span> gira la mestola nella <span class="term" data-ana="#term.cibo">salsa del pomodoro</span>, e il diavolo
+con una mano gratta il <span class="term" data-ana="#term.cibo">formaggio</span> e con l’altra soffia sotto
+la <span class="term" data-ana="#term.cibo">caldaia</span>. Ma diabolica o angelica che sia la scoperta di <span class="persName" data-ana="#persName.fittizia">Cicho</span>, essa ha formato la felicità dei <span class="placeName" data-ana="#placeName.citta">Napoletani</span> e nulla indica
+che non continui a formarla, nei secoli dei secoli.
+</p>
+          <p class="firma">
+            <span class="persName" data-ana="#persName.reale">Matilde Serao</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="articolo_essere_troppo_stimati">
+      <div id="essere-troppo-stimati-head">
+        <h2 id="essere-troppo-stimati-titolo">L'ESSERE TROPPO STIMATI.</h2>
+      </div>
+      <div class="facsimile-layout">
+        <div class="facsimile-immagini">
+          <p class="facsimile-label">Facsimile</p>
+          <img class="facsimile-img" src="img/pag267.jpg" alt="L'essere troppo stimati - p. 267"/>
+          <img class="facsimile-img" src="img/pag268.jpg" alt="L'essere troppo stimati - p. 268"/>
+        </div>
+        <div class="facsimile-testo" id="essere-troppo-stimati-body">
+          <span class="page-break" id="pb_267">
+      [p. 267]
+    </span>
+          <p class="paragrafo" id="p267_paragrafo_1">
+    <span class="quote">«Scredita un <span class="term" data-ana="#term.animale">cane</span> e appiccalo</span> » è un detto inglese no-
+    tissimo, e i mali effetti de <span class="term" data-ana="#moral.negativo">i giudizi severi e alquanto maligni</span> del nostro prossimo sono un argomento così trito, che
+    non mette conto di spendervi una parola di più. Ma che si
+    possa altresì recar danno, benché in grado minore, nel modo
+    opposto, è un fatto che in generale non si riconosce da tutti
+    egualmente, o tale che non si farà forse opera vana dedicandogli un breve esame. 
+    <span class="term" data-ana="#moral.negativo">Se v’ha cosa da cui profondamente aborrisca chi, pur senza uscir fuori del comune, abbia sano intendimento</span> e <span class="term" data-ana="#moral.positivo">sentimento d’onore</span>, è quella di trovarsi in una
+    condizione falsa : eppure questo è di necessità lo stato di
+    qualunque <span class="persName" data-ana="#persName.generico">galantuomo</span> a cui amici e conoscenti si ostinino
+    nel voler attribuire <span class="term" data-ana="#moral.positivo">alte qualità di mente o di corpo</span>, ovvero
+    ricchezze che in realtà non possiede. Da lui s’aspettano
+    grandi cose, e a quest’aspettazione egli non è in grado di
+    corrispondere. Gli si addossa un carico, a sopportare il quale
+    non gli reggono le forze, e il peggio si è che, soccombendovi
+    egli (come bisogna pure che avvenga o prima o poi), e vista
+    la cantonata che si è presa, allora si può esser certi che
+    coloro stessi, i quali tenevano da più di quel che era, se la
+    pigliano con lui per il fiasco fatto, proprio come se l’errore ad
+    essi occorso nel valutarlo fosse dipeso da <span class="term" data-ana="#moral.negativo">bugiarde vanterie</span>
+    della loro vittima. Quelle <span class="term" data-ana="#moral.positivo">anime virtuose</span> si sdegnano di essere state messe in mezzo, e si dimenticano di aver esse fabbricato le <span class="term" data-ana="#moral.positivo">promesse lusinghiere</span> onde furono deluse. 
+    Poniamo un <span class="term" data-ana="#socialclass.borghesia">proprietario</span> d’una modesta fortuna, che in una o in
+    un’altra maniera si sia procacciata la nomea di un <span class="term"><span class="persName" data-ana="#persName.storico">Creso</span></span>.
+    La gente crede sia dovere di lui di tenere casa e borsa
+    aperte, di dare il suo nome a quante sottoscrizioni vengon fuori sotto la cappa del cielo, e di tuffarsi a capo
+    fitto in ogni sorta di prodigalità, sotto pena di passare per
+    <span class="term" data-ana="#moral.negativo">taccagno</span> e <span class="term" data-ana="#moral.negativo">avaro</span> se frustra queste aspettazioni. Oppure
+    poniamo un <span class="term" data-ana="#socialclass.militare">militare</span>, a cui per favore di fortuna sia riuscita
+    a bene un’impresa che i suoi amici vogliono di riffa attribuire
+    <span class="page-break" id="pb_267">
+      [p. 267]
+    </span>
+    
+allo straordinario suo <span class="term" data-ana="#moral.positivo">ingegno strategico</span>, per quanto egli
+onestamente protesti che non ha verun titolo a simili elogi.
+Dato il caso che i loro <span class="distinct" data-type="metaforica">strombazzamenti</span> producessero
+qualche effetto nelle alte regioni, e che a lui venisse affidato
+un incarico di responsabilità al quale vi fosse <span class="distinct" data-type="arcaico">disadatto</span>,
+ne conseguirebbero probabilmente dei disastri di cui gli
+cadrebbe <span class="choice" title="Originale: adosso">addosso</span> tutto il biasimo; e questo lo colpisce dura
+mente. Così pure un altro avrà certe attitudini punto ec
+cezionali, che per circostanze fortuite sono salite sopra il
+livello ordinario, e l’opinione pubblica coglie l’opportunità
+per faro di lui una <span class="term" data-ana="#moral.positivo">celebrità</span>, benché egli stesso sappia benissimo di non avere nè spirito nè ingegno al di sopra degli
+altri, e non abbia mai aspirato ad essere tenuto per un uomo
+di <span class="distinct" data-type="arcaico"><span class="term" data-ana="#moral.positivo">vaglia</span></span>. Anch’egli merita compassione, poiché è di con
+tinuo turbato dal sentire dentro di sé come ognuno si ri
+prometta da lui qualche cosa di buono che gli è impossibile
+di compiere, e deve prevedere il giorno in cui i suoi amici,
+scoprendo l’inganno onde si sono pasciuti, e considerandolo
+un <span class="distinct" data-type="arcaico"><span class="term" data-ana="#moral.negativo">ciurmatore</span></span>, gli volteranno probabilmente le spalle con
+<span class="term" data-ana="#moral.negativo">sprezzante disgusto</span>.
+</p>
+          <p class="paragrafo" id="p267_paragrafo_2"><div class="inserto-poetico"><div class="strofa"><p class="verso">Viveva il <span class="persName" data-ana="#persName.fittizia">Centopiè</span> tranquillo e lieto,</p><p class="verso">Quando per <span class="distinct" data-type="arcaico"><span class="term" data-ana="#term.caratteristica">celia</span></span> il rospo un dì gli chiese:</p><p class="verso">«Vorresti dirmi in grazia quale piede</p><p class="verso">Appresso l’altro muovi?» Studia e pensa</p><p class="verso">Il <span class="distinct" data-type="arcaico"><span class="term" data-ana="#term.caratteristica">tapinello</span></span>, e tanto si confonde,</p><p class="verso">Che dentro un fosso resta dissennato,</p><p class="verso">A meditar sul come darà un passo.</p></div></div>
+       </p>
+          <p class="paragrafo" id="p267_paragrafo_3">
+  E ovvio come <span class="distinct" data-type="arcaico">sieno</span> più d’una le faccio sotto cui si pre
+  senta la morale inculcata in queste righe. <span class="choice" title="Originale: Dove.è">Dov'è</span> beato
+  l’ignorante, è <span class="term" data-ana="#moral.negativo">follia esser <span class="distinct" data-type="arcaico">savio</span></span>, può essere una morale; le
+  <span class="term" data-ana="#moral.negativo">tristi conseguenze</span> di <span class="term" data-ana="#moral.negativo">domande inconsulte</span> e di una <span class="term" data-ana="#moral.negativo">curiosità
+  impertinente</span>, è un’altra ; un <span class="persName" data-ana="#persName.generico">signore</span> poi, alla cui opinione
+  portiamo il massimo rispetto, ne ha suggerita una terza
+  nella disgrazia di conoscere sé stessi. Ma dopo <span class="term" data-ana="#moral.positivo">seria considerazione</span> abbiamo finito col <span class="term"><span class="distinct" data-type="arcaico">conchiudere</span></span> che le afflizioni
+  del centopiedi furono causate dalla fiducia del rospo nell’at-
+  tribuirgli una quantità di cognizioni, che quello non aveva,
+  intorno al proprio individuo. Esso vide come si ammet-
+  teva per dato e fatto che dovesse sapere l’ordinata di
+  sposizione e movenza delle sue gambe, e da quell’istante
+  incominciò a <em>struggersi</em> in deboli conati, cercando di cor
+  rispondere a quella aspettazione. V’ ha chi, accorgendosi
+  di essere in una tale situazione falsa, non <span class="phr">si dà per inteso</span> dell’ esagerata estimazione in cui è tenuto, e va di
+  ritto per la propria strada come se nulla fosse : laddove
+  altri, a <span class="distinct" data-type="arcaico">guisa</span> del centopiedi, si lascia ingannare da un
+  mezzo dubbio circa alla possibilità che, al tirar delle somme,
+  vi sia in lui più di quanto supponesse, e si <span class="distinct" data-type="letterario">travaglia</span> <span class="distinct" data-type="letterario">indarno</span> in
+  <span class="term" data-ana="#moral.negativo">tentativi febbrili</span> per giustificare la <span class="distinct" data-type="letterario">riputazione</span> che
+  gli è stata creata. Ma <span class="distinct" data-type="arcaico">sì</span> gli uni che gli altri si sentono op
+  pressi dall’idea della sproporzione fra ciò che da loro si at-
+  tende, e ciò che possono dare, e dalla previsione del di
+  leggio e dell’ira che avranno da subire quando saranno
+  riconosciuti <span class="term" data-ana="#moral.negativo">impari</span> alla <span class="distinct" data-type="letterario">riputazione</span>. Che questa sia un’<span class="term" data-ana="#moral.negativo">orribile ingiustizia</span> ognun lo vede; ma il mondo, a buon conto,
+  s’inquieta raramente di simili faccende. Il suo primo istinto,
+  quando una cosa non va <span class="distinct" data-type="letterario">pel giusto verso</span>, è di scaricare il
+  biasimo sulle spalle altrui, tocca a chi tocca, purché non <span class="distinct" data-type="arcaico">sieno</span>
+  le sue, e non è <span class="distinct" data-type="arcaico">punto</span> disposto ad ammettere che vi sia da
+  ridire su una sentenza, sia pure strampalata, una volta che
+  è stata proferita. Se una turba <span class="distinct" data-type="letterario">tumultuante</span> si sognasse che
+  un tale ciabattino faccia il fornaio, e se stesse lì lì per ro-
+  vesciarsi sulla sua bottega a fine di aver pane in tempo
+  di carestia, la circostanza dell'esser egli niente altro che
+  un ciabattino varrebbe difficilmente a salvare le sue ve-
+  trine dal volare in frantumi qualora <span class="distinct" data-type="arcaico">ei</span> non riuscisse a for-
+  nire le richieste pagnotte.
+</p>
+          <p class="paragrafo" id="p267_paragrafo_4">
+  Naturalmente coloro soltanto che, come <span class="term"><span class="persName" data-ana="#persName.reale">Bill Nye</span></span>, non
+    <span class="page-break" id="pb_268">
+      [p. 268]
+    </span>
+  
+  ...hanno mai operato « con l’intenzione di ingannare,» noi
+  stimiamo <span class="term" data-ana="#moral.negativo">meritevoli di commiserazione</span>. Per <span class="term"><span class="persName" data-ana="#persName.fittizia">Tartufo</span></span> — quella
+  <span class="term" data-ana="#moral.negativo">grande personificazione dell’ipocrisia premeditata</span>, al quale
+  debbono verosimilmente la loro origine tutti i <span class="term" data-ana="#moral.negativo">successivi
+  ipocriti</span> de’ romanzi — non sentiamo ombra di pietà; av-
+  venga di lui quel che può, è tutta colpa sua, ed egli me-
+  rita appieno il suo castigo. Ma corre tutto il divario im-
+  maginabile fra chi di proposito e per fatto proprio si pone
+  in una condizione falsa, e chi vi si vede cacciato dentro
+  unicamente per opera altrui. Poniamo il caso, a mo’ d’esem-
+  pio, dell’<span class="term" data-ana="#socialclass.nobilta">aristocratico</span> <span class="term" data-ana="#moral.negativo">povero in canna</span> nel <span class="term"><span class="persName" data-ana="#persName.fittizia">Don Chisciotte</span></span>,
+  il quale, <span class="term" data-ana="#moral.negativo">troppo <span class="distinct" data-type="letterario">altiero</span></span> per lasciar supporre che non abbia
+  di che sfamarsi, <span class="distinct" data-type="arcaico">comparisce</span> in <span class="distinct" data-type="arcaico">istrada</span><span class="term" data-ana="#moral.negativo"> « facendo l’ipocrita »</span>
+  con uno stuzzicadenti in bocca, quando in realtà non ha
+  mangiato nulla che ne richiegga l’uso. Ora supponete
+  che quell’<span class="term" data-ana="#socialclass.nobilta">aristocratico</span> si fosse imbattuto in un amico che
+  aveva in animo di invitarlo a pranzo, e che ne fu di-
+  stolto perchè l’ostentata mostra dello stecchino l’indusse a
+  credere che l’amico avesse già <span class="distinct" data-type="letterario">desinato</span>; in tal caso quest’ul-
+  timo non avrebbe da ringraziar altri che se stesso per es-
+  sere rimasto con la sua fame. Ma se per contro egli non
+  avesse mai cercato di nascondere il vuoto dello stomaco, e
+  <span class="distinct" data-type="arcaico">non ostante</span> perdesse l’invito perchè s’era ficcato di mezzo
+  un amico <span class="term" data-ana="#moral.negativo">malaccorto</span> a cui era <span class="term"><span class="distinct" data-type="letterario">talentato</span></span> di tenere alta la
+  dignità del famelico dinanzi agli occhi del pubblico con
+  decantare « i <span class="term" data-ana="#term.animale">fagiani</span> venuti da <span class="placeName" data-ana="#placeName.citta">Roma</span>, il <span class="term" data-ana="#term.animale">vitello</span> di 
+  <span class="placeName" data-ana="#placeName.citta">Sorrento</span>, le <span class="term" data-ana="#term.animale">pernici</span> di <span class="placeName" data-ana="#placeName.citta">Moron</span>, » ed altre simili <span class="distinct" data-type="letterario">leccornie</span> disprezzate
+  da <span class="term"><span class="persName" data-ana="#persName.fittizia">Sancio Panza</span></span>, le quali apparivano abitualmente sulla
+  tavola dell’amico, allora la sorte del <span class="term" data-ana="#moral.negativo">pover’uomo</span> sarebbe
+  davvero <span class="term" data-ana="#term.caratteristica">crudele</span>. 
+  Non v’ha dubbio che a lungo andare si
+  verifica sempre il fatto che, come dice <span class="term"><span class="persName" data-ana="#persName.reale">Cervantes</span></span>, <em class="foreign" lang="es">cada uno
+  es hijo de sus obras</em> — ognuno è figlio delle proprie azioni. Non di 
+  meno è cosa quasi sicura che nella sua vita vi sarà questo o quel
+  periodo, durante il quale <span class="distinct" data-type="arcaico">ei</span> sarà criticato e trattato più secondo il
+  concetto che i suoi amici si sono formati delle sue qualità od attitudini, 
+  che secondo i suoi meriti reali. E rammentandoci non solamente di
+  questo, ma ancora della immensa facilità con cui sogliono errare i 
+  nostri giudizi, guardiamoci dall’ascrivere avventatamente così il bene 
+  come il male a chicchessia, e per quanto è possibile asteniamoci 
+  dal giudicarci l’un l’altro senza alcuna necessità.
+</p>
+          <p class="chiusura fonte">
+           
+               (Dallo <span class="title" data-ana="#title.principale">Spectator</span>).
+           
+       </p>
+        </div>
+      </div>
+    </div>
+    <div id="sezione_notizie">
+      <div class="sezione-head">
+        <h2 class="sezione-titolo">NOTIZIE.</h2>
+      </div>
+      <div class="facsimile-layout">
+        <div class="facsimile-immagini">
+          <p class="facsimile-label">Facsimile</p>
+          <img class="facsimile-img" src="img/notizie.jpg" alt="Notizie - p. 272"/>
+        </div>
+        <div class="facsimile-testo notizie-corpo" id="notizie-body">
+          <div class="notizia">
+            <p class="paragrafo">
+          - La <span class="orgName" data-ana="#orgName.tipografia">tipografia Salviucci</span> di <span class="placeName" data-ana="#placeName.citta">Roma</span> pubblica un’opera del prof. <span class="persName" data-ana="#persName.reale">Ricca-
+          Salorno</span>, premiata dall’<span class="orgName" data-ana="#orgName.accademia">Accademia dei Lincei</span>, sulla <em><span class="title" data-ana="#title.principale">Storia delle dottrine
+             finanziarie in Italia</span></em>.
+       </p>
+          </div>
+          <div class="notizia">
+            <p class="paragrafo">
+          - Dalla <span class="orgName" data-ana="#orgName.tipografia">tipografia Zoppelli</span> di <span class="placeName" data-ana="#placeName.citta">Treviso</span> sta per uscire la terza edi-
+          zione della <span class="title" data-ana="#title.principale"><em>Raccolta di Proverbi veneti</em></span> di <span class="persName" data-ana="#persName.reale">Cristoforo Pasqualigo</span>, accre-
+          sciuta di 2500 proverbi delle <span class="placeName" data-ana="#placeName.montagna">Alpi Carniche</span> o <span class="placeName" data-ana="#placeName.montagna">Fassane</span>, del <span class="placeName" data-ana="#placeName.regione">Trentino</span>,
+          e più di 500 nella parlata tedesca dei <span class="placeName" data-ana="#placeName.territorio">Sette Comuni Vicentini</span>. Sarà un vo- 
+          lume di 400 pagine.
+       </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sezione_bibliografia">
+      <div class="sezione-head">
+        <h2 class="sezione-titolo">BIBLIOGRAFIA.</h2>
+      </div>
+      <div class="facsimile-layout">
+        <div class="facsimile-immagini">
+          <p class="facsimile-label">Facsimile</p>
+          <img class="facsimile-img" src="img/notizie.jpg" alt="Bibliografia - p. 272"/>
+        </div>
+        <div class="facsimile-testo bibliografia-corpo" id="bibliografia-body">
+          <span class="page-break" id="pb_272">
+      [p. 272]
+    </span>
+          <p class="bibl-entry">
+       <span class="bibl-author"><span class="persName" data-ana="#persName.reale">H. Simonsfeld</span></span>, <span class="title" data-ana="#title.principale"><em>Studien zu Marino Sanuto dem Aelteren</em></span>, (<span class="title" data-ana="#title.tradotto">Studi
+       su Marino Sanuto il Vecchio</span>). — <span class="placeName" data-ana="#placeName.citta">Hannover</span>, <span class="date" data-ana="#date.anno">1881</span> (Dal
+       <span class="title" data-ana="#title.principale"><em>Neues Archiv etc</em>.</span>, vol. <span class="biblScope">IIVII</span>).
+    </p>
+          <p class="paragrafo">
+       Nell’ occasione del terzo Congresso internazionale geo-
+       grafico, che si è recentemente tenuto in <span class="placeName" data-ana="#placeName.citta">Venezia</span>, quella Depu-
+       tazione di Storia Patria aveva deliberato di ripubblicare la
+        celebre opera di <span class="persName" data-ana="#persName.storico">Marino Sanuto Torsello il Vecchio</span>, intitolata
+        <span class="title" data-ana="#title.principale"><em>Liber Secretorum
+       fidelium Crucis</em></span>, che fu già stampata nel <span class="date" data-ana="#date.anno">1611</span>
+        dal <span class="persName" data-ana="#persName.storico">Bongars</span> nel <span class="term" data-ana="#term.volume">II vol.</span> dei <span class="title" data-ana="#title.principale"><em>Gesta Dei per Francos</em></span>. E l’idea
+        era buonissima; che veramente la detta opera, scritta da un
+        concittadino e contemporaneo di <span class="persName" data-ana="#persName.storico">Marco Polo</span>, da un uomo
+       competente che aveva visitato cinque volte il mondo orien-
+       tale, e ch’era insieme viaggiatore e cartografo e storico :è,
+       come bene la giudicò il <span class="persName" data-ana="#persName.storico">Canale</span>, un tesoro di notizie geo-
+       grafiche, nautiche, commerciali e statistiche; è un monu-
+       mento preziosissimo della ricca letteratura storica e geogra-
+       fica di <span class="placeName" data-ana="#placeName.citta">Venezia</span>. Inoltre, l’unica edizione del <span class="persName" data-ana="#persName.storico">Bongars</span> è or-
+       mai insufficiente ai bisogni della critica moderna; ed è ben
+       lontana da darci un’idea compiuta della progressiva elabo-
+       razione che subì quest’ opera del <span class="persName" data-ana="#persName.storico">Sanuto</span>, il quale è certo
+        che l’accrebbe e la rilavorò più volte prima o dopo d’averla
+       presentata a <span class="persName" data-ana="#persName.storico">Giovanni XXII</span> nel <span class="date" data-ana="#date.anno">1321</span>.
+    </p>
+          <p class="paragrafo">
+       Ma la riedizione del <span class="persName" data-ana="#persName.storico">Sanuto</span>, perchè riuscisse veramente
+       critica ed esemplare, richiedeva un lavoro di preparazione
+        lungo e faticoso : e il tempo si presentava troppo ristretto:
+        onde la Deputazione dovette dismetterne, almeno per ora,
+        il pensiero, esponendone le ragioni, nell’ <span class="title" data-ana="#title.principale"><em>Archivio Veneto</em></span>
+        del <span class="date" data-ana="#date.anno">1880</span> (<span class="term" data-ana="#term.volume">vol. XX</span>, p.388-402), in alcune pagine, che possono
+        considerarsi come un utilissimo contributo ai nuovi studi
+        intorno al <span class="persName" data-ana="#persName.storico">Sanuto</span>, e alla nuova edizione che è desiderabile
+        si faccia una volta o l’altra in <span class="placeName" data-ana="#placeName.citta">Venezia</span>.
+    </p>
+          <p class="paragrafo">
+       In tale occasione il dott. <span class="persName" data-ana="#persName.reale">Enrico Simonsfeld</span>, di <span class="placeName" data-ana="#placeName.citta">Monaco</span>
+        (che da parecchi anni si occupa di storiografia veneziana
+        e ne ha già pubblicati dei lodevoli saggi), scrisse una let-
+       tera alla Deputazione Veneta, rendendo conto di alcuni co-
+       dici Sanutiani da lui veduti (<span class="title" data-ana="#title.principale"><em>Arch. Veneto</em></span>, <span class="term" data-ana="#term.volume">XX</span>, 401): ora,
+        nel <span class="title" data-ana="#title.principale"><em>Neues Archiv</em></span>, è tornato a trattare più largamente lo
+        stesso argomento, ricavando dallo studio comparativo dei
+       codici notizie importanti su quella che sopra abbiamo chia-
+       mata progressiva elaborazione dell’opera Sanutiana, e sulle
+        carte geografiche che le facevano corredo.
+    </p>
+          <p class="paragrafo">
+       I codici esaminati dal <span class="persName" data-ana="#persName.reale">Simonsfeld</span> sono dieci ; nove dei
+        quali italiani, e uno bavarese, già studiato da <span class="persName" data-ana="#persName.storico">Federigo
+        Kunstmann</span>. Quattro di questi codici contengono il <span class="title" data-ana="#title.principale"><em>Liber
+        Secretorum</em></span> nella forma ch’è pubblicata dal <span class="persName" data-ana="#persName.storico">Bongars</span> ; e anzi
+        uno di questi (Vatic. Regin. 548, sec. XIV) pare all’A.
+        che possa essere quello stesso cod. del <span class="persName" data-ana="#persName.storico">Petavio</span>, che servì 
+       di base alla stampa. Ma gli altri presentano notevoli dif-
+       ferenze; e permettono di distinguere tre redazioni del <span class="title" data-ana="#title.principale"><em>Liber
+        Secretorum</em></span>. La prima consisto nel solo primo libro, ed è
+        compilata tra il <span class="date" data-ana="#date.anno">1306</span> e il <span class="date" data-ana="#date.anno">1309</span>. La seconda contiene il pri-
+       mo libro nella forma presente; il secondo libro (cominciato
+        nel <span class="date" data-ana="#date.anno">1312</span>), e il terzo in forma più breve che presso il Bon-
+       gars ; e questa fu compiuta tra il <span class="date" data-ana="#date.anno">1318</span> e il <span class="date" data-ana="#date.anno">1321</span>. La terza
+        redazione infine contiene l’opera completa, col terzo libro
+    </p>
+          <span class="page-break" id="pb_2">
+      [p. 2]
+    </span>
+          <p class="paragrafo">
+       notevolmente accresciuto, e sembra essere stata rifatta dopo
+        la presentazione dell’opera al Papa, tra il <span class="date" data-ana="#date.anno">1321</span> e il <span class="date" data-ana="#date.anno">1322</span>.
+    </p>
+          <p class="paragrafo">
+        Hanno poi uno speciale interesse le notizie che il
+       <span class="persName" data-ana="#persName.reale">Simonsfeld</span> dà del cod. Vatic. 2972, che contiene, unico fra
+        quanti se ne conoscono, <span class="title" data-ana="#title.principale">!a Carta del Mare Mediterraneo</span> in
+       nove fogli. Da un preambolo del <span class="persName" data-ana="#persName.storico">Sanuto</span> sappiamo ch’ egli
+        presentò al Papa, oltre l’opera sua in due libri, quattro
+        mappe geografiche, cioè: <em>unam de mari mediterraneo ; se-
+       cundam de mari et terra; terciam de terra sancta; quar-
+       tam vero de terra Egypti</em>. Ma il <span class="persName" data-ana="#persName.storico">Bongars</span> pubblica sol-
+       tanto (dal codice del <span class="persName" data-ana="#persName.storico">Petavio</span>) le tre ultime, aggiuntevi
+        le piante di
+       <span class="placeName" data-ana="#placeName.citta">Gerusalemme</span> e di <span class="placeName" data-ana="#placeName.citta">Tolemaide</span>; o lamenta la
+        perdita della mappa del Mediterraneo. E perduta pure
+        la dice il <span class="persName" data-ana="#persName.storico">Lelewel</span> (<span class="title" data-ana="#title.principale"><em>Géogr. du moyen âge</em></span>, <span class="term" data-ana="#term.volume">II</span>, 31), se non che
+        riferisce la descrizione fattane da <span class="persName" data-ana="#persName.storico">Placido Zurla</span> nel <span class="date" data-ana="#date.anno">1818</span>,
+        secondo un codice dell’ab. <span class="persName" data-ana="#persName.storico">Canonici</span>, anche questo ora per-
+       duto; dalla quale descrizione si ricava che tale mappa era
+        in più tavole. Ciò posto, pare a noi molto importante la
+        scoperta del <span class="persName" data-ana="#persName.reale">Simonsfeld</span> : e crediamo con lui che in quei
+        nove fogli del citato Cod. Vatic, si contenga appunto quella
+        <em>mappa de’ mari mediterraneo</em>, finora rimpianta e desiderata.
+        E la scoperta sarebbe anche più importante, se veramente
+        codesto codice fosse lo stesso presentato dal <span class="persName" data-ana="#persName.storico">Sanuto</span> a papa
+        <span class="persName" data-ana="#persName.storico">Giovanni XXII</span>, come il <span class="persName" data-ana="#persName.reale">Simonsfeld</span> crede di potere arguire
+        dalla bellezza della scrittura, e dalla ricchezza straordina-
+       ria delle miniature e degli ornamenti: su di che non osia-
+       mo dare un reciso giudizio.
+    </p>
+          <p class="bibl-entry">
+       <span class="persName" data-ana="#persName.reale">D. C. Pedrocchi</span>, <span class="title" data-ana="#title.principale">Il Caffè Pedrocchi</span>. <span class="title" data-ana="#title.secondario">Memorie edite e inedite
+       raccolte e pubblicate in occasione del cinquantesimo anni-
+       versario della sua apertura</span>. — <span class="placeName" data-ana="#placeName.citta">Padova</span>, <span class="orgName" data-ana="#orgName.editore">Prosperini</span>, <span class="date" data-ana="#date.anno">1881</span>.
+    </p>
+          <p class="paragrafo">
+        Sono ormai cinquanta
+       anni dacché per opera di <span class="persName" data-ana="#persName.storico">Antonio
+        Pedrocchi</span> fu aperto a <span class="placeName" data-ana="#placeName.citta">Padova</span> il più bel Caffè d’Europa, il
+        quale, com’ è noto, s’intitolò dal nome del suo operosissimo
+        fondatore, e quel nome andrà sempre unito a quello di <span class="persName" data-ana="#persName.storico">Giu-
+       seppe Jappelli</span>, architetto dell’insigne edificio. Il <span class="persName" data-ana="#persName.storico">Pedrocchi</span>
+        si ebbe, durante la vita, tutti i plausi e le lodi che è pos-
+       sibile di avere: visite di sovrani, visite di personaggi cospi-
+       cui, versi e prose dei letterati più rinomati del suo tempo.
+        Fu anco pubblicato un periodico col nome del celebre caffè. 
+    </p>
+          <p class="paragrafo">
+       Nell’ occorrenza del cinquantesimo anniversario dell’aper-
+       tura del Caffè Pedrocchi è stato pubblicato un volume ove
+       sono raccolti i versi e le prose che i contemporanei più illu-
+       stri dettarono, come dicemmo, per celebrare il fondatore e 
+       1’ architetto di quel Caffè. A questa raccolta va innanzi un
+       cenno del signor <span class="persName" data-ana="#persName.reale">Alessandro Anserini</span>, scritto con forma fa-
+       cile e chiara, pieno di assennati concetti intorno all’influenza
+        che ha l' ideale per mandare ad ad effetto le grandi cose non
+        solo, ma anco le più modeste.
+    </p>
+        </div>
+      </div>
+    </div>
+    <div id="back">
+      <div id="appendice">
+        <h2 id="appendice-titolo">Glossario e Indice dei Nomi</h2>
+        <div id="appendice-layout">
+          <div id="glossario">
+            <h3>Glossario</h3>
+            <div class="glossario-entry" id="definizione_Salutifera_incarnazione">
+              <span class="glossario-form">Salutifera Incarnazione</span>
+              <p class="glossario-def">Formula liturgica cristiana per indicare l'anno a partire dalla nascita di Cristo, equivalente ad "Anno Domini". L'espressione sottolinea il carattere salvifico (salutifera) dell'Incarnazione del Verbo.</p>
+              <a class="glossario-ref" href="https://www.treccani.it/vocabolario/incarnazione/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="glossario-entry" id="def_malannaggia">
+              <span class="glossario-form">Malann'aggia</span>
+              <p class="glossario-def">Esclamazione napoletana di disappunto, contrazione di "mal anno aggia" (che tu abbia un anno di mali). Imprecazione lieve tipica del dialetto napoletano.</p>
+            </div>
+            <div class="glossario-entry" id="definizione_vaglia">
+              <span class="glossario-form">Vaglia</span>
+              <p class="glossario-def">Nel linguaggio letterario, valore, merito, eccellenza.</p>
+              <a class="glossario-ref" href="https://www.treccani.it/vocabolario/vaglia1/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="glossario-entry" id="definizione_ciurmatore">
+              <span class="glossario-form">Ciurmatore</span>
+              <p class="glossario-def">Chi incanta o inganna con chiacchiere e raggiri.</p>
+              <a class="glossario-ref" href="https://www.treccani.it/vocabolario/ciurmatore/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="glossario-entry" id="definizione_celia">
+              <span class="glossario-form">Celia</span>
+              <p class="glossario-def">Motto o atto scherzoso.</p>
+              <a class="glossario-ref" href="https://www.treccani.it/vocabolario/celia/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="glossario-entry" id="definizione_tapinello">
+              <span class="glossario-form">Tapinello</span>
+              <p class="glossario-def">Diminutivo di tapino. Persona meschina o infelice.</p>
+              <a class="glossario-ref" href="https://www.treccani.it/vocabolario/tapino/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="glossario-entry" id="definizione_savio">
+              <span class="glossario-form">Savio</span>
+              <p class="glossario-def">Che ha o dimostra senno e saggezza.</p>
+              <a class="glossario-ref" href="https://www.treccani.it/vocabolario/savio/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="glossario-entry" id="definizione_macarus">
+              <span class="glossario-form">macarus</span>
+              <p class="glossario-def">Forse dal gr. μάκαρ «beato», epiteto che si dà ai morti: in origine si sarebbe indicato con questo nome un cibo che si consumava nei banchetti funebri</p>
+              <a class="glossario-ref" href="https://www.treccani.it/vocabolario/maccherone/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="glossario-entry" id="definizione_conchiudere">
+              <span class="glossario-form">Conchiudere</span>
+              <p class="glossario-def">Variante arcaica di concludere.</p>
+              <a class="glossario-ref" href="https://www.treccani.it/vocabolario/conchiudere/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="glossario-entry" id="definizione_talentato">
+              <span class="glossario-form">Talentare</span>
+              <p class="glossario-def">Verbo letterario: andare a genio, piacere.</p>
+              <a class="glossario-ref" href="https://www.treccani.it/vocabolario/talentare/">
+          Treccani ↗
+        </a>
+            </div>
+          </div>
+          <div id="indice-persone">
+            <h3>Indice dei nomi</h3>
+            <div class="persona-card" id="Cicho">
+              <p class="persona-nome">Cicho <span class="persona-epiteto">
+            (il mago)
+          </span></p>
+              <p class="persona-nota">Protagonista della leggenda di Matilde Serao; inventore segreto dei maccheroni, creduto erroneamente uno stregone dai suoi contemporanei.</p>
+              <a class="persona-ref" href="https://it.wikisource.org/wiki/Leggende_napoletane/Il_segreto_di_Cicho">
+          ↗
+        </a>
+            </div>
+            <div class="persona-card" id="AlaeddinKayqubadI">
+              <p class="persona-nome">Alaeddin Kayqubad I</p>
+              <p class="persona-nota">Sultano dei Selgiuchidi di Rum dal 1220 al 1237, spesso identificato nelle cronache occidentali come il Gran Turco del tempo.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/alaeddin-kaigubad-i">
+          ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Archimede">
+              <p class="persona-nome">Archimede</p>
+              <p class="persona-nota">Matematico, fisico e inventore siracusano; citato nel testo per il suo celebre esclamativo "Eureka".</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/archimede">
+          ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Jovanuella">
+              <p class="persona-nome">Jovanuella Canzio</p>
+              <p class="persona-nota">Personaggio della leggenda "Il segreto di Cicho" di Matilde Serao; moglie del guattero Giacomo e responsabile del furto della ricetta dei maccheroni.</p>
+              <a class="persona-ref" href="https://it.wikisource.org/wiki/Leggende_napoletane/Il_segreto_di_Cicho">
+          ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Cervantes">
+              <p class="persona-nome">Miguel de Cervantes Saavedra</p>
+              <p class="persona-nota">Autore del Don Chisciotte.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/miguel-de-cervantes-saavedra">
+          ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Creso">
+              <p class="persona-nome">Creso Creso su Treccani</p>
+              <p class="persona-nota">Re di Lidia, simbolo di ricchezza.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/creso">
+          ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Don_Chisciotte">
+              <p class="persona-nome">Don Chisciotte Don Chisciotte su Treccani</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/don-chisciotte-della-mancia">
+          ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Sancio_Panza">
+              <p class="persona-nome">Sancho Panza</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/sancho-panza">
+          ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Tartufo">
+              <p class="persona-nome">Tartufo Tartufo su Treccani</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/tartuffe">
+          ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Centopie">
+              <p class="persona-nome">Centopie</p>
+            </div>
+            <div class="persona-card" id="Bill_Nye">
+              <p class="persona-nome">Edgar Wilson Nye <span class="persona-epiteto">
+            (Bill Nye)
+          </span></p>
+              <a class="persona-ref" href="https://www.britannica.com/biography/Bill-Nye">
+          ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Dio">
+              <p class="persona-nome">Dio Voce Treccani: Dio</p>
+              <p class="persona-nota">Divinità nella tradizione religiosa monoteistica.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/dio/">
+          ↗
+        </a>
+            </div>
+          </div>
+          <div id="indice-luoghi">
+            <h3>Indice dei luoghi</h3>
+            <div class="persona-card" id="Roma">
+              <p class="persona-nome">Roma</p>
+              <p class="persona-nota">Italia</p>
+              <p class="persona-nota">Capitale d'Italia. Sede della direzione della Rassegna Settimanale dal fascicolo n. 44 (novembre 1878). Citata nel testo come luogo di provenienza dei fagiani serviti a tavola.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/roma/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="persona-card" id="FI">
+              <p class="persona-nome">Firenze</p>
+              <p class="persona-nota">Italia</p>
+              <p class="persona-nota">Città di fondazione della Rassegna Settimanale (1878). Sede della Biblioteca Nazionale Centrale che conserva l'esemplare codificato.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/firenze/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Firenze">
+              <p class="persona-nome">Firenze</p>
+              <p class="persona-nota">Italia</p>
+              <p class="persona-nota">Vedi voce principale: .</p>
+            </div>
+            <div class="persona-card" id="PI">
+              <p class="persona-nome">Pisa</p>
+              <p class="persona-nota">Toscana,
+           Italia</p>
+              <p class="persona-nota">Sede dell'Università di Pisa, istituzione promotrice dell'edizione digitale.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/pisa/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Napoli">
+              <p class="persona-nome">Napoli</p>
+              <p class="persona-nota">Italia</p>
+              <p class="persona-nota">Città protagonista del primo articolo ("Un segreto"): ambientazione della leggenda di Cicho il mago e dell'invenzione dei maccheroni. Regnata nel 1220 da Federico II di Svevia.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/napoli/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Palermo">
+              <p class="persona-nome">Palermo</p>
+              <p class="persona-nota">Sicilia,
+           Italia</p>
+              <p class="persona-nota">Città del regno di Federico II di Svevia, citata all'inizio del primo articolo insieme a Napoli.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/palermo/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Parma">
+              <p class="persona-nome">Parma</p>
+              <p class="persona-nota">Emilia-Romagna,
+           Italia</p>
+              <p class="persona-nota">Citata nel primo articolo come luogo di produzione del formaggio grattugiato sui maccheroni ("formaggio che ha nome da Parma").</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/parma/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Lodi">
+              <p class="persona-nome">Lodi</p>
+              <p class="persona-nota">Lombardia,
+           Italia</p>
+              <p class="persona-nota">Citata nel primo articolo come luogo di produzione del formaggio ("si fabbrica in Lodi"), riferimento al formaggio lodigiano.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/lodi/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Sorrento">
+              <p class="persona-nome">Sorrento</p>
+              <p class="persona-nota">Campania,
+           Italia</p>
+              <p class="persona-nota">Citata nel secondo articolo come provenienza del vitello servito alla mensa dell'amico dell'aristocratico di Don Chisciotte.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/sorrento/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Svevia">
+              <p class="persona-nome">Svevia</p>
+              <p class="persona-nota">Germania</p>
+              <p class="persona-nota">Regione storica della Germania meridionale, casa della dinastia degli Hohenstaufen. Federico II era detto "di Svevia" per la sua appartenenza a questa casata.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/svevia/">
+          Treccani ↗
+        </a>
+            </div>
+            <div class="persona-card" id="Moron">
+              <p class="persona-nome">Morón de la Frontera</p>
+              <p class="persona-nota">Andalusia,
+           Spagna</p>
+              <p class="persona-nota">Città spagnola citata nel secondo articolo come provenienza delle pernici servite a tavola, in un passo tratto o adattato dallo Spectator.</p>
+            </div>
+            <div class="persona-card" id="vicoCortellari">
+              <p class="persona-nome">Vico dei Cortellari</p>
+              <p class="persona-nota">Vicolo medievale di Napoli appartenente al Seggio di Portanova, ambientazione principale della leggenda di Cicho il mago nel primo articolo.</p>
+            </div>
+            <div class="persona-card" id="portaDelCaputo">
+              <p class="persona-nome">Porta del Caputo</p>
+              <p class="persona-nota">Porta cittadina di Napoli nei pressi della quale Cicho sente per la prima volta l'odore dei maccheroni già diffusi in tutta la città.</p>
+            </div>
+            <div class="persona-card" id="viaDelMolo">
+              <p class="persona-nome">Via del Molo</p>
+              <p class="persona-nota">Via napoletana sulla quale passeggia Cicho il mago nel momento in cui scopre che il suo segreto è stato divulgato.</p>
+            </div>
+            <div class="persona-card" id="palazzoReale">
+              <p class="persona-nome">Palazzo Reale</p>
+              <p class="persona-nota">Palazzo reale di Napoli, il cui custode conferma a Cicho il diffondersi della ricetta dei maccheroni fino alla corte di Federico II.</p>
+            </div>
+          </div>
+          <div id="indice-organizzazioni">
+            <h3>Indice delle organizzazioni</h3>
+            <div class="persona-card" id="UniPi">
+              <p class="persona-nome">Università di Pisa</p>
+              <p class="persona-nota">Pisa</p>
+              <p class="persona-nota">Istituzione accademica promotrice del progetto di edizione digitale per il corso di Codifica di Testi.</p>
+              <a class="persona-ref" href="https://www.unipi.it/">
+          ↗
+        </a>
+            </div>
+            <div class="persona-card" id="CEB">
+              <p class="persona-nome">Casa Editrice Barbéra</p>
+              <p class="persona-nota">Firenze</p>
+              <p class="persona-nota">Casa editrice fiorentina fondata da Gaspero Barbéra nel 1854. Editrice e tipografa della Rassegna Settimanale nella sua fase iniziale a Firenze; si occupava anche della stampa del periodico.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/gasparo-barbera_%28Dizionario-Biografico%29/">
+          ↗
+        </a>
+            </div>
+            <div class="persona-card" id="SeggioDiPortanova">
+              <p class="persona-nome">Seggio di Portanova</p>
+              <p class="persona-nota">Napoli</p>
+              <p class="persona-nota">Uno dei cinque Seggi (o Sedili) del patriziato napoletano medievale, ovvero le circoscrizioni nobiliari che governavano i rioni della città. Il vico dei Cortellari, ambientazione del primo articolo, apparteneva alla giurisdizione di questo Seggio.</p>
+              <a class="persona-ref" href="https://www.treccani.it/enciclopedia/napoli-storia_res-b67e0f28-8869-11dc-8e9d-0016357eee51_%28Enciclopedia-Italiana%29/">
+          ↗
+        </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="facsimile-overlay" id="facsimile-overlay"/>
+    <script src="script.js"/>
+  </body>
+</html>

@@ -1,0 +1,1789 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader xml:lang="it">
+    <fileDesc>
+      <titleStmt>
+        <title type="opera_principale">La Rassegna Settimanale</title>
+        <title type="opera_categoria">Di politica, scienza, lettere ed arti</title>
+        <author ref="#SidSon">Sidney Sonnino</author>
+        <author ref="#LeoFra">Leopoldo Franchetti</author>
+      </titleStmt>
+      
+    
+      <editionStmt>
+        <edition>Edizione digitale realizzata per l'esame di Codifica di Testi del Corso di Laurea in Informatica Umanistica, a.a. 2024-25</edition>
+        <respStmt>
+          <resp>Progetto coordinato da:</resp>
+          <name ref="#Professore">Angelo Mario Del Grosso</name>
+        </respStmt>
+        <respStmt>
+          <resp>Grafica e conversione TEI P5 a cura di:</resp>
+          <name ref="#Studente_due">Giovanni Luigi Serra</name>
+        </respStmt>
+      </editionStmt>
+      
+<publicationStmt>
+        <publisher>
+          <orgName full="yes" ref="#UniPi">Università di Pisa</orgName>
+        </publisher>
+        <pubPlace ref="#PI">Pisa</pubPlace>
+        <address>
+          <postCode>56127</postCode>
+          <name type="place">Italia</name>
+        </address>
+        <availability status="free">
+          <p>Opera ad accesso libero</p>
+        </availability>
+        <date when="2026-02">Febbraio 2026</date>
+      </publicationStmt>
+
+        <notesStmt>
+            <note><p>Link al sito ufficiale della Rassegna Settimanale: <ref target="https://rassegnasettimanale.animi.it/">rassegnasettimanale.animi.it</ref></p></note>
+        </notesStmt>
+
+        <sourceDesc>
+<msDesc>
+<msIdentifier>
+<settlement>Firenze</settlement>
+<repository>Biblioteca Nazionale Centrale</repository>
+            <idno>RS-1881</idno>
+</msIdentifier>
+
+<msContents>
+<p>
+                <bibl>
+                    <title>La Rassegna Settimanale</title>
+                    <biblScope unit="volume">Vol. 8°</biblScope>, <pubPlace ref="#Roma">Roma</pubPlace>, <date when="1881-10-23">23 Ottobre 1881</date>, <biblScope unit="issue">N° 199</biblScope>
+                </bibl>
+            </p>
+</msContents>
+<physDesc>
+<objectDesc>
+<supportDesc>
+<support>Carta stampata</support>
+</supportDesc>
+<layoutDesc>
+<layout columns="2">Testo stampato su due colonne per pagina.</layout>
+</layoutDesc>
+</objectDesc>
+<typeDesc>
+<p>Giornale</p>
+<p>Pubblicazione settimanale di carattere culturale, politico e informativo.</p>
+</typeDesc>
+</physDesc>
+
+<history>
+  <origin>
+    <date when="1878-01-06">6 Gennaio 1878</date>
+    <placeName ref="#FI">Firenze</placeName>
+    <p>La rivista viene fondata a Firenze da Sidney Sonnino e Leopoldo Franchetti, con l'obiettivo di importare in Italia il modello dei periodici d'opinione britannici.</p>
+  </origin>
+  
+  <provenance>
+    <date when="1878-11-03">3 Novembre 1878</date>
+    <placeName ref="#Roma">Roma</placeName>
+    <p>Con il fascicolo n. 44 del primo anno, la direzione e l'amministrazione della rivista vengono trasferite definitivamente a Roma, in via delle Botteghe Oscure n. 32.</p>
+  </provenance>
+  
+  <provenance>
+    <date when="1882-01-29">29 Gennaio 1882</date>
+    <p>La pubblicazione in formato settimanale termina con il n. 213 (Vol. IX). Dal 1° febbraio 1882, l'iniziativa editoriale prosegue con la fusione nel quotidiano "La Rassegna".</p>
+  </provenance>
+</history>
+</msDesc>     
+     
+ <biblStruct>
+            <analytic>
+                <title>UN SEGRETO</title>
+            </analytic>
+            <analytic>
+                <title>L'ESSER TROPPO STIMATI</title>
+            </analytic>
+
+            <monogr>
+                <editor ref="#CEB">Casa editrice Barbéra</editor>
+                <title>La Rassegna Settimanale di Politica, Scienze, Lettere ed Arti</title>
+                <textLang mainLang="it">Italiano</textLang>
+                <respStmt>
+                <resp>Fondata da</resp>
+                <name>Leopoldo Franchetti</name>
+                <name>Sydney Sonnino</name>
+                </respStmt>
+                <imprint>
+                <pubPlace>Firenze</pubPlace>
+                <publisher>Tipografia Barbéra</publisher>
+                <date>1878</date>
+                </imprint>
+                <biblScope unit="volume">8</biblScope>
+                <biblScope unit="issue">199</biblScope>
+                <biblScope unit="page">262,263,264,267,268,271,272</biblScope>
+            </monogr>
+        </biblStruct>     
+      </sourceDesc>
+    </fileDesc>
+    
+    
+<encodingDesc>
+        <projectDesc>
+            <p>I testi seguono le linee guida TEI P5, il progetto è stato realizzato per il corso di Codifica Di Testi dell'Università di Pisa</p>
+        </projectDesc>
+
+        <samplingDecl>
+            <p>"Sono stati selezionati per la codifica due articoli di fondo (L'essere troppo stimati e Le previsioni finanziarie), un articolo della sezione Varietà e alcune entrate delle sezioni Bibliografia e Notizie, tutti appartenenti allo stesso fascicolo."</p>
+        </samplingDecl>
+
+        <editorialDecl> 
+            <correction status="high" method="markup"> 
+            <p>Per la correzione di errori sono stati usati i tag <gi>sic</gi> e <gi>corr</gi>.</p>
+            </correction>
+            <normalization method="markup">
+            <p>Per le normalizzazioni sono stati usati i tag <gi>orig</gi> e <gi>reg</gi>.</p>
+            </normalization>
+            
+        </editorialDecl>
+    
+    
+             <classDecl>
+    <taxonomy>
+        <!-- Categorie per i titoli -->
+        <category xml:id="title">
+            <catDesc>Tipologie di titoli</catDesc>
+            <category xml:id="title.principale"><catDesc>Indica il titolo principale</catDesc></category>
+            <category xml:id="title.secondario"><catDesc>Indica il titolo secondario</catDesc></category>
+            <category xml:id="title.tradotto"><catDesc>Indica il titolo tradotto</catDesc></category>
+        </category>
+        
+                <!-- Categorie per i nomi di persona -->
+       <category xml:id="persName">
+            <catDesc>Tipologie di persone</catDesc>
+            <category xml:id="persName.reale"><catDesc>Persona reale, esempio: Carlo Conti</catDesc></category>
+            <category xml:id="persName.fittizia"><catDesc>Persona fittizia: Mickey Mouse</catDesc></category>
+                        <category xml:id="persName.storico"><catDesc>Personaggio storico e reale: Serse II</catDesc></category>
+                        <category xml:id="persName.generico"><catDesc>Titolo appartenente ad una persona non specificata, esempio: Un signore</catDesc></category>
+
+        </category>
+
+        <!-- Categorie per i nomi di organizzazioni -->
+        <category xml:id="orgName">
+            <catDesc>Tipologie di organizzazioni</catDesc>
+            <category xml:id="orgName.militare"><catDesc>Usato quando nel testo ci si riferisce ad un'organizzazione militare,esempio:"L'arma dei carabinieri ha operato" oppure "Il quinto battaglione di fucilieri."</catDesc></category>
+            <category xml:id="orgName.istituzione"><catDesc>Usato quando nel testo ci si riferisce ad un'istituzione civile</catDesc></category>
+            <category xml:id="orgName.editore"><catDesc>Usato quando nel testo ci si riferisce ad un editore</catDesc></category>
+            <category xml:id="orgName.giornale"><catDesc>Usato quando nel testo ci si riferisce ad un giornale</catDesc></category>
+            <category xml:id="orgName.tipografia"><catDesc>Usato quando nel testo ci si riferisce ad una tipografia</catDesc></category>
+            <category xml:id="orgName.accademia"><catDesc>Usato quando nel testo ci si riferisce ad un'accademia (es. Accademia dei Lincei)</catDesc></category>
+        </category>
+
+      
+        
+        <!-- Giudizi morali -->
+<category xml:id="moral">
+            <catDesc>Valutazioni e giudizi etici o sociali</catDesc>
+            <category xml:id="moral.negativo"><catDesc>Giudizi severi, maligni o calunnie</catDesc></category>
+            <category xml:id="moral.positivo"><catDesc>Stima, alte qualità e aspettative lusinghiere</catDesc></category>
+        </category>        
+        <!--Classi sociali-->
+        <category xml:id="socialclass">
+            <catDesc>Riferimenti a persone appartenenti a classi, cetistatus sociali</catDesc>
+            <category xml:id="socialclass.nobilta"><catDesc>Nobiltà e aristocrazia</catDesc></category>
+            <category xml:id="socialclass.borghesia"><catDesc>Proprietari e ceto medio</catDesc></category>
+            <category xml:id="socialclass.indigente"><catDesc>Persone povere o in difficoltà economica</catDesc></category>
+              <category xml:id="socialclass.militare"><catDesc>Persona appartenente alle forze armate</catDesc></category>
+
+        </category>
+        <!-- Categorie per i luoghi -->
+        <category xml:id="placeName">
+            <catDesc>Tipologie di luoghi</catDesc>
+            <category xml:id="placeName.citta"><catDesc>Città</catDesc></category>
+            <category xml:id="placeName.urbano"><catDesc>Luogo urbano</catDesc></category>
+            <category xml:id="placeName.natura"><catDesc>Luogo naturale</catDesc></category>
+            <category xml:id="placeName.nazione"><catDesc>Nazione</catDesc></category>
+            <category xml:id="placeName.storico"><catDesc>Luogo di forte interesse storico</catDesc></category>
+            <category xml:id="placeName.via"><catDesc>Via, vicolo o strada</catDesc></category>
+            <category xml:id="placeName.regione"><catDesc>Regione storica o amministrativa</catDesc></category>
+            <category xml:id="placeName.montagna"><catDesc>Catena montuosa o rilievo (es. Alpi Carniche)</catDesc></category>
+            <category xml:id="placeName.territorio"><catDesc>Territorio o area geografica non amministrativa (es. Sette Comuni)</catDesc></category>
+            </category>
+        
+        <!-- Categorie per i termini -->
+        <category xml:id="term">
+            <catDesc>Tipologie di termini</catDesc>
+            <category xml:id="term.genere"><catDesc>Genere</catDesc></category>
+            <category xml:id="term.volume"><catDesc>Volume</catDesc></category>
+            <category xml:id="term.numero"><catDesc>Numero</catDesc></category>
+            <category xml:id="term.etnia"><catDesc>Gruppo etnico</catDesc></category>
+            <category xml:id="term.animale"><catDesc>Termini di riferimento ad animali</catDesc></category>
+            <category xml:id="term.cibo"><catDesc>Cibi, ingredienti,alimenti</catDesc></category>
+            <category xml:id="term.ruolo"><catDesc>Ruolo o professione</catDesc></category>
+            <category xml:id="term.caratteristica"><catDesc>Caratteristica o qualità</catDesc></category>
+        </category>
+
+        <!-- Categorie per le misure -->
+        <category xml:id="measure">
+            <catDesc>Tipologie di misure</catDesc>
+            <category xml:id="measure.ricchezza"><catDesc>Ricchezza, esempio: "è ricchissimo;è povero,è facoltoso"</catDesc></category>
+            <category xml:id="measure.tempo"><catDesc>Tempo</catDesc></category>
+            <category xml:id="measure.durata"><catDesc>Durata</catDesc></category>
+            <category xml:id="measure.eta"><catDesc>Età</catDesc></category>
+        </category>
+
+
+<!-- Categorie per le date -->
+      <category xml:id="date">
+            <catDesc>Tipologie di date</catDesc>
+            <category xml:id="date.anno"><catDesc>Indica l'anno</catDesc></category>
+        </category>
+
+
+        <!-- Categorie per le divisioni strutturali -->
+        <category xml:id="div">
+            <catDesc>Divisioni strutturali del testo</catDesc>
+            <category xml:id="div.titolo"><catDesc>Pagina titolo</catDesc></category>
+            <category xml:id="div.firma"><catDesc>Firma autore</catDesc></category>
+            <category xml:id="div.versi"><catDesc>Sezione contenente tutti i versi di una poesia</catDesc></category>
+             <category xml:id="div.appendice"><catDesc>Appendice</catDesc></category>
+
+<!-- Categorie per le parti poetiche-->
+<category xml:id="raccolta">
+                    <catDesc>Raccolte poesia</catDesc>
+                    <category xml:id="raccolta_versi"><catDesc>canzoniere</catDesc></category>
+                </category>
+
+  
+                  
+                
+                  <category xml:id="ling_varie">
+                    <catDesc>Varietà linguistiche</catDesc>
+                    <category xml:id="ling_regionali"><catDesc>Varietà regionali</catDesc></category>
+                    <category xml:id="ling_storiche"><catDesc>Varietà storiche</catDesc></category> 
+                </category>
+        </category>
+    </taxonomy>
+</classDecl>
+    </encodingDesc>
+    
+  <profileDesc>
+    <textClass>
+      <keywords>
+        <term type="genre">Pubblicazione settimanale di carattere politico, culturale e informativo</term>
+      </keywords>
+      <classCode scheme="http://www.tei-c.org/ns/1.0">Article</classCode>
+    </textClass>
+  </profileDesc>    
+  </teiHeader>
+  
+  <facsimile>
+  <!-- Surface "Un segreto"-->
+<surface xml:id="TESTO_UNSEGRETO">
+  <graphic url='UNSEGRETO_page-0008.jpg' width='1156.5px' height='1691.5px' />
+  <zone ulx="781" uly="108" lrx="941" lry="136" />
+  <zone ulx="638" uly="141" lrx="1111" lry="168" />
+  <zone xml:id="date_1220_p263" ulx="725" uly="145" lrx="764" lry="164" />
+  <zone xml:id="term_Salutifera_incarnazione_p263" ulx="818" uly="145" lrx="1022" lry="165" />
+  <zone ulx="612" uly="165" lrx="1112" lry="189" />
+  <zone xml:id="placeName_Palermo_p263" ulx="639" uly="165" lrx="708" lry="186" />
+  <zone xml:id="placeName_Napoli_p263a" ulx="764" uly="168" lrx="824" lry="187" />
+  <zone xml:id="persName_Federico_p263" ulx="1016" uly="166" lrx="1110" lry="188" />
+  <zone xml:id="placeName_Svevia_p263" ulx="637" uly="187" lrx="694" lry="206" />
+  <zone xml:id="placeName_Napoli_p263b" ulx="800" uly="190" lrx="857" lry="208" />
+  <zone ulx="611" uly="210" lrx="1106" lry="230" />
+  <zone ulx="610" uly="229" lrx="1112" lry="252" />
+  <zone xml:id="term_eleganti_narratori_p263" ulx="981" uly="233" lrx="1070" lry="250" />
+  <zone ulx="610" uly="252" lrx="1112" lry="272" />
+  <zone ulx="611" uly="273" lrx="1112" lry="296" />
+  <zone ulx="611" uly="298" lrx="1111" lry="317" />
+  <zone ulx="611" uly="316" lrx="1113" lry="337" />
+  <zone xml:id="distinct_nepoti_p263" ulx="833" uly="320" lrx="887" lry="334" />
+  <zone xml:id="distinct_travaglia_p263" ulx="983" uly="319" lrx="1059" lry="337" />
+  <zone ulx="613" uly="337" lrx="1114" lry="359" />
+  <zone ulx="614" uly="360" lrx="1112" lry="376" />
+  <zone ulx="613" uly="381" lrx="1057" lry="400" />
+  <zone ulx="644" uly="403" lrx="1113" lry="423" />
+  <zone xml:id="placeName_vicoCortellari_p263" ulx="757" uly="406" lrx="905" lry="422" />
+  <zone ulx="614" uly="426" lrx="1112" lry="442" />
+  <zone xml:id="orgName_SeggioDiPortanova_p263" ulx="740" uly="422" lrx="923" lry="441" />
+  <zone ulx="614" uly="446" lrx="1113" lry="466" />
+  <zone xml:id="term_magra_p263" ulx="615" uly="448" lrx="673" lry="463" />
+<zone xml:id="term_alta_p263" ulx="705" uly="449" lrx="741" lry="464" />
+<zone xml:id="term_sudici_p263" ulx="1064" uly="448" lrx="1110" lry="463" />
+<zone ulx="615" uly="466" lrx="1112" lry="487" />
+<zone xml:id="term_bassa_p263" ulx="962" uly="469" lrx="1013" lry="484" />
+<zone xml:id="term_oscura_p263" ulx="1049" uly="469" lrx="1101" lry="485" />
+<zone ulx="614" uly="490" lrx="1111" lry="505" />
+<zone xml:id="term_sporca_p263" ulx="614" uly="490" lrx="671" lry="506" />
+<zone xml:id="term_ripida_p263" ulx="693" uly="490" lrx="749" lry="505" />
+<zone ulx="615" uly="508" lrx="1111" lry="529" />
+<zone ulx="615" uly="531" lrx="1112" lry="550" />
+<zone ulx="614" uly="552" lrx="1112" lry="571" />
+<zone ulx="614" uly="571" lrx="1111" lry="592" />
+<zone ulx="614" uly="571" lrx="1111" lry="592" />
+<zone xml:id="term_genteMalFamata_p263" ulx="683" uly="577" lrx="832" lry="592" />
+<zone ulx="614" uly="595" lrx="1112" lry="616" />
+<zone xml:id="term_maledetto_p263" ulx="614" uly="595" lrx="1112" lry="616" />
+<zone xml:id="roleName_usuraio_p263" ulx="665" uly="598" lrx="724" lry="615" />
+<zone ulx="613" uly="616" lrx="1113" lry="637" />
+<zone xml:id="term_bella_p263" ulx="614" uly="617" lrx="656" lry="634" />
+<zone ulx="613" uly="637" lrx="1112" lry="658" />
+<zone ulx="614" uly="661" lrx="1112" lry="679" />
+<zone xml:id="term_brutti_p263" ulx="1061" uly="640" lrx="1110" lry="655" />
+<zone xml:id="term_ceffi_p263" ulx="614" uly="662" lrx="652" lry="679" />
+<zone ulx="614" uly="681" lrx="1111" lry="703" />
+<zone ulx="614" uly="703" lrx="1109" lry="722" />
+<zone ulx="617" uly="727" lrx="1108" lry="744" />
+<zone xml:id="term_viandanti_p263" ulx="647" uly="730" lrx="731" lry="742" />
+<zone xml:id="term_tristo_p263" ulx="935" uly="725" lrx="1007" lry="741" />
+<zone xml:id="roleName_usuraio2_p263" ulx="1018" uly="726" lrx="1084" lry="742" />
+<zone ulx="616" uly="750" lrx="1112" lry="764" />
+<zone xml:id="term_provocante_p263" ulx="689" uly="749" lrx="785" lry="764" />
+<zone xml:id="term_moglie_p263" ulx="1055" uly="750" lrx="1109" lry="763" />
+<zone ulx="615" uly="769" lrx="1109" lry="787" />
+<zone ulx="614" uly="789" lrx="1108" lry="809" />
+<zone ulx="615" uly="814" lrx="1106" lry="829" />
+<zone xml:id="persName_Cicho_p263" ulx="751" uly="811" lrx="798" lry="825" />
+<zone xml:id="roleName_mago_p263" ulx="802" uly="811" lrx="878" lry="829" />
+<zone xml:id="persName_Dio_p263" ulx="1077" uly="811" lrx="1109" lry="829" />
+<zone ulx="616" uly="830" lrx="1108" lry="851" />
+<zone ulx="617" uly="855" lrx="1109" lry="871" />
+<zone ulx="617" uly="874" lrx="1112" lry="895" />
+<zone ulx="615" uly="899" lrx="1108" lry="913" />
+<zone ulx="616" uly="920" lrx="1110" lry="935" />
+<zone ulx="616" uly="940" lrx="1109" lry="956" />
+<zone xml:id="persName_Cicho2_p263" ulx="615" uly="940" lrx="666" lry="957" />
+<zone ulx="614" uly="958" lrx="1111" lry="977" />
+<zone ulx="614" uly="980" lrx="1111" lry="1000" />
+<!-- paragrafo 3-->
+<zone ulx="639" uly="1002" lrx="1110" lry="1022" />
+<zone xml:id="persName_Cicho3_p263" ulx="967" uly="1002" lrx="1018" lry="1020" />
+<zone ulx="614" uly="1023" lrx="1112" lry="1045" />
+<zone ulx="615" uly="1051" lrx="1109" lry="1066" />
+<zone ulx="615" uly="1069" lrx="1112" lry="1088" />
+<zone ulx="615" uly="1089" lrx="1111" lry="1109" />
+<zone ulx="616" uly="1111" lrx="1112" lry="1131" />
+<zone ulx="615" uly="1132" lrx="1111" lry="1155" />
+<zone ulx="615" uly="1155" lrx="1113" lry="1175" />
+<zone xml:id="distinct_vestimenta_p263" ulx="779" uly="1157" lrx="878" lry="1173" />
+<zone ulx="617" uly="1176" lrx="1107" lry="1195" />
+<zone xml:id="placeName_vicoCortellari2_p263" ulx="714" uly="1177" lrx="839" lry="1195" />
+<zone ulx="616" uly="1198" lrx="1111" lry="1216" />
+<zone ulx="616" uly="1220" lrx="1110" lry="1237" />
+<zone ulx="616" uly="1239" lrx="1109" lry="1260" />
+<zone ulx="616" uly="1261" lrx="1112" lry="1282" />
+<zone xml:id="persName_Cicho4_p263" ulx="919" uly="1261" lrx="968" lry="1281" />
+<zone ulx="615" uly="1281" lrx="1109" lry="1306" />
+<zone xml:id="choice_dellignoto_p263a" ulx="1067" uly="1284" lrx="1105" lry="1304" />
+<zone xml:id="choice_dellignoto_p263b" ulx="612" uly="1302" lrx="672" lry="1324" />
+<zone ulx="614" uly="1303" lrx="1109" lry="1324" />
+<zone xml:id="hi_escogitando_p263" ulx="1009" uly="1307" lrx="1105" lry="1323" />
+<zone ulx="614" uly="1326" lrx="1112" lry="1347" />
+<zone xml:id="persName_Cicho5_p263" ulx="724" uly="1325" lrx="776" lry="1344" />
+<zone ulx="612" uly="1349" lrx="1107" lry="1364" />
+<zone ulx="613" uly="1367" lrx="1109" lry="1390" />
+<zone ulx="613" uly="1391" lrx="1107" lry="1411" />
+<!-- a questo punto ho capito che avrei potuto usare teizoner anche solo per le righe e che poi il rifierimento ai personaggi, ai luoghi ecc sarebbe stato effettuato tramite xmsl in quanto in xml i suddetti sono già marcati!-->
+<zone ulx="614" uly="1413" lrx="1109" lry="1429" />
+<zone ulx="615" uly="1431" lrx="1109" lry="1454" />
+<zone ulx="613" uly="1458" lrx="1109" lry="1474" />
+<zone ulx="616" uly="1475" lrx="1109" lry="1494" />
+<zone ulx="618" uly="1501" lrx="1106" lry="1519" />
+<zone ulx="614" uly="1521" lrx="1106" lry="1542" />
+</surface>
+<!--paragrafo 4-->
+<surface>
+<graphic url='UNSEGRETO_page-0009.jpg' width='1133.5px' height='1684.5px' />
+<zone ulx="38" uly="63" lrx="541" lry="84" />
+<zone ulx="38" uly="86" lrx="540" lry="108" />
+<zone ulx="39" uly="105" lrx="541" lry="129" />
+<zone ulx="37" uly="126" lrx="538" lry="151" />
+<zone ulx="34" uly="149" lrx="540" lry="171" />
+<zone ulx="38" uly="173" lrx="542" lry="191" />
+<zone ulx="35" uly="193" lrx="540" lry="216" />
+<zone ulx="37" uly="215" lrx="542" lry="237" />
+<zone ulx="38" uly="232" lrx="539" lry="260" />
+<zone ulx="37" uly="258" lrx="542" lry="278" />
+<zone ulx="39" uly="278" lrx="540" lry="297" />
+<zone ulx="39" uly="299" lrx="542" lry="320" />
+<zone ulx="40" uly="318" lrx="544" lry="343" />
+<zone ulx="40" uly="345" lrx="540" lry="364" />
+<zone ulx="39" uly="364" lrx="542" lry="385" />
+<zone ulx="37" uly="385" lrx="542" lry="410" />
+<zone ulx="39" uly="409" lrx="542" lry="430" />
+<zone ulx="37" uly="431" lrx="541" lry="454" />
+<zone ulx="37" uly="449" lrx="544" lry="471" />
+<zone ulx="37" uly="469" lrx="442" lry="493" />
+<!-- paragrafo 5-->
+<zone ulx="60" uly="495" lrx="361" lry="516" />
+<zone ulx="62" uly="516" lrx="544" lry="536" />
+<zone ulx="62" uly="541" lrx="318" lry="556" />
+<zone ulx="34" uly="560" lrx="544" lry="600" />
+<zone ulx="40" uly="606" lrx="540" lry="623" />
+<!-- paragrafo 6-->
+<zone ulx="56" uly="622" lrx="540" lry="642" />
+<zone ulx="38" uly="647" lrx="546" lry="664" />
+<zone ulx="39" uly="666" lrx="542" lry="685" />
+<zone ulx="41" uly="685" lrx="544" lry="708" />
+<zone ulx="38" uly="709" lrx="544" lry="733" />
+<zone ulx="37" uly="732" lrx="546" lry="754" />
+<zone ulx="39" uly="754" lrx="541" lry="773" />
+<zone ulx="38" uly="772" lrx="541" lry="793" />
+<zone ulx="37" uly="795" lrx="541" lry="814" />
+<zone ulx="37" uly="814" lrx="544" lry="837" />
+<zone ulx="39" uly="836" lrx="545" lry="862" />
+<zone ulx="37" uly="859" lrx="542" lry="881" />
+<zone ulx="37" uly="878" lrx="541" lry="903" />
+<zone ulx="38" uly="908" lrx="542" lry="920" />
+<zone ulx="38" uly="923" lrx="542" lry="947" />
+<zone ulx="33" uly="942" lrx="542" lry="965" />
+<zone ulx="34" uly="968" lrx="544" lry="985" />
+<zone ulx="37" uly="986" lrx="545" lry="1012" />
+<zone ulx="37" uly="1014" lrx="546" lry="1032" />
+<zone ulx="40" uly="1030" lrx="541" lry="1054" />
+<zone ulx="37" uly="1051" lrx="541" lry="1078" />
+<zone ulx="38" uly="1078" lrx="542" lry="1097" />
+<zone ulx="35" uly="1098" lrx="544" lry="1115" />
+<zone ulx="43" uly="1120" lrx="544" lry="1136" />
+<zone ulx="41" uly="1138" lrx="544" lry="1159" />
+<zone ulx="42" uly="1160" lrx="541" lry="1178" />
+<zone ulx="41" uly="1178" lrx="545" lry="1204" />
+<zone ulx="41" uly="1198" lrx="542" lry="1223" />
+<zone ulx="40" uly="1221" lrx="540" lry="1241" />
+<zone ulx="37" uly="1246" lrx="542" lry="1263" />
+<zone ulx="43" uly="1260" lrx="544" lry="1287" />
+<zone ulx="43" uly="1282" lrx="542" lry="1309" />
+<zone ulx="35" uly="1307" lrx="541" lry="1331" />
+<zone ulx="41" uly="1326" lrx="540" lry="1351" />
+<zone ulx="35" uly="1349" lrx="546" lry="1373" />
+<zone ulx="42" uly="1370" lrx="545" lry="1398" />
+<zone ulx="41" uly="1394" lrx="545" lry="1414" />
+<zone ulx="40" uly="1411" lrx="542" lry="1439" />
+<zone ulx="40" uly="1440" lrx="542" lry="1460" />
+<zone ulx="41" uly="1456" lrx="546" lry="1485" />
+<zone ulx="42" uly="1487" lrx="546" lry="1503" />
+<zone ulx="555" uly="63" lrx="1061" lry="86" />
+<zone ulx="555" uly="83" lrx="757" lry="105" />
+
+<!-- paragrafo 7-->
+<zone ulx="584" uly="113" lrx="1063" lry="134" />
+<zone ulx="561" uly="136" lrx="1061" lry="154" />
+<zone ulx="555" uly="157" lrx="1061" lry="179" />
+<zone ulx="557" uly="181" lrx="1064" lry="197" />
+<zone ulx="558" uly="198" lrx="1064" lry="219" />
+<zone ulx="552" uly="220" lrx="1058" lry="239" />
+<zone ulx="557" uly="241" lrx="1061" lry="262" />
+<zone ulx="557" uly="264" lrx="1060" lry="283" />
+<zone ulx="559" uly="283" lrx="1054" lry="307" />
+<zone ulx="560" uly="307" lrx="1058" lry="325" />
+<zone ulx="557" uly="325" lrx="1063" lry="350" />
+<zone ulx="557" uly="352" lrx="1063" lry="370" />
+<zone ulx="559" uly="370" lrx="1059" lry="388" />
+<zone ulx="560" uly="391" lrx="1060" lry="412" />
+<zone ulx="557" uly="414" lrx="1061" lry="430" />
+<zone ulx="557" uly="431" lrx="1064" lry="457" />
+<zone ulx="557" uly="455" lrx="1063" lry="477" />
+<zone ulx="559" uly="480" lrx="1058" lry="497" />
+<zone ulx="555" uly="497" lrx="1062" lry="517" />
+<zone ulx="557" uly="517" lrx="710" lry="543" />
+<!-- paragrafo 8 -->
+<zone ulx="581" uly="549" lrx="1062" lry="564" />
+<zone ulx="556" uly="564" lrx="610" lry="583" />
+<zone ulx="580" uly="589" lrx="944" lry="604" />
+<zone ulx="583" uly="605" lrx="1064" lry="629" />
+<zone ulx="560" uly="626" lrx="1062" lry="649" />
+<zone ulx="561" uly="647" lrx="1064" lry="670" />
+<zone ulx="557" uly="669" lrx="624" lry="691" />
+<zone ulx="581" uly="694" lrx="806" lry="713" />
+<zone ulx="582" uly="713" lrx="1062" lry="735" />
+<zone ulx="555" uly="738" lrx="620" lry="757" />
+<!-- paragrafo9-->
+<zone ulx="584" uly="757" lrx="1063" lry="776" />
+<zone ulx="557" uly="777" lrx="1062" lry="798" />
+<zone ulx="560" uly="801" lrx="1061" lry="820" />
+<zone ulx="556" uly="820" lrx="1063" lry="844" />
+<zone ulx="558" uly="845" lrx="1062" lry="867" />
+<zone ulx="557" uly="863" lrx="1063" lry="888" />
+<zone ulx="557" uly="890" lrx="1061" lry="907" />
+<zone ulx="556" uly="907" lrx="1059" lry="928" />
+<zone ulx="556" uly="927" lrx="1061" lry="950" />
+<zone ulx="557" uly="951" lrx="1062" lry="971" />
+<zone ulx="556" uly="974" lrx="1064" lry="994" />
+<zone ulx="559" uly="993" lrx="1067" lry="1016" />
+<zone ulx="557" uly="1017" lrx="1064" lry="1035" />
+<zone ulx="559" uly="1035" lrx="1064" lry="1056" />
+<zone ulx="561" uly="1057" lrx="1067" lry="1081" />
+<zone ulx="557" uly="1083" lrx="1062" lry="1101" />
+<zone ulx="556" uly="1101" lrx="1062" lry="1122" />
+<zone ulx="559" uly="1123" lrx="1064" lry="1144" />
+<zone ulx="559" uly="1148" lrx="679" lry="1166" />
+<!-- paragrafo 10-->
+<zone ulx="585" uly="1168" lrx="1061" lry="1189" />
+<zone ulx="557" uly="1186" lrx="1065" lry="1209" />
+<zone ulx="554" uly="1212" lrx="1062" lry="1228" />
+<zone ulx="560" uly="1233" lrx="1064" lry="1253" />
+<zone ulx="560" uly="1253" lrx="1064" lry="1277" />
+<zone ulx="559" uly="1275" lrx="1062" lry="1297" />
+<zone ulx="557" uly="1296" lrx="1063" lry="1317" />
+</surface>
+<surface>
+<graphic url='UNSEGRETO_page-0010.jpg' width='1151.5px' height='1690.5px' />
+<zone ulx="561" uly="1317" lrx="1061" lry="1339" />
+<zone ulx="557" uly="1342" lrx="1065" lry="1357" />
+<zone ulx="558" uly="1360" lrx="1061" lry="1381" />
+<zone ulx="559" uly="1382" lrx="1063" lry="1399" />
+<zone ulx="558" uly="1398" lrx="1062" lry="1426" />
+<zone ulx="557" uly="1420" lrx="1064" lry="1445" />
+<zone ulx="558" uly="1445" lrx="1068" lry="1465" />
+<zone ulx="558" uly="1465" lrx="1064" lry="1487" />
+<zone ulx="560" uly="1489" lrx="1061" lry="1511" />
+<zone ulx="89" uly="67" lrx="596" lry="90" />
+<zone ulx="92" uly="90" lrx="596" lry="110" />
+<zone ulx="90" uly="111" lrx="596" lry="135" />
+<zone ulx="92" uly="134" lrx="599" lry="152" />
+<zone ulx="90" uly="154" lrx="599" lry="175" />
+<zone ulx="93" uly="175" lrx="600" lry="196" />
+<zone ulx="89" uly="190" lrx="599" lry="220" />
+<zone ulx="91" uly="218" lrx="428" lry="239" />
+<!-- paragrafo 11-->
+<zone ulx="119" uly="257" lrx="596" lry="283" />
+<zone ulx="92" uly="281" lrx="598" lry="303" />
+<zone ulx="91" uly="307" lrx="598" lry="324" />
+<zone ulx="93" uly="325" lrx="599" lry="349" />
+<zone ulx="92" uly="345" lrx="598" lry="370" />
+<zone ulx="90" uly="367" lrx="598" lry="386" />
+<zone ulx="92" uly="387" lrx="599" lry="409" />
+<zone ulx="91" uly="408" lrx="600" lry="432" />
+<zone ulx="91" uly="432" lrx="600" lry="453" />
+<zone ulx="93" uly="452" lrx="599" lry="475" />
+<zone ulx="95" uly="476" lrx="599" lry="493" />
+<zone ulx="92" uly="496" lrx="599" lry="514" />
+<zone ulx="91" uly="517" lrx="498" lry="537" />
+<!--paragrafo12-->
+<zone ulx="113" uly="538" lrx="279" lry="558" />
+<zone ulx="121" uly="562" lrx="325" lry="582" />
+<zone ulx="122" uly="586" lrx="367" lry="602" />
+<zone ulx="125" uly="601" lrx="335" lry="623" />
+<zone ulx="125" uly="622" lrx="225" lry="645" />
+<zone ulx="121" uly="643" lrx="599" lry="665" />
+<zone ulx="94" uly="665" lrx="600" lry="690" />
+<zone ulx="97" uly="688" lrx="599" lry="706" />
+<zone ulx="97" uly="709" lrx="422" lry="733" />
+<zone ulx="118" uly="734" lrx="249" lry="754" />
+<!-- paragrafo 13-->
+<zone ulx="119" uly="754" lrx="602" lry="775" />
+<zone ulx="97" uly="777" lrx="602" lry="796" />
+<zone ulx="95" uly="797" lrx="599" lry="817" />
+<zone ulx="98" uly="818" lrx="599" lry="842" />
+<zone ulx="96" uly="841" lrx="604" lry="862" />
+<zone ulx="95" uly="860" lrx="603" lry="880" />
+<zone ulx="96" uly="880" lrx="605" lry="900" />
+<zone ulx="98" uly="901" lrx="172" lry="927" />
+<!-- paragrafo 14-->
+<zone ulx="122" uly="926" lrx="602" lry="944" />
+<zone ulx="98" uly="949" lrx="604" lry="968" />
+<zone ulx="100" uly="970" lrx="602" lry="990" />
+<zone ulx="97" uly="989" lrx="601" lry="1009" />
+<zone ulx="101" uly="1009" lrx="602" lry="1031" />
+<zone ulx="98" uly="1028" lrx="604" lry="1051" />
+<zone ulx="101" uly="1052" lrx="605" lry="1076" />
+<zone ulx="99" uly="1076" lrx="601" lry="1094" />
+<zone ulx="98" uly="1097" lrx="603" lry="1118" />
+<zone ulx="98" uly="1118" lrx="600" lry="1139" />
+<zone ulx="96" uly="1139" lrx="605" lry="1159" />
+<zone ulx="101" uly="1157" lrx="603" lry="1178" />
+<zone ulx="101" uly="1180" lrx="602" lry="1203" />
+<zone ulx="102" uly="1207" lrx="509" lry="1222" />
+<!--paragrafo 15-->
+<zone ulx="440" uly="1224" lrx="578" lry="1246" />
+<!-- fine-->
+</surface>
+  
+  <!--Surface testo "L'esser troppo stimati"-->
+<surface xml:id="TESTO_ESSERETROPPOSTIMATI">
+            <!-- pagina 267 -->
+<graphic url='pag267.jpg' width='1120.5px' height='1677.5px' />
+<!--titolo e pragrafo 1-->
+<zone ulx="146" uly="770" lrx="444" lry="796" />
+<!-- paragrafo 1-->
+<zone ulx="65" uly="795" lrx="546" lry="817" />
+<zone ulx="47" uly="820" lrx="553" lry="838" />
+<zone ulx="44" uly="844" lrx="548" lry="860" />
+<zone ulx="43" uly="865" lrx="549" lry="886" />
+<zone ulx="42" uly="886" lrx="551" lry="904" />
+<zone ulx="43" uly="907" lrx="549" lry="925" />
+<zone ulx="44" uly="927" lrx="545" lry="946" />
+<zone ulx="43" uly="949" lrx="549" lry="968" />
+<zone ulx="42" uly="972" lrx="548" lry="990" />
+<zone ulx="44" uly="991" lrx="551" lry="1014" />
+<zone ulx="44" uly="1015" lrx="550" lry="1035" />
+<zone ulx="45" uly="1036" lrx="548" lry="1056" />
+<zone ulx="46" uly="1057" lrx="548" lry="1078" />
+<zone ulx="42" uly="1081" lrx="543" lry="1099" />
+<zone ulx="42" uly="1102" lrx="548" lry="1122" />
+<zone ulx="43" uly="1123" lrx="548" lry="1139" />
+<zone ulx="43" uly="1144" lrx="552" lry="1163" />
+<zone ulx="44" uly="1165" lrx="546" lry="1183" />
+<zone ulx="44" uly="1184" lrx="551" lry="1207" />
+<zone ulx="40" uly="1206" lrx="548" lry="1228" />
+<zone ulx="43" uly="1227" lrx="546" lry="1249" />
+<zone ulx="46" uly="1250" lrx="545" lry="1271" />
+<zone ulx="44" uly="1271" lrx="544" lry="1293" />
+<zone ulx="44" uly="1297" lrx="548" lry="1319" />
+<zone ulx="45" uly="1314" lrx="547" lry="1336" />
+<zone ulx="47" uly="1333" lrx="548" lry="1356" />
+<zone ulx="42" uly="1354" lrx="547" lry="1380" />
+<zone ulx="42" uly="1378" lrx="548" lry="1399" />
+<zone ulx="44" uly="1402" lrx="549" lry="1417" />
+<zone ulx="44" uly="1422" lrx="548" lry="1441" />
+<zone ulx="44" uly="1441" lrx="547" lry="1461" />
+<zone ulx="45" uly="1459" lrx="542" lry="1483" />
+<zone ulx="43" uly="1483" lrx="547" lry="1504" />
+<zone ulx="38" uly="1501" lrx="547" lry="1522" />
+<zone ulx="563" uly="90" lrx="1075" lry="113" />
+<zone ulx="565" uly="114" lrx="1070" lry="136" />
+<zone ulx="563" uly="136" lrx="1061" lry="154" />
+<zone ulx="564" uly="157" lrx="1067" lry="175" />
+<zone ulx="566" uly="176" lrx="1065" lry="200" />
+<zone ulx="566" uly="201" lrx="1066" lry="219" />
+<zone ulx="566" uly="221" lrx="1067" lry="240" />
+<zone ulx="566" uly="237" lrx="1069" lry="260" />
+<zone ulx="566" uly="258" lrx="1069" lry="283" />
+<zone ulx="566" uly="278" lrx="1067" lry="304" />
+<zone ulx="567" uly="304" lrx="1066" lry="325" />
+<zone ulx="566" uly="323" lrx="1067" lry="343" />
+<zone ulx="561" uly="345" lrx="1070" lry="366" />
+<zone ulx="563" uly="367" lrx="1069" lry="386" />
+<zone ulx="565" uly="388" lrx="1070" lry="412" />
+<zone ulx="564" uly="413" lrx="1070" lry="432" />
+<zone ulx="564" uly="430" lrx="1072" lry="453" />
+<zone ulx="566" uly="456" lrx="1072" lry="474" />
+<zone ulx="568" uly="477" lrx="1070" lry="494" />
+<zone ulx="566" uly="499" lrx="741" lry="516" />
+<!-- paragrafo 2-->
+<zone ulx="653" uly="517" lrx="920" lry="535" />
+<zone ulx="671" uly="538" lrx="983" lry="552" />
+<zone ulx="671" uly="554" lrx="947" lry="568" />
+<zone ulx="668" uly="573" lrx="965" lry="589" />
+<zone ulx="670" uly="592" lrx="905" lry="614" />
+<zone ulx="670" uly="609" lrx="940" lry="632" />
+<zone ulx="668" uly="630" lrx="923" lry="649" />
+<!-- paragrafo 3-->
+<zone ulx="592" uly="647" lrx="1070" lry="672" />
+<zone ulx="565" uly="676" lrx="1070" lry="694" />
+<zone ulx="564" uly="695" lrx="1075" lry="716" />
+<zone ulx="566" uly="716" lrx="1072" lry="735" />
+<zone ulx="568" uly="738" lrx="1068" lry="757" />
+<zone ulx="566" uly="760" lrx="1069" lry="776" />
+<zone ulx="565" uly="779" lrx="1068" lry="799" />
+<zone ulx="568" uly="801" lrx="1070" lry="820" />
+<zone ulx="566" uly="824" lrx="1065" lry="841" />
+<zone ulx="566" uly="843" lrx="1067" lry="866" />
+<zone ulx="566" uly="868" lrx="1069" lry="882" />
+<zone ulx="567" uly="888" lrx="1072" lry="905" />
+<zone ulx="569" uly="907" lrx="1066" lry="927" />
+<zone ulx="567" uly="928" lrx="1067" lry="946" />
+<zone ulx="566" uly="951" lrx="1067" lry="968" />
+<zone ulx="566" uly="971" lrx="1066" lry="988" />
+<zone ulx="565" uly="994" lrx="1070" lry="1012" />
+<zone ulx="569" uly="1012" lrx="1067" lry="1033" />
+<zone ulx="567" uly="1036" lrx="1066" lry="1054" />
+<zone ulx="567" uly="1057" lrx="1064" lry="1075" />
+<zone ulx="563" uly="1078" lrx="1070" lry="1096" />
+<zone ulx="566" uly="1099" lrx="1070" lry="1119" />
+<zone ulx="567" uly="1121" lrx="1067" lry="1143" />
+<zone ulx="565" uly="1147" lrx="1067" lry="1165" />
+<zone ulx="564" uly="1165" lrx="1070" lry="1181" />
+<zone ulx="565" uly="1184" lrx="1068" lry="1204" />
+<zone ulx="563" uly="1204" lrx="1065" lry="1227" />
+<zone ulx="566" uly="1229" lrx="1066" lry="1251" />
+<zone ulx="565" uly="1252" lrx="1067" lry="1272" />
+<zone ulx="567" uly="1272" lrx="1065" lry="1291" />
+<zone ulx="564" uly="1291" lrx="1064" lry="1313" />
+<zone ulx="563" uly="1312" lrx="1069" lry="1336" />
+<zone ulx="563" uly="1339" lrx="1064" lry="1353" />
+<zone ulx="566" uly="1356" lrx="1070" lry="1377" />
+<zone ulx="563" uly="1380" lrx="1071" lry="1397" />
+<zone ulx="563" uly="1401" lrx="1066" lry="1420" />
+<zone ulx="564" uly="1420" lrx="1069" lry="1441" />
+<zone ulx="564" uly="1443" lrx="1067" lry="1460" />
+<zone ulx="565" uly="1463" lrx="1067" lry="1482" />
+<zone ulx="564" uly="1485" lrx="794" lry="1503" />
+<!-- paragrafo 4-->
+<zone ulx="592" uly="1505" lrx="1068" lry="1528" />
+</surface>
+<surface>
+<graphic url='pag268.jpg' width='1148.5px' height='1689.5px' />
+<zone ulx="70" uly="79" lrx="575" lry="101" />
+<zone ulx="73" uly="99" lrx="574" lry="122" />
+<zone ulx="74" uly="125" lrx="571" lry="144" />
+<zone ulx="75" uly="147" lrx="572" lry="164" />
+<zone ulx="71" uly="167" lrx="573" lry="186" />
+<zone ulx="71" uly="186" lrx="575" lry="207" />
+<zone ulx="72" uly="210" lrx="575" lry="229" />
+<zone ulx="74" uly="224" lrx="572" lry="250" />
+<zone ulx="71" uly="248" lrx="573" lry="270" />
+<zone ulx="72" uly="270" lrx="570" lry="296" />
+<zone ulx="72" uly="291" lrx="574" lry="316" />
+<zone ulx="72" uly="313" lrx="570" lry="333" />
+<zone ulx="67" uly="334" lrx="571" lry="357" />
+<zone ulx="75" uly="354" lrx="575" lry="380" />
+<zone ulx="72" uly="384" lrx="571" lry="396" />
+<zone ulx="74" uly="399" lrx="569" lry="420" />
+<zone ulx="70" uly="420" lrx="571" lry="440" />
+<zone ulx="73" uly="444" lrx="572" lry="461" />
+<zone ulx="72" uly="465" lrx="570" lry="480" />
+<zone ulx="72" uly="483" lrx="573" lry="501" />
+<zone ulx="73" uly="507" lrx="573" lry="526" />
+<zone ulx="71" uly="528" lrx="572" lry="547" />
+<zone ulx="70" uly="547" lrx="569" lry="567" />
+<zone ulx="74" uly="570" lrx="569" lry="591" />
+<zone ulx="70" uly="592" lrx="569" lry="610" />
+<zone ulx="74" uly="611" lrx="571" lry="638" />
+<zone ulx="73" uly="633" lrx="569" lry="652" />
+<zone ulx="74" uly="652" lrx="574" lry="675" />
+<zone ulx="74" uly="675" lrx="572" lry="696" />
+<zone ulx="74" uly="693" lrx="575" lry="717" />
+<zone ulx="69" uly="716" lrx="572" lry="737" />
+<zone ulx="70" uly="736" lrx="572" lry="759" />
+<zone ulx="74" uly="757" lrx="571" lry="783" />
+<zone ulx="71" uly="780" lrx="574" lry="803" />
+<zone ulx="69" uly="805" lrx="572" lry="825" />
+<zone ulx="73" uly="822" lrx="569" lry="843" />
+<zone ulx="72" uly="849" lrx="572" lry="866" />
+<zone ulx="71" uly="865" lrx="574" lry="887" />
+<zone ulx="68" uly="888" lrx="573" lry="912" />
+<zone ulx="72" uly="908" lrx="570" lry="934" />
+<zone ulx="74" uly="932" lrx="575" lry="956" />
+<!-- paragrafo 5 -->
+<zone ulx="398" uly="959" lrx="540" lry="982" />
+</surface>  
+  
+    <surface xml:id="p.272">
+        <graphic url='notizie.jpg' width='2276px' height='3401px' />
+
+        <!-- bibliografia -->
+        <!--colonna sx-->
+        <zone ulx="61" uly="726" lrx="1129" lry="864" /> <!--titolo bib1-->
+        <zone ulx="40" uly="881" lrx="1141" lry="1689" />
+        <zone ulx="47" uly="1690" lrx="1131" lry="2070" />
+        <zone ulx="57" uly="2075" lrx="1112" lry="2496" />
+        <!--colonna dx-->
+        <zone ulx="1159" uly="221" lrx="2168" lry="299" />
+        <zone ulx="1163" uly="305" lrx="2199" lry="1381" />
+        <zone ulx="1153" uly="1412" lrx="2191" lry="1540" /> <!--titolo bib2-->
+        <zone ulx="1157" uly="1542" lrx="2185" lry="2332" />
+        <!-- notizie -->
+        <zone ulx="1525" uly="2325" lrx="1779" lry="2375" />
+        <zone ulx="1158" uly="2372" lrx="2208" lry="2487" />
+        <zone ulx="1144" uly="2503" lrx="2201" lry="2685" />
+    </surface>
+  </facsimile>
+
+
+
+    <text>
+  <front>
+  <div type="titlePage">
+        <head><title>La Rassegna Settimanale</title></head>
+        <p>Di politica, scienze, lettere ed arti.</p>
+        <p>
+            <term type="volume">Vol. 8°</term>, 
+            <placeName type="urban" ref="#Roma">Roma</placeName>, 
+            <date when="1881-10-23">23 Ottobre 1881</date>, 
+            <term type="issue">N° 199</term>.
+        </p>
+        </div>
+  </front>
+    <body>
+    <div type="articolo" n="1" xml:id="storia_un_segreto">
+    <pb n="199" facs="#pagina_199"/>
+    <head>
+        <title ana="#title.principale" xml:id="titolo_UN_SEGRETO_p199" type="main">UN SEGRETO.</title>
+    </head>
+    
+<p facs="#p262_paragrafo_1">
+<lb/>Nell’anno <date ana="#date.anno">1220 </date> della <term type="teologico" ref="#definizione_Salutifera_incarnazione">Salutifera Incarnazione</term>, regnando
+<lb/>in <placeName type="placeName.citta">Palermo</placeName> ed in <placeName type="placeName.citta">Napoli</placeName> il grande e buon <persName ana="#persName.storico">re Federico II
+<lb/>di <placeName type="placeName.regione">Svevia</placeName></persName>, accadde in <placeName type="placeName.citta">Napoli</placeName> un caso stranissimo che non
+<lb/>vi sarà discaro ascoltare, trattandosi di piacevole argomento.
+<lb/>Simil novella non troverete nè in istorici, nè <term ana="#moral.positivo">in eleganti <w type="hyphen">nar-</w>
+<lb/>ratori</term> ; io stessa la raccolsi rozza ed informe dalla <w type="hyphen">tradi-</w>
+<lb/>zione popolare e voglio, narrandola a voi, consacrarla in
+<lb/>questa scrittura, affinchè ne possano avere disadorna ma
+<lb/>chiara notizia i più tardi <distinct type="arcaico">nepoti</distinct>, per cui si <distinct type="letterario">travaglia</distinct> e s'<w type="hyphen">af-</w>
+<lb/>fatica ogni scrittore, disdegnoso del facile plauso <w type="hyphen">contempo-</w>
+<lb/>raneo. Ma senza più intrattenervi in preliminari, avendo
+<lb/>spiegata chiaramente la mia intenzione, ecco il caso.
+</p>    
+
+<p facs="#p262_paragrafo_2">
+<lb/>Nello stretto <placeName type="placeName.urbano">vico dei Cortellari</placeName> che, come ognuno sa, <w type="hyphen">ap-</w>
+<lb/>parteneva al <orgName ana="#orgName.istituzione" ref="#SeggioDiPortanova">Seggio di Portanova</orgName>, vi era una casuccia
+<lb/><term ana="#term.caratteristica">magra</term> ed <term ana="#term.caratteristica">alta</term>, dalle piccole finestre, aventi i vetri <term ana="#term.caratteristica">sudici</term>
+<lb/>ed impiombati. La porta di entrata era <term ana="#term.caratteristica">bassa</term> ed <term ana="#term.caratteristica">oscura</term>;
+<lb/><term ana="#term.caratteristica">sporca</term> e <term ana="#term.caratteristica">ripida</term> la scala; di rado si aprivano le finestruole.
+<lb/>La gente vi passava dinanzi frettolosa, dando uno sguardo
+<lb/>fra il collerico ed il pauroso, e borbottando fra i denti non so
+<lb/>se una preghiera o una maledizione. In verità, nella casuccia
+<lb/>abitava <term ana="#moral.negativo">gente mal famata</term>; al primo piano vi era un 
+<lb/><term ana="#moral.negativo">maledetto <roleName ana="#term.ruolo">usuraio</roleName></term>, tosatore di monete d’oro; 
+<lb/>al secondo una<term ana="#term.caratteristica">bella</term>giovane di quelle che sono la tentazione e la <w type="hyphen">danna-</w>
+<lb/>zione dell’uomo; al terzo un marito ed una moglie, <term ana="#moral.negativo">brutti 
+<lb/>ceffi</term> che di giorno erano fuori di casa a qualche ignoto ed
+<lb/>equivoco mestiere e quando rincasavano, a notte piena, si
+<lb/>battevano come la lana. Ma quello che formava lo sgomento
+<lb/>dei <term ana="#term.ruolo">viandanti</term> non era specialmente il <term ana="#moral.negativo">tristo</term> <roleName ana="#term.ruolo">usuraio</roleName>, lo
+<lb/>sguardo<term ana="#term.caratteristica">provocante</term> della donna o gli strilli della <term ana="#term.ruolo">moglie</term>
+<lb/>bastonata dal marito, ma era tutto questo insieme e <w type="hyphen">prin-</w>
+<lb/>cipalmente il pensiero che all’ultimo piano della casa <w type="hyphen">india-</w>
+<lb/>volata abitava <persName ana="#persName.fittizia" ref="#Cicho">Cicho</persName> il <roleName ana="#term.ruolo">mago</roleName>. Le anime timorate di <persName ref="#Dio">Dio</persName>
+<lb/>si facevano il segno della croce che è anche quello della
+<lb/>nostra salvazione e passavano oltre; gli spiriti mondani
+<lb/>facevano le corna con la mano, si tastavano il ginocchio,
+<lb/>pronunciavano qualche scongiuro e simili cose adoperavano
+<lb/>che si credono atte a disperdere il malocchio. Sebbene
+<lb/><persName ana="#persName.fittizia" ref="#Cicho">Cicho</persName> uscisse molto raramente e raramente spalancasse le
+<lb/>imposte della sua finestruola, il popolo sapendo della sua
+<lb/>magia, del suo potere sovrumano, n’avea timore grandissimo.
+</p>
+    
+   <p facs="#p262_paragrafo_3">
+<lb/>Senza dubbio i misteriosi andamenti di <persName ana="#persName.fittizia">Cicho</persName> davan fede
+<lb/>di verità a quanto di lui si diceva. Chi fosse non si sapeva,
+<lb/>nè donde venisse; sempre chiuso in casa; in apparenza
+<lb/>privo d’amici o di parenti ; curvo nell'incedere, lento il passo,
+<lb/>l’occhio fisso a terra, mormorando parole greche, latine o
+<lb/>di qualche lingua demoniaca : parco nel conversare, ma non
+<lb/>aspro nei modi, anzi sorridente nella bianca, fluente barba ;
+<lb/>oscure ma nette le <distinct type="arcaico">vestimenta</distinct>. Invano, quando venne ad
+<lb/>abitare nel <placeName ana="#placeName.via">vico Cortellari</placeName>, le femminette d’intorno s’<w type="hyphen">infor-</w>
+<lb/>marono di lui, chiesero, osarono interrogarlo, fermarono il
+<lb/>suo servo e adoperarono i mille mezzi che mai sempre
+<lb/>consiglia alla donna la sua gran maestra e signora, la <w type="hyphen">cu-</w>
+<lb/>riosità. Nulla potettero sapere, e <persName ana="#persName.fittizia">Cicho</persName>, la sua origine,
+<lb/>la sua famiglia, la sua vita, rimasero nelle tenebre <choice><sic>dello
+<lb/>ignoto</sic><corr>dell’ignoto</corr></choice>. Ma in seguito, spiando, osservando, <hi rend="italic">escogitando,</hi>
+<lb/>si seppe che <persName ana="#persName.fittizia">Cicho</persName> intendeva ad opere magiche : durante
+<lb/>la notte, mai si spegneva la lampada della stanzuccia dove
+<lb/>egli studiava su grossi volumi di manoscritto, chiusi a <w type="hyphen">fer-</w>
+<lb/>maglio, tolti da una <term type="term.caratteristica">polverosa</term> <term ref="#definizione_scansia">scansia</term>: mai cessava di uscire
+<lb/>dalla cappa <term type="term.caratteristica">nera</term> del suo focolare, un filo di fumo e la sua
+<lb/>stanza era piena di storto, di lambicchi, di fornelli, di <w type="hyphen">sin-</w>
+<lb/>golari coltelli in tutte le forme e di altri strumenti in ferro
+<lb/>destinati ad usi ignoti. Si dicea che spesso <persName ana="#persName.fittizia">Cicho</persName> passava
+<lb/>ore intiere curvato sopra un pentolino che bolliva, bolliva
+<lb/>e dove sicuramente danzavano le <term ana="#moral.negativo">maledette</term> <term type="term.caratteristica">infernali</term> erbe
+</p>
+
+<p facs="#263_paragrafo_4">
+<pb n="263"/> 
+<cb n="1"/>
+<lb/>che cagionavano <term ana="#moral.negativo">malsania</term>, <term ana="#moral.negativo">follia</term> e <term ana="#moral.negativo">morte</term>, sebbene il servo
+<lb/>non comperasse in piazza che le <term ana="#term.cibo">erbe di cucina</term>, come <term ana="#term.cibo">maggiorana</term>, <term ana="#term.cibo">pomodoro</term>, <term ana="#term.cibo">basilico</term>, <term ana="#term.cibo">prezzemolo</term>, <term ana="#term.cibo">cipolle</term>, <term ana="#term.cibo">agli</term> ed <w type="hyphen">al-</w>
+<lb/>tro. Ma si sa che gli stregoni vanno nei prati, nella notte
+<lb/>del sabato, incantano la luna, chiamano il diavolo e <w type="hyphen">col-</w>
+<lb/>gono le <term ana="#moral.negativo">erbaccie malefiche</term>. Si diceva altresì che <persName ana="#persName.fittizia">Cicho</persName> <w type="hyphen">ve-</w>
+<lb/>nisse fuori sul suo piccolo terrazzino, scuotendo dalle mani
+<lb/>e dall’abito una <term type="term.caratteristica">polvere bianca</term> che certo doveva avvelenare
+<lb/>l’aria : che spesso andasse a lavarsi le mani macchiate di
+<lb/>rosso in un tinello di cui l’acqua si corrompeva. Quelle
+<lb/>mani macchiate di rosso davano autorità ad <term ana="#moral.negativo">orribili sospetti</term>: tanto piu che si soggiungeva esservi spesso nel <w type="hyphen">la-</w>
+<lb/>boratorio di <persName ana="#persName.fittizia">Cicho</persName>, sul pavimento, larghe macchie di un
+<lb/>rosso bruno, simili a pozze di sangue e che quello <term ana="#moral.negativo">stregone</term> si occupasse, nella notte, a tagliare
+<lb/>coi suoi sottili coltelli, sopra una grande tavola di marmo,
+<lb/>non so che di bianco e di delicato. <term ana="#term.cibo">Membra di bambini</term>, o
+<lb/><term type="term.caratteristica">gambe di rana</term>, o <term ana="#term.cibo">pelle di serpentelli</term> — ripeteva la gente.
+<lb/>E quando camminava nella via, le comari ammiccavano e
+<lb/>si davano delle gomitate nei fianchi, dicendo:
+</p>
+    
+<p facs="#263_paragrafo_5" >
+<lb/><q>— <persName ana="#persName.fittizia">Cicho</persName> il <term ana="#term.ruolo">mago! </term><persName ana="#persName.fittizia">Cicho</persName> il <term ana="#term.ruolo">mago!</term></q>
+<lb/><q>— Cerca il modo di ridiventare giovane, il vecchione.</q>
+<lb/><q>— Vuol trovare l’oro, forse.</q>
+<lb/><q>— O quella pietra per cui s’ ha virtù, saggezza e</q>
+<lb/>lunga vita.
+<lb/><q>— Che !! <choice><sic>chiama</sic><corr>Chiama</corr></choice> il diavolo per diventare <persName ana="#persName.storico" ref="#AlaeddinKayqubadI">Gran Turco</persName>.</q>
+</p>
+    
+<p facs="#263_paragrafo_6">
+<cb n="2"/>
+    <lb/><persName ana="#persName.fittizia">Cicho</persName> ascoltava e tirava via, sorridendo. In fondo le
+    <lb/>comari, avendone paura, non osavano maledirlo che sotto
+    <lb/>voce; e ammonivano i bimbi a usargli rispetto. Lo <term ana="#term.ruolo"><w type="hyphen">stre-</w>
+    <lb/>gone</term>, malgrado le voci temerarie, aveva aspetto di <term ana="#moral.positivo"><w type="hyphen">galan-</w>
+    <lb/>tuomo</term> e quella tale aria di <term ana="#term.caratteristica">soddisfatto</term> raccoglimento di
+    <lb/>chi medita una <term ana="#term.caratteristica">bella</term> e <term ana="#term.caratteristica">feconda</term> idea. Parea dicesse: <q>verrà,
+    <lb/>verrà il mio giorno, o gente ingrata.</q> A chiarirvi un poco
+    <lb/>il mistero ed a denudare la sua vita di quella parte <term ana="#term.caratteristica"><w type="hyphen">so-</w>
+    <lb/>vrumana</term> che <persName ref="#Dio">Dio</persName> non permette più sulla terra, poiché <persName ref="#Dio">Dio</persName>
+    <lb/>fa miracoli solamente per l’anima e non per il corpo, vi
+    <lb/>dirò quanto segue, <persName ana="#persName.fittizia">Cicho</persName> era stato a suo tempo <term ana="#measure.ricchezza">ricco</term>, <w type="hyphen">ga-</w>
+    <lb/><term ana="#term.caratteristica">gliardo</term> e <term ana="#term.caratteristica">bel</term> <term ana="#term.ruolo">garzone</term>, aveva saputo goder bene della salute,
+    <lb/>della <term ana="#measure.eta">gioventù</term>, della <term ana="#measure.ricchezza">ricchezza</term>; amante, era stato amato;
+    <lb/>aveva avuto palazzi, corridori di <term ana="#socialclass.nobilta">nobil sangue</term>, vestimenta
+    <lb/>intessute d’oro; aveva goduto feste, conviti, balli, <w type="hyphen">tornea-</w>
+    <lb/>menti, giostre; aveva assaporato col più vivo piacere baci
+    <lb/>di donne, colpi di spada di cavalieri e <term ana="#term.cibo">vini</term> <term ana="#term.caratteristica">poderosi</term>. Quando
+    <lb/>la sua <term ana="#measure.ricchezza">ricchezza</term> cominciò a dileguare, come sempre accade,
+    <lb/>si allontanarono donne ed amici; ma <persName ana="#persName.fittizia">Cicho</persName>, che aveva
+    <lb/>fatta sugli scrittori antichi buona e larga provvista di filo
+    <lb/>sofìa, non se ne <term type ="arcaico">accorò</term>. Sibbene, rimasto solo, con niuna
+    <lb/>opera da compiere, lo prese vaghezza di rendersi utile agli
+    <lb/>uomini. E dopo aver molto escogitato tutti i mezzi, <w type="hyphen">ri-</w>
+    <lb/>cordando i suoi godimenti ed i suoi piaceri, entrò nella
+    <lb/>persuasione dover lui ritrovare qualche cosa che concorresse
+    <lb/>specialmente alla felicità del suo simile, felicità <term ana="#term.caratteristica">instabile</term> e
+    <lb/><term ana="#term.caratteristica">passeggiera</term>, a cui egli voleva dare un qualche fondamento.
+    <lb/>Raffermato in questa intenzione comprò pergamene e<w type="hyphen"> vo-</w>
+    <lb/>lumi di manoscritto, li studiò lungamente, tentando e <w type="hyphen">ri-</w>
+    <lb/>tentando ogni giorno prove novelle, sbagliando, <w type="hyphen">ricomin-</w>
+    <lb/>ciando da capo, consumando le sue notti, il suo danaro ed
+    <lb/>il carbone dei suoi fornelli. Per molto tempo la <term ana="#moral.negativo">mala <w type="hyphen">for-</w>
+    <lb/>tuna</term> lo perseguitò e le sue esperienze riuscirono sempre
+    <lb/><term ana="#moral.negativo">fallaci</term>, ma non per questo venne meno la sua costanza. <distinct type="arcaico">Ei</distinct> <w type="hyphen">la-</w>
+    <lb/>vorava per la felicità dell’uomo e cotale <term ana="#term.caratteristica">altissimo</term> scopo gli
+    <lb/>era innanzi agli occhi come visione animatrice; alla fine,
+    <lb/>dopo molti <measure ana="#measure.tempo">anni</measure> di travaglio, ei potè dire di aver raggiunto
+    <lb/>la sua meta, gridando anche lui la parola del greco <persName ana="#persName.storico"><w type="hyphen">Ar-</w>
+    <lb/>chimede</persName>, di fronte a tanta scoperta. Poi, come usano gli
+    <lb/><term ana="#term.ruolo">inventori</term>, si occupò a vezzeggiare la sua scoperta, a <w type="hyphen">ca-</w>
+    <lb/>rezzarla, a darle forme svariato, seducenti, a perfezionarla,
+    <cb n="2"/>
+    <lb/>in modo da poter dire agli uomini : <q>Eccola qui, io ve la
+    <lb/>dono bella e completa</q>
+</p>
+
+    <p facs="#263_paragrafo_7">
+<lb/>Ora accadile che sul terrazzino di <persName ana="#persName.fittizia">Cicho</persName> il <term ana="#term.ruolo">mago</term> <w type="hyphen">spor-</w>
+<lb/>gesse anche una porticina di una stanzaccia, dove abitava
+<lb/>con suo marito <persName ana="#persName.fittizia">Jovanuella di Canzio</persName>. Era costei <term ana="#term.caratteristica">maliziosa</term>,
+<lb/><term ana="#term.caratteristica">astuta</term> e <term ana="#term.caratteristica">linguacciuta</term> quanto mai femmina possa essere; e sua
+<lb/><term ana="#term.caratteristica">dilettosa</term> occupazione era conoscere i fatti del vicinato o <w type="hyphen">per-</w>
+<lb/>trarne personale vantaggio o per malignarvi su. Non è a dire
+<lb/>se la malvagia <persName ana="#moral.negativo #persName.fittizia">Jovanuella</persName> spiasse continuamente <persName ana="#persName.fittizia">Cicho</persName> il
+<lb/>mago; che anzi si arrovellava di giorno e non aveva tregua
+<lb/>nelle lenzuola alla notte, per la inappagata curiosità; e più
+<lb/>non riusciva a saper nulla, più, per dispetto, lacerava la
+<lb/>riputazione delle vicine e tormentava il marito <persName ana="#persName.fittizia">Giacomo</persName>,
+<lb/>guattero di cucina al <term ana="#term.caratteristica">real</term> palazzo. Ma non senza saviezza
+<lb/>corrono dettami popolari, esprimenti che la donna ottiene <w type="hyphen">sem-</w>
+<lb/>pre quello che vuole fortemente, e, malgrado le precauzioni
+<lb/>di segretezza adoperate da <persName ana="#persName.fittizia">Cicho</persName> il mago, malgrado le porte
+<lb/>chiuse, le finestre sbarrate, la <persName ana="#persName.fittizia">Jovanuella</persName> seppe il segreto
+<lb/>dello stregone. Fosse stato per buco di serratura, per <w type="hyphen">fes-</w>
+<lb/>sura di porta, per foro nel muro, o per altro, io non so.
+<lb/>Ma è certo che un giorno, la trionfante <persName ana="#persName.fittizia">Jovannella</persName> disse al
+<lb/><term ana="#term.caratteristica">guattero</term> marito:
+</p>
+    
+    <p facs="#263_paragrafo_8">
+    <lb/><q>— <persName ana="#persName.fittizia">Giacomo</persName>, se hai ardire di uomo, la fortuna nostra è
+<lb/>fatta.</q>
+<lb/><q>— Sei tu diventata <term ana="#term.ruolo">strega? Io mel sapeva</term>.</q>
+<lb/><q>— <term ana="#ling_regionali" ref="#def_malannaggia">Malann'aggia</term> la tua bocca sconsacrata! Ascolta. Vuoi</q>
+<lb/><q>tu dire al <roleName ana="#term.ruolo">cuoco</roleName> di palazzo che io conosco una <term ana="#term.cibo">vivanda</term> di</q>
+<lb/><q>così nuova o tanto squisita fattura da meritare l’assaggio</q>
+<lb/><q>del <roleName ana="#term.ruolo">re</roleName>?</q>
+<lb/><q>— Femmina, tu sei pazza.</q>
+<lb/><q>— Dio mi sradichi questa lingua che ho tanto cara, s’io</q>
+<lb/><q>mento.</q>
+</p>
+    
+        <p facs="#263_paragrafo_9">
+<lb/>E con molte sue persuasioni lo indusse a parlarne col <roleName ana="#term.ruolo">cuoco</roleName>, che a sua volta ne discusse col <roleName ana="#term.ruolo">maggiordomo</roleName>, il quale
+<lb/>ne tenne parola con un <roleName ana="#term.ruolo">conte</roleName>, che osò dirne al <roleName ana="#term.ruolo">re</roleName>. Piacque al
+<lb/>re la novella e dette ordine che la moglie del <roleName ana="#term.ruolo">guattero</roleName> si <w type="hyphen">re-</w>
+<lb/>casse nelle reali cucine e componesse la prelibata <term ana="#term.cibo">vivanda</term>:
+<lb/>infatti <persName ana="#persName.fittizia">Jovannella</persName> accorse prontamente ed in <measure ana="#measure.tempo">tre ore</measure> ebbe
+<lb/>tutto fatto. Ecco come: prese prima <term ana="#term.cibo">fior di farina</term>, lo impastò
+<lb/>con poca <term ana="#term.cibo">acqua</term>, <term ana="#term.cibo">sale</term> e <term ana="#term.cibo">uova</term>, maneggiando la pasta <term ana="#term.caratteristica">lungamente</term>
+<lb/>per raffinarla e per ridurla <term ana="#term.caratteristica">sottile sottile</term> come la tela;
+<lb/>poi la tagliò con un suo <term ana="#term.caratteristica">coltellaccio</term> in piccole striscie, le <w type="hyphen">ar-</w>
+<lb/>rotolò a forma di piccoli <term ana="#term.caratteristica">cannelli</term> e fattane una grande <w type="hyphen">quan-</w>
+<lb/>tità, essendo la pasta <term ana="#term.caratteristica">morbida</term> ed <term ana="#term.caratteristica">umidiccia</term>, la mise a <distinct type="arcaico"><w type="hyphen">rasciu-</w>
+<lb/>gare</distinct> al sole. Poi mise in un <term ana="#term.cibo">tegame</term>, <term ana="#term.cibo">strutto di porco</term>, <term ana="#term.cibo">cipolla tagliuzzata finissima</term> e <term ana="#term.cibo">sale</term>, lasciando friggere tutto; vi mise
+<lb/>un grosso pezzo di <term ana="#term.cibo">carne</term> e quando lo vide <term ana="#term.caratteristica">crogiolato bene</term>,
+<lb/>avendo acquistato un colore <term ana="#term.caratteristica">bruno-dorato</term>, versò nel <term ana="#term.cibo">tegame</term>
+<lb/>il <term ana="#term.cibo">succo denso e rosso dei pomodori</term>, che aveva spremuti in
+<lb/>uno staccio: coprì il <term ana="#term.cibo">tegame</term> e lasciò cuocere a fuoco lento,
+<lb/>carne e <term ana="#term.cibo">salsa</term>.
+</p>
+    
+  <p facs="#263_paragrafo_10">
+    <lb/>Poi che l’ora del pranzo fu venuta, ella tenne preparata
+<lb/>una caldaia di <term ana="#term.cibo">acqua bollente</term>, dove rovesciò i <term ana="#term.caratteristica">cannelli</term> di
+<lb/>pasta: intanto che cuocevano, ella grattugiò una <term ana="#term.cibo">grande quantità di formaggio</term> che ha nume da <placeName ana="#placeName.citta">Parma</placeName> e
+<lb/>si fabbrica in <placeName ana="#placeName.citta">Lodi</placeName>. Cotta a punto la pasta, la separò dal
+<lb/>l’acqua ed in un bacile di maiolica la condì mano mano con
+<lb/>una cucchiaiata di <term ana="#term.cibo">formaggio</term> ed una di <term ana="#term.cibo">salsa</term>. Così fu la
+<lb/>famosa <term ana="#term.cibo">vivanda</term> che andò innanzi al <roleName ana="#term.ruolo">grande Federico</roleName>, il
+<lb/>quale ne rimase <term ana="#term.caratteristica">maravigliato</term> e <term ana="#term.caratteristica">compiaciuto</term>; e chiamata
+<lb/>a sé la <persName ana="#persName.fittizia">Jovanuella di Cauzio</persName>, le chiese come avesse potuto
+<lb/>immaginare un <term ana="#term.caratteristica">connubio così armonioso e stupendo</term>. La
+<lb/>rea femmina disse che ne aveva avuta rivelazione in sogno,
+<lb/>da un <roleName ana="#term.ruolo">angelo</roleName>: il gran <roleName ana="#term.ruolo">re</roleName> volle che il suo <roleName ana="#term.ruolo">cuoco</roleName> imparasse
+<lb/>la ricetta e donò alla <persName ana="#persName.fittizia">Jovannella</persName> <measure ana="#measure.ricchezza">cento monete d’oro</measure>, <w type="hyphen">di-</w>
+<lb/>cendo che era molto a compensarsi colei, che per una sì
+<lb/>grande parte aveva concorso alla felicità dell’uomo. Ma non
+<pb n="264" facs="#pagina_264"/>
+<lb/>fu questa solamente la fortuna di <persName ana="#persName.fittizia">Jovannella</persName>, poiché ogni
+<lb/><roleName ana="#term.ruolo">conte</roleName> ed ogni <roleName ana="#term.ruolo">dignitario</roleName> volle avere la ricetta e mandò il
+<lb/>proprio <roleName ana="#term.ruolo">cuoco</roleName> ad imparare da lei, dandole <term ana="#term.caratteristica">grosso premio</term>;
+<lb/>e dopo i dignitari vennero i <rs type="socialClass" ana="#socialclass.borghesia">ricchi borghesi</rs> e poi i <roleName ana="#term.ruolo">mercanti</roleName>
+<lb/>e poi i <rs type="socialClass" ana="#socialclass">lavoratori di giornata</rs> e poi i <rs type="socialClass" ana="#socialclass.indigente">poveri</rs>, dando
+<lb/>ognuno alla donna quel che poteva. Nel corso di <measure ana="#measure.tempo">sei mesi</measure>
+<lb/>tutta <placeName ana="#placeName.citta">Napoli</placeName> si cibava dei <term ana="#term.cibo">deliziosi maccheroni — da <hi rend="italic"><term ref="#definizione_macarus">macarus</term></hi>, cibo divino</term> — e la <persName ana="#persName.fittizia">Jovannella</persName> era <term ana="#measure.ricchezza">ricca</term>.
+</p>
+    
+    
+<p facs="#264_paragrafo_11">
+<lb/>Intanto <persName ana="#persName.fittizia">Cicho</persName> il <roleName ana="#term.ruolo">mago</roleName>, solo solo nella sua <term ana="#term.caratteristica">caraeruccia</term>, <w type="hyphen">mo-</w>
+<lb/>dificava e variava la sua <term ana="#term.caratteristica">scoporta</term>. Pregustava il <term ana="#term.caratteristica">momento</term> in
+<lb/>cui, fatto noto agli uomini il <term ana="#term.caratteristica">segreto</term>, gliene sarebbe venuta
+<lb/><term ana="#moral.positivo">gratitudine</term>, <term ana="#moral.positivo">ammirazione</term> e <term ana="#measure.ricchezza">fortuna</term>. Infine, non vale di più
+<lb/>la scoperta di una nuova <term ana="#term.cibo">pietanza</term> che quella di un <term ana="#term.caratteristica">teorema
+<lb/> filosofico</term>? <sic>che</sic><corr>Che</corr> quella di una <term ana="#term.caratteristica">cometa</term>? <sic>che</sic><corr>Che</corr> quella di un nuovo
+<lb/><term ana="#term.caratteristica">insetto</term>? Bene dunque: e lodato senza fine sia l’uomo che la
+<lb/>fa. Ma un giorno che il <measure ana="#measure.tempo">termine</measure> era vicino, <persName ana="#persName.fittizia">Cicho</persName> il <roleName ana="#term.ruolo">mago</roleName>
+<lb/>uscì a passeggiare per la <placeName ana="#placeName.urbano">via del Molo</placeName>; arrivato presso la
+<lb/><placeName ana="#placeName.urbano">porta del Caputo</placeName> un <term ana="#term.caratteristica">noto odore</term> gli ferì le nari. Egli tremò
+<lb/>e volle rincorarsi, <term ana="#term.caratteristica">pensando</term> che era <term ana="#term.caratteristica">inganno</term>. Ma, <term ana="#term.caratteristica">róso dall’ansietà</term>,
+<lb/>entrò nella casa donde l’odore era venuto e domandò ad una <roleName ana="#term.ruolo">donna</roleName> che badava ad un <roleName ana="#term.ruolo">tegame</roleName>:
+</p>
+    
+<p facs="#264_paragrafo_12">
+<lb/><q>— Che cucini tu?</q>
+<lb/><q>— <term ana="#term.cibo">Maccheroni</term>, vecchio.</q>
+<lb/><q>— Chi te le insegnò, donna?</q>
+<lb/><q>— <persName ana="#persName.fittizia">Jovannella di Canzio</persName>.</q>
+<lb/><q>— E a lei?</q>
+<lb/><q>— Un angelo, dicono. Ella ne cucinò al <roleName ana="#term.ruolo">re</roleName>; ne vollero
+<lb/><roleName ana="#term.ruolo">i principi</roleName>, <roleName ana="#term.ruolo">i conti</roleName>, tutta <placeName ana="#placeName.citta">Napoli</placeName>. In qualunque casa entrerai,
+<lb/>o vecchio pallido e morente, troverai che vi bì cucinano <term ana="#term.cibo">maccheroni</term>. Hai fame? Vuoi tu <term ana="#term.caratteristica">cibartene</term>?</q>
+<lb/><q>— No. Addio.</q>
+</p>
+    
+<p facs="#264_paragrafo_13">
+<lb/>Entrato in varie case, trascinandosi a stento, <persName ana="#persName.fittizia">Cicho</persName> il
+<lb/>mago ebbe certezza dell’accaduto e del tradimento di <persName ana="#persName.fittizia">Jovannella</persName>; il custode del <placeName ana="#placeName.storico">palazzo reale</placeName> gli ripetè la storiella.
+<lb/>Allora, disperato d’ogni cosa, tornatosene alla sua casetta,
+<lb/>rovesciò lambicchi, storte, <term ana="#term.cibo">tegami</term>, fornelli, forme e coltelli;
+<lb/>ruppe, fracassò tutto; abbruciò volumi di chimica. E <w type="hyphen">partis-</w>
+<lb/>sene solo ed ignorato, senza che mai più fosse veduto <w type="hyphen">ri-</w>
+<lb/>tornare.
+</p>
+    
+<p facs="#264_paragrafo_14">
+<lb/>Come è <term ana="#term.caratteristica">naturale</term>, la gente disse che il diavolo aveva <w type="hyphen">por-</w>
+<lb/>tato via il mago. Ma venuta a morte la <persName ana="#persName.fittizia">Jovannella</persName>, dopo una
+<lb/>vita <term ana="#term.caratteristica">felice</term>, <term ana="#term.caratteristica">ricca</term> ed <term ana="#term.caratteristica">onorata</term>, come la godono per lo più i <term ana="#term.caratteristica"><w type="hyphen">mal-</w>
+<lb/>vagi</term>, malgrado le massime morali in contrario, nella dispe-
+<lb/>razione dell’<term ana="#term.caratteristica">agonia</term> confessò il suo peccato e morì urlando
+<lb/>come una dannata. Neppure tarda giustizia fu resa a <persName ana="#persName.fittizia">Cicho</persName>
+<lb/>il mago; la leggenda soggiunge che nella casa dei <placeName ana="#placeName.storico">Cortellari</placeName>,
+<lb/>dentro la stanzuccia del mago, alla notte del sabato, <persName ana="#persName.fittizia">Cicho</persName> il
+<lb/>mago ritorna a tagliare i suoi <term ana="#term.cibo">maccheroni</term>, <persName ana="#persName.fittizia">Jovannella di Canzio</persName> gira la mestola nella <term ana="#term.cibo">salsa del pomodoro</term>, e il diavolo
+<lb/>con una mano gratta il <term ana="#term.cibo">formaggio</term> e con l’altra soffia sotto
+<lb/>la <term ana="#term.cibo">caldaia</term>. Ma diabolica o angelica che sia la scoperta di <persName ana="#persName.fittizia">Cicho</persName>, essa ha formato la felicità dei <placeName ana="#placeName.citta">Napoletani</placeName> e nulla indica
+<lb/>che non continui a formarla, nei secoli dei secoli.
+</p>
+
+        <p facs="#264_paragrafo_15">
+            <lb/><persName ana="#persName.reale" ref="#MatildeSerao">Matilde Serao</persName>
+        </p>
+    </div>
+     
+    
+      
+      
+      
+   <div type="articolo" n="2" xml:id="articolo_essere_troppo_stimati">
+    <pb n="267" facs="#pagina_267"/>
+    <head>
+        <title ana="#title.principale" xml:id="titolo_ESSERE_TROPPO_STIMATI_p267" type="main">L'ESSERE TROPPO STIMATI.</title>
+    </head>
+
+      
+    <p facs="#p267_paragrafo_1">
+    <lb/><quote>«Scredita un <term ana="#term.animale">cane</term> e appiccalo</quote> » è un detto inglese <w type="hyphen">no-</w>
+    <lb/>tissimo, e i mali effetti de <term ana="#moral.negativo">i giudizi severi e alquanto maligni</term> del nostro prossimo sono un argomento così trito, che
+    <lb/>non mette conto di spendervi una parola di più. Ma che si
+    <lb/>possa altresì recar danno, benché in grado minore, nel modo
+    <lb/>opposto, è un fatto che in generale non si riconosce da tutti
+    <lb/>egualmente, o tale che non si farà forse opera vana dedicandogli un breve esame. 
+    <lb/><term ana="#moral.negativo">Se v’ha cosa da cui profondamente aborrisca chi, pur senza uscir fuori del comune, abbia sano intendimento</term> e <term ana="#moral.positivo">sentimento d’onore</term>, è quella di trovarsi in una
+    <lb/>condizione falsa : eppure questo è di necessità lo stato di
+    <lb/>qualunque <persName ana="#persName.generico">galantuomo</persName> a cui amici e conoscenti si ostinino
+    <lb/>nel voler attribuire <term ana="#moral.positivo">alte qualità di mente o di corpo</term>, ovvero
+    <lb/>ricchezze che in realtà non possiede. Da lui s’aspettano
+    <lb/>grandi cose, e a quest’aspettazione egli non è in grado di
+    <lb/>corrispondere. Gli si addossa un carico, a sopportare il quale
+    <lb/>non gli reggono le forze, e il peggio si è che, soccombendovi
+    <lb/>egli (come bisogna pure che avvenga o prima o poi), e vista
+    <lb/>la cantonata che si è presa, allora si può esser certi che
+    <lb/>coloro stessi, i quali tenevano da più di quel che era, se la
+    <lb/>pigliano con lui per il fiasco fatto, proprio come se l’errore ad
+    <lb/>essi occorso nel valutarlo fosse dipeso da <term ana="#moral.negativo">bugiarde vanterie</term>
+    <lb/>della loro vittima. Quelle <term ana="#moral.positivo">anime virtuose</term> si sdegnano di essere state messe in mezzo, e si dimenticano di aver esse fabbricato le <term ana="#moral.positivo">promesse lusinghiere</term> onde furono deluse. 
+    <lb/>Poniamo un <term ana="#socialclass.borghesia">proprietario</term> d’una modesta fortuna, che in una o in
+    <lb/>un’altra maniera si sia procacciata la nomea di un <term ref="#Creso"><persName ana="#persName.storico">Creso</persName></term>.
+    <lb/>La gente crede sia dovere di lui di tenere casa e borsa
+    <lb/>aperte, di dare il suo nome a quante sottoscrizioni vengon fuori sotto la cappa del cielo, e di tuffarsi a capo
+    <lb/>fitto in ogni sorta di prodigalità, sotto pena di passare per
+    <lb/><term ana="#moral.negativo">taccagno</term> e <term ana="#moral.negativo">avaro</term> se frustra queste aspettazioni. Oppure
+    <lb/>poniamo un <term ana="#socialclass.militare">militare</term>, a cui per favore di fortuna sia riuscita
+    <lb/>a bene un’impresa che i suoi amici vogliono di riffa attribuire
+    <pb n="267" facs="#pagina_267"/>
+    <cb n="2"/>
+<lb/>allo straordinario suo <term ana="#moral.positivo">ingegno strategico</term>, per quanto egli
+<lb/>onestamente protesti che non ha verun titolo a simili elogi.
+<lb/>Dato il caso che i loro <distinct type="metaforica">strombazzamenti</distinct> producessero
+<lb/>qualche effetto nelle alte regioni, e che a lui venisse affidato
+<lb/>un incarico di responsabilità al quale vi fosse <distinct type="arcaico">disadatto</distinct>,
+<lb/>ne conseguirebbero probabilmente dei disastri di cui gli
+<lb/>cadrebbe <choice><sic>adosso</sic><corr>addosso</corr></choice> tutto il biasimo; e questo lo colpisce dura
+<lb/>mente. Così pure un altro avrà certe attitudini punto ec
+<lb/>cezionali, che per circostanze fortuite sono salite sopra il
+<lb/>livello ordinario, e l’opinione pubblica coglie l’opportunità
+<lb/>per faro di lui una <term ana="#moral.positivo">celebrità</term>, benché egli stesso sappia benissimo di non avere nè spirito nè ingegno al di sopra degli
+<lb/>altri, e non abbia mai aspirato ad essere tenuto per un uomo
+<lb/>di <distinct type="arcaico"><term ref="#definizione_vaglia" ana="#moral.positivo">vaglia</term></distinct>. Anch’egli merita compassione, poiché è di con
+<lb/>tinuo turbato dal sentire dentro di sé come ognuno si ri
+<lb/>prometta da lui qualche cosa di buono che gli è impossibile
+<lb/>di compiere, e deve prevedere il giorno in cui i suoi amici,
+<lb/>scoprendo l’inganno onde si sono pasciuti, e considerandolo
+<lb/>un <distinct type="arcaico"><term ref="#definizione_ciurmatore" ana="#moral.negativo">ciurmatore</term></distinct>, gli volteranno probabilmente le spalle con
+<lb/><term ana="#moral.negativo">sprezzante disgusto</term>.
+</p>
+
+       <p facs="#p267_paragrafo_2"><quote ana="#div.versi">
+           <lg type="poesia" ana="#raccolta_versi" xml:id="poesia_centopie">
+               <!-- Versi della poesia -->
+               <l>Viveva il <persName ana="#persName.fittizia">Centopiè</persName> tranquillo e lieto,</l>
+               <l>Quando per <distinct type="arcaico"><term ref="#definizione_celia" ana="#term.caratteristica">celia</term></distinct> il rospo un dì gli chiese:</l>
+               <l>«Vorresti dirmi in grazia quale piede</l>
+               <l>Appresso l’altro muovi?» Studia e pensa</l>
+               <l>Il <distinct type="arcaico"><term ref="#definizione_tapinello" ana="#term.caratteristica">tapinello</term></distinct>, e tanto si confonde,</l>
+               <l>Che dentro un fosso resta dissennato,</l>
+               <l>A meditar sul come darà un passo.</l>
+           </lg>
+       </quote>
+       </p>
+
+
+<p facs="#p267_paragrafo_3">
+  <lb/>E ovvio come <distinct type="arcaico">sieno</distinct> più d’una le faccio sotto cui si pre
+  <lb/>senta la morale inculcata in queste righe. <choice><sic>Dove.è</sic><corr>Dov'è</corr></choice> beato
+  <lb/>l’ignorante, è <term ref="#definizione_savio" ana="#moral.negativo">follia esser <distinct type="arcaico">savio</distinct></term>, può essere una morale; le
+  <lb/><term ana="#moral.negativo">tristi conseguenze</term> di <term ana="#moral.negativo">domande inconsulte</term> e di una <term ana="#moral.negativo">curiosità
+  <lb/>impertinente</term>, è un’altra ; un <persName ana="#persName.generico">signore</persName> poi, alla cui opinione
+  <lb/>portiamo il massimo rispetto, ne ha suggerita una terza
+  <lb/>nella disgrazia di conoscere sé stessi. Ma dopo <term ana="#moral.positivo">seria considerazione</term> abbiamo finito col <term ref="#definizione_conchiudere"><distinct type="arcaico">conchiudere</distinct></term> che le afflizioni
+  <lb/>del centopiedi furono causate dalla fiducia del rospo nell’at-
+  <lb/>tribuirgli una quantità di cognizioni, che quello non aveva,
+  <lb/>intorno al proprio individuo. Esso vide come si ammet-
+  <lb/>teva per dato e fatto che dovesse sapere l’ordinata di
+  <lb/>sposizione e movenza delle sue gambe, e da quell’istante
+  <lb/>incominciò a <hi rend="italic">struggersi</hi> in deboli conati, cercando di cor
+  <lb/>rispondere a quella aspettazione. V’ ha chi, accorgendosi
+  <lb/>di essere in una tale situazione falsa, non <phr type="idiom">si dà per in<lb break="no"/>teso</phr> dell’ esagerata estimazione in cui è tenuto, e va di
+  <lb/>ritto per la propria strada come se nulla fosse : laddove
+  <lb/>altri, a <distinct type="arcaico">guisa</distinct> del centopiedi, si lascia ingannare da un
+  <lb/>mezzo dubbio circa alla possibilità che, al tirar delle somme,
+  <lb/>vi sia in lui più di quanto supponesse, e si <distinct type="letterario">travaglia</distinct> <distinct type="letterario">in<lb break="no"/>darno</distinct> in
+  <lb/><term ana="#moral.negativo">tentativi febbrili</term> per giustificare la <distinct type="letterario">riputazione</distinct> che
+  <lb/>gli è stata creata. Ma <distinct type="arcaico">sì</distinct> gli uni che gli altri si sentono op
+  <lb/>pressi dall’idea della sproporzione fra ciò che da loro si <w type="hyphen">at-</w>
+  <lb/>tende, e ciò che possono dare, e dalla previsione del di
+  <lb/>leggio e dell’ira che avranno da subire quando saranno
+  <lb/>riconosciuti <term ana="#moral.negativo">impari</term> alla <distinct type="letterario">riputazione</distinct>. Che questa sia un’<term ana="#moral.negativo">orribile ingiustizia</term> ognun lo vede; ma il mondo, a buon conto,
+  <lb/>s’inquieta raramente di simili faccende. Il suo primo istinto,
+  <lb/>quando una cosa non va <distinct type="letterario">pel giusto verso</distinct>, è di scaricare il
+  <lb/>biasimo sulle spalle altrui, tocca a chi tocca, purché non <distinct type="arcaico">sieno</distinct>
+  <lb/>le sue, e non è <distinct type="arcaico">punto</distinct> disposto ad ammettere che vi sia da
+  <lb/>ridire su una sentenza, sia pure strampalata, una volta che
+  <lb/>è stata proferita. Se una turba <distinct type="letterario">tumultuante</distinct> si sognasse che
+  <lb/>un tale ciabattino faccia il fornaio, e se stesse lì lì per <w type="hyphen">ro-</w>
+  <lb/>vesciarsi sulla sua bottega a fine di aver pane in tempo
+  <lb/>di carestia, la circostanza dell'esser egli niente altro che
+  <lb/>un ciabattino varrebbe difficilmente a salvare le su<w type="hyphen">e ve-</w>
+  <lb/>trine dal volare in frantumi qualora <distinct type="arcaico">ei</distinct> non riuscisse a <w type="hyphen">for-</w>
+  <lb/>nire le richieste pagnotte.
+</p>
+
+
+<p facs="#p267_paragrafo_4">
+  <lb/>Naturalmente coloro soltanto che, come <term ref="#Bill_Nye"><persName ana="#persName.reale">Bill Nye</persName></term>, non
+    <pb n="268"/>
+  <cb n="1"/>
+  <lb/>...hanno mai operato « con l’intenzione di ingannare,» noi
+  <lb/>stimiamo <term ana="#moral.negativo">meritevoli di commiserazione</term>. Per <term ref="#Tartufo"><persName ana="#persName.fittizia">Tartufo</persName></term> — quella
+  <lb/><term ana="#moral.negativo">grande personificazione dell’ipocrisia premeditata</term>, al quale
+  <lb/>debbono verosimilmente la loro origine tutti i <term ana="#moral.negativo">successivi
+  <lb/>ipocriti</term> de’ romanzi — non sentiamo ombra di pietà; <w type="hyphen">av-</w>
+  <lb/>venga di lui quel che può, è tutta colpa sua, ed egli <w type="hyphen">me-</w>
+  <lb/>rita appieno il suo castigo. Ma corre tutto il divario <w type="hyphen">im-</w>
+  <lb/>maginabile fra chi di proposito e per fatto proprio si pone
+  <lb/>in una condizione falsa, e chi vi si vede cacciato dentro
+  <lb/>unicamente per opera altrui. Poniamo il caso, a mo’ d’<w type="hyphen">esem-</w>
+  <lb/>pio, dell’<term ana="#socialclass.nobilta">aristocratico</term> <term ana="#moral.negativo">povero in canna</term> nel <term ref="#Don_Chisciotte"><persName ana="#persName.fittizia">Don Chisciotte</persName></term>,
+  <lb/>il quale, <term ana="#moral.negativo">troppo <distinct type="letterario">altiero</distinct></term> per lasciar supporre che non abbia
+  <lb/>di che sfamarsi, <distinct type="arcaico">comparisce</distinct> in <distinct type="arcaico">istrada</distinct><term ana="#moral.negativo"> « facendo l’ipocrita »</term>
+  <lb/>con uno stuzzicadenti in bocca, quando in realtà non ha
+  <lb/>mangiato nulla che ne richiegga l’uso. Ora supponete
+  <lb/>che quell’<term ana="#socialclass.nobilta">aristocratico</term> si fosse imbattuto in un amico che
+  <lb/>aveva in animo di invitarlo a pranzo, e che ne fu di-
+  <lb/>stolto perchè l’ostentata mostra dello stecchino l’indusse a
+  <lb/>credere che l’amico avesse già <distinct type="letterario">desinato</distinct>; in tal caso quest’<w type="hyphen">ul-</w>
+  <lb/>timo non avrebbe da ringraziar altri che se stesso per <w type="hyphen">es-</w>
+  <lb/>sere rimasto con la sua fame. Ma se per contro egli non
+  <lb/>avesse mai cercato di nascondere il vuoto dello stomaco, e
+  <lb/><distinct type="arcaico">non ostante</distinct> perdesse l’invito perchè s’era ficcato di mezzo
+  <lb/>un amico <term ana="#moral.negativo">malaccorto</term> a cui era <term ref="#definizione_talentato"><distinct type="letterario">talentato</distinct></term> di tenere alta la
+  <lb/>dignità del famelico dinanzi agli occhi del pubblico con
+  <lb/>decantare « i <term ana="#term.animale">fagiani</term> venuti da <placeName ana="#placeName.citta">Roma</placeName>, il <term ana="#term.animale">vitello</term> di 
+  <lb/><placeName ana="#placeName.citta">Sorrento</placeName>, le <term ana="#term.animale">pernici</term> di <placeName ana="#placeName.citta">Moron</placeName>, » ed altre simili <distinct type="letterario">leccornie</distinct> disprezzate
+  <lb/>da <term ref="#Sancio_Panza"><persName ana="#persName.fittizia">Sancio Panza</persName></term>, le quali apparivano abitualmente sulla
+  <lb/>tavola dell’amico, allora la sorte del <term ana="#moral.negativo">pover’uomo</term> sarebbe
+  <lb/>davvero <term ana="#term.caratteristica">crudele</term>. 
+  <lb/>Non v’ha dubbio che a lungo andare si
+  <lb/>verifica sempre il fatto che, come dice <term ref="#Cervantes"><persName ana="#persName.reale">Cervantes</persName></term>, <foreign xml:lang="es">cada uno
+  <lb/>es hijo de sus obras</foreign> — ognuno è figlio delle proprie azioni. Non di 
+  <lb/>meno è cosa quasi sicura che nella sua vita vi sarà questo o quel
+  <lb/>periodo, durante il quale <distinct type="arcaico">ei</distinct> sarà criticato e trattato più secondo il
+  <lb/>concetto che i suoi amici si sono formati delle sue qualità od attitudini, 
+  <lb/>che secondo i suoi meriti reali. E rammentandoci non solamente di
+  <lb/>questo, ma ancora della immensa facilità con cui sogliono errare i 
+  <lb/>nostri giudizi, guardiamoci dall’ascrivere avventatamente così il bene 
+  <lb/>come il male a chicchessia, e per quanto è possibile asteniamoci 
+  <lb/>dal giudicarci l’un l’altro senza alcuna necessità.
+</p>
+
+       <p facs="#p268_paragrafo_5">
+           <seg type="closer">
+               (Dallo <title ana="#title.principale" ref="#The_Spectator">Spectator</title>).
+           </seg>
+       </p>
+   </div>
+
+
+    <!-- SEZIONE: NOTIZIE -->
+    <div type="articolo" n="4" xml:id="sezione_notizie">
+    <head>
+        <title ana="#title.principale" type="main">NOTIZIE.</title>
+    </head>
+
+    <!--prima notizia-->
+    <div type="entry">
+       <p facs="#">
+          <lb/>- La <orgName ana="#orgName.tipografia">tipografia Salviucci</orgName> di <placeName ana="#placeName.citta" ref="#Roma">Roma</placeName> pubblica un’opera del prof. <persName ana="#persName.reale" ref="#RS">Ricca-<lb break="no"/>
+          Salorno</persName>, premiata dall’<orgName ana="#orgName.accademia" ref="#Lincei">Accademia dei Lincei</orgName>, sulla <hi rend="italic"><title ana="#title.principale">Storia delle dottrine<lb break="no"/>
+             finanziarie in Italia</title></hi>.
+       </p>
+    </div>
+
+    <!--seconda notizia -->
+    <div type="entry">
+       <p facs="#">
+          <lb/>- Dalla <orgName ana="#orgName.tipografia" ref="#Zoppelli">tipografia Zoppelli</orgName> di <placeName ana="#placeName.citta" ref="#Treviso">Treviso</placeName> sta per uscire la terza edi-
+          <lb break="no"/>zione della <title ana="#title.principale"><hi rend="italic">Raccolta di Proverbi veneti</hi></title> di <persName ana="#persName.reale" ref="#Pasqualigo">Cristoforo Pasqualigo</persName>, accre-<lb break="no"/>
+          sciuta di 2500 proverbi delle <placeName ana="#placeName.montagna" ref="#Alpi_Carniche">Alpi Carniche</placeName> o <placeName ana="#placeName.montagna" ref="#Alpi_Fassane">Fassane</placeName>, del <placeName ana="#placeName.regione" ref="#Trentino">Trentino</placeName>,
+          <lb/>e più di 500 nella parlata tedesca dei <placeName ana="#placeName.territorio" ref="#Sette_Comuni">Sette Comuni Vicentini</placeName>. Sarà un vo- <lb break="no"/>
+          <lb/>lume di 400 pagine.
+       </p>
+    </div>
+    </div>
+
+    <!-- SEZIONE: BIBLIOGRAFIA -->
+    <div type="articolo" n="5" xml:id="sezione_bibliografia">
+
+            <pb n="272" facs="#p.272"/>
+                    <cb n="1"/>
+
+                    <head>
+                    <title type="main" xml:id="pB.272" >BIBLIOGRAFIA.</title>
+                    </head>
+
+     <bibl>
+       <lb/><author><persName ana="#persName.reale" ref="#Simonsfeld_H">H. Simonsfeld</persName></author>, <title ana="#title.principale"><hi rend="italic">Studien zu Marino Sanuto dem Aelteren</hi></title>, (<title ana="#title.tradotto">Studi
+       <lb/>su Marino Sanuto il Vecchio</title>). — <placeName ana="#placeName.citta" ref="#Hannover">Hannover</placeName>, <date ana="#date.anno" when="1881">1881</date> (Dal
+       <lb/><title ana="#title.principale"><hi rend="italic">Neues Archiv etc</hi>.</title>, vol. <biblScope unit="volume">IIVII</biblScope>).
+    </bibl>
+
+    <p facs="">
+       <lb/>Nell’ occasione del terzo Congresso internazionale geo-
+       <lb/>grafico, che si è recentemente tenuto in <placeName ana="#placeName.citta" ref="#Venezia">Venezia</placeName>, quella Depu-<lb break="no"/>
+       <lb/>tazione di Storia Patria aveva deliberato di ripubblicare la
+       <lb/> celebre opera di <persName ana="#persName.storico" ref="#Sanuto">Marino Sanuto Torsello il Vecchio</persName>, intitolata
+       <lb/> <title ana="#title.principale"><hi rend="italic">Liber Secretorum
+       <lb/>fidelium Crucis</hi></title>, che fu già stampata nel <date ana="#date.anno" when="1611">1611</date>
+       <lb/> dal <persName ana="#persName.storico" ref="#Bongars">Bongars</persName> nel <term ana="#term.volume">II vol.</term> dei <title ana="#title.principale"><hi rend="italic">Gesta Dei per Francos</hi></title>. E l’idea
+       <lb/> era buonissima; che veramente la detta opera, scritta da un
+       <lb/> concittadino e contemporaneo di <persName ana="#persName.storico" ref="#MarcoPolo">Marco Polo</persName>, da un uomo
+       <lb/>competente che aveva visitato cinque volte il mondo orien-<lb break="no"/>
+       <lb/>tale, e ch’era insieme viaggiatore e cartografo e storico :è,
+       <lb/>come bene la giudicò il <persName ana="#persName.storico" ref="#Canale">Canale</persName>, un tesoro di notizie geo-<lb break="no"/>
+       <lb/>grafiche, nautiche, commerciali e statistiche; è un monu-
+       <lb/>mento preziosissimo della ricca letteratura storica e geogra-
+       <lb/>fica di <placeName ana="#placeName.citta" ref="#Venezia">Venezia</placeName>. Inoltre, l’unica edizione del <persName ana="#persName.storico" ref="#Bongars">Bongars</persName> è or-<lb break="no"/>
+       <lb/>mai insufficiente ai bisogni della critica moderna; ed è ben
+       <lb/>lontana da darci un’idea compiuta della progressiva elabo-<lb break="no"/>
+       <lb/>razione che subì quest’ opera del <persName ana="#persName.storico" ref="#Sanuto">Sanuto</persName>, il quale è certo
+       <lb/> che l’accrebbe e la rilavorò più volte prima o dopo d’averla
+       <lb/>presentata a <persName ana="#persName.storico" ref="#Giovanni_XXII">Giovanni XXII</persName> nel <date ana="#date.anno" when="1321">1321</date>.
+    </p>
+
+    <p facs="">
+       <lb/>Ma la riedizione del <persName ana="#persName.storico" ref="#Sanuto">Sanuto</persName>, perchè riuscisse veramente
+       <lb/>critica ed esemplare, richiedeva un lavoro di preparazione
+       <lb/> lungo e faticoso : e il tempo si presentava troppo ristretto:
+       <lb/> onde la Deputazione dovette dismetterne, almeno per ora,
+       <lb/> il pensiero, esponendone le ragioni, nell’ <title ana="#title.principale"><hi rend="italic">Archivio Veneto</hi></title>
+       <lb/> del <date ana="#date.anno" when="1880">1880</date> (<term ana="#term.volume">vol. XX</term>, p.388-402), in alcune pagine, che possono
+       <lb/> considerarsi come un utilissimo contributo ai nuovi studi
+       <lb/> intorno al <persName ana="#persName.storico" ref="#Sanuto">Sanuto</persName>, e alla nuova edizione che è desiderabile
+       <lb/> si faccia una volta o l’altra in <placeName ana="#placeName.citta" ref="#Venezia">Venezia</placeName>.
+    </p>
+
+    <p facs="">
+       <lb/>In tale occasione il dott. <persName ana="#persName.reale" ref="#Simonsfeld">Enrico Simonsfeld</persName>, di <placeName ana="#placeName.citta" ref="#Monaco">Monaco</placeName>
+       <lb/> (che da parecchi anni si occupa di storiografia veneziana
+       <lb/> e ne ha già pubblicati dei lodevoli saggi), scrisse una let-<lb break="no"/>
+       <lb/>tera alla Deputazione Veneta, rendendo conto di alcuni co-<lb break="no"/>
+       <lb/>dici Sanutiani da lui veduti (<title ana="#title.principale"><hi rend="italic">Arch. Veneto</hi></title>, <term ana="#term.volume">XX</term>, 401): ora,
+       <lb/> nel <title ana="#title.principale"><hi rend="italic">Neues Archiv</hi></title>, è tornato a trattare più largamente lo
+       <lb/> stesso argomento, ricavando dallo studio comparativo dei
+       <lb/>codici notizie importanti su quella che sopra abbiamo chia-<lb break="no"/>
+       <lb/>mata progressiva elaborazione dell’opera Sanutiana, e sulle
+       <lb/> carte geografiche che le facevano corredo.
+    </p>
+
+    <p facs="">
+       <lb/>I codici esaminati dal <persName ana="#persName.reale" ref="#Simonsfeld_H">Simonsfeld</persName> sono dieci ; nove dei
+       <lb/> quali italiani, e uno bavarese, già studiato da <persName ana="#persName.storico" ref="#Kunstmann_F">Federigo
+       <lb/> Kunstmann</persName>. Quattro di questi codici contengono il <title ana="#title.principale"><hi rend="italic">Liber
+       <lb/> Secretorum</hi></title> nella forma ch’è pubblicata dal <persName ana="#persName.storico" ref="#Bongars_J">Bongars</persName> ; e anzi
+       <lb/> uno di questi (Vatic. Regin. 548, sec. XIV) pare all’A.
+       <lb/> che possa essere quello stesso cod. del <persName ana="#persName.storico" ref="#Petavio">Petavio</persName>, che servì 
+       <lb/>di base alla stampa. Ma gli altri presentano notevoli dif-<lb break="no"/>
+       <lb/>ferenze; e permettono di distinguere tre redazioni del <title ana="#title.principale"><hi rend="italic">Liber
+       <lb/> Secretorum</hi></title>. La prima consisto nel solo primo libro, ed è
+       <lb/> compilata tra il <date ana="#date.anno" when="1306">1306</date> e il <date ana="#date.anno" when="1309">1309</date>. La seconda contiene il pri-<lb break="no"/>
+       <lb/>mo libro nella forma presente; il secondo libro (cominciato
+       <lb/> nel <date ana="#date.anno" when="1312">1312</date>), e il terzo in forma più breve che presso il Bon-<lb break="no"/>
+       <lb/>gars ; e questa fu compiuta tra il <date ana="#date.anno" when="1318">1318</date> e il <date ana="#date.anno" when="1321">1321</date>. La terza
+       <lb/> redazione infine contiene l’opera completa, col terzo libro
+    </p>
+
+
+    <pb n="2" facs="#"/>
+    <cb n="2"/>
+    <p facs="">
+       <lb/>notevolmente accresciuto, e sembra essere stata rifatta dopo
+       <lb/> la presentazione dell’opera al Papa, tra il <date ana="#date.anno" when="1321">1321</date> e il <date ana="#date.anno" when="1322">1322</date>.
+    </p>
+
+    <p facs="">
+       <lb/> Hanno poi uno speciale interesse le notizie che il
+       <lb/><persName ana="#persName.reale" ref="#Simonsfeld">Simonsfeld</persName> dà del cod. Vatic. 2972, che contiene, unico fra
+       <lb/> quanti se ne conoscono, <title ana="#title.principale">!a Carta del Mare Mediterraneo</title> in
+       <lb/>nove fogli. Da un preambolo del <persName ana="#persName.storico" ref="#Sanuto">Sanuto</persName> sappiamo ch’ egli
+       <lb/> presentò al Papa, oltre l’opera sua in due libri, quattro
+       <lb/> mappe geografiche, cioè: <hi rend="italic">unam de mari mediterraneo ; se-<lb break="no"/>
+       <lb/>cundam de mari et terra; terciam de terra sancta; quar-
+       <lb/>tam vero de terra Egypti</hi>. Ma il <persName ana="#persName.storico" ref="#Bongars_J">Bongars</persName> pubblica sol-<lb break="no"/>
+       <lb/>tanto (dal codice del <persName ana="#persName.storico" ref="#Petavio">Petavio</persName>) le tre ultime, aggiuntevi
+       <lb/> le piante di
+       <lb/><placeName ana="#placeName.citta" ref="#Gerusalemme">Gerusalemme</placeName> e di <placeName ana="#placeName.citta" ref="#Tolemaide">Tolemaide</placeName>; o lamenta la
+       <lb/> perdita della mappa del Mediterraneo. E perduta pure
+       <lb/> la dice il <persName ana="#persName.storico" ref="#Lelewel">Lelewel</persName> (<title ana="#title.principale"><hi rend="italic">Géogr. du moyen âge</hi></title>, <term ana="#term.volume">II</term>, 31), se non che
+       <lb/> riferisce la descrizione fattane da <persName ana="#persName.storico" ref="#Zurla">Placido Zurla</persName> nel <date ana="#date.anno" when="1818">1818</date>,
+       <lb/> secondo un codice dell’ab. <persName ana="#persName.storico" ref="#Canonici">Canonici</persName>, anche questo ora per-<lb break="no"/>
+       <lb/>duto; dalla quale descrizione si ricava che tale mappa era
+       <lb/> in più tavole. Ciò posto, pare a noi molto importante la
+       <lb/> scoperta del <persName ana="#persName.reale" ref="#Simonsfeld">Simonsfeld</persName> : e crediamo con lui che in quei
+       <lb/> nove fogli del citato Cod. Vatic, si contenga appunto quella
+       <lb/> <hi rend="italic">mappa de’ mari mediterraneo</hi>, finora rimpianta e desiderata.
+       <lb/> E la scoperta sarebbe anche più importante, se veramente
+       <lb/> codesto codice fosse lo stesso presentato dal <persName ana="#persName.storico" ref="#Sanuto">Sanuto</persName> a papa
+       <lb/> <persName ana="#persName.storico" ref="#Giovanni_XXII">Giovanni XXII</persName>, come il <persName ana="#persName.reale" ref="#Simonsfeld">Simonsfeld</persName> crede di potere arguire
+       <lb/> dalla bellezza della scrittura, e dalla ricchezza straordina-<lb break="no"/>
+       <lb/>ria delle miniature e degli ornamenti: su di che non osia-<lb break="no"/>
+       <lb/>mo dare un reciso giudizio.
+    </p>
+
+
+
+
+    <bibl>
+       <lb/><persName ana="#persName.reale" ref="#Pedrocchi">D. C. Pedrocchi</persName>, <title ana="#title.principale">Il Caffè Pedrocchi</title>. <title ana="#title.secondario">Memorie edite e inedite
+       <lb/>raccolte e pubblicate in occasione del cinquantesimo anni-
+       <lb/>versario della sua apertura</title>. — <placeName ana="#placeName.citta" ref="#Padova">Padova</placeName>, <orgName ana="#orgName.editore">Prosperini</orgName>, <date ana="#date.anno" when="1881">1881</date>.
+    </bibl>
+
+    <p facs="">
+       <lb/> Sono ormai cinquanta
+       <lb/>anni dacché per opera di <persName ana="#persName.storico" ref="#Pedrocchi">Antonio
+       <lb/> Pedrocchi</persName> fu aperto a <placeName ana="#placeName.citta" ref="#Padova">Padova</placeName> il più bel Caffè d’Europa, il
+       <lb/> quale, com’ è noto, s’intitolò dal nome del suo operosissimo
+       <lb/> fondatore, e quel nome andrà sempre unito a quello di <persName ana="#persName.storico" ref="#Jappelli">Giu-<lb break="no"/>
+       <lb/>seppe Jappelli</persName>, architetto dell’insigne edificio. Il <persName ana="#persName.storico" ref="#Pedrocchi">Pedrocchi</persName>
+       <lb/> si ebbe, durante la vita, tutti i plausi e le lodi che è pos-<lb break="no"/>
+       <lb/>sibile di avere: visite di sovrani, visite di personaggi cospi-<lb break="no"/>
+       <lb/>cui, versi e prose dei letterati più rinomati del suo tempo.
+       <lb/> Fu anco pubblicato un periodico col nome del celebre caffè. 
+    </p>
+    <p facs="">
+       <lb/>Nell’ occorrenza del cinquantesimo anniversario dell’aper-<lb break="no"/>
+       <lb/>tura del Caffè Pedrocchi è stato pubblicato un volume ove
+       <lb/>sono raccolti i versi e le prose che i contemporanei più illu-<lb break="no"/>
+       <lb/>stri dettarono, come dicemmo, per celebrare il fondatore e 
+       <lb/>1’ architetto di quel Caffè. A questa raccolta va innanzi un
+       <lb/>cenno del signor <persName ana="#persName.reale" ref="#Anserini">Alessandro Anserini</persName>, scritto con forma fa-<lb break="no"/>
+       <lb/>cile e chiara, pieno di assennati concetti intorno all’influenza
+       <lb/> che ha l' ideale per mandare ad ad effetto le grandi cose non
+       <lb/> solo, ma anco le più modeste.
+    </p>
+
+        </div>
+</body>
+
+
+
+
+    <back>
+        <div type="appendice">
+            <head>Glossario e Indice dei Nomi</head>
+
+            <entry xml:id="definizione_Salutifera_incarnazione">
+                <form>Salutifera Incarnazione</form>
+                <def>Formula liturgica cristiana per indicare l'anno a partire dalla nascita di Cristo, equivalente ad "Anno Domini". L'espressione sottolinea il carattere salvifico (salutifera) dell'Incarnazione del Verbo.</def>
+                <ref target="https://www.treccani.it/vocabolario/incarnazione/"/>
+            </entry>
+
+            <entry xml:id="def_malannaggia">
+                <form>Malann'aggia</form>
+                <def>Esclamazione napoletana di disappunto, contrazione di "mal anno aggia" (che tu abbia un anno di mali). Imprecazione lieve tipica del dialetto napoletano.</def>
+            </entry>
+
+            <entry xml:id="definizione_vaglia">
+                <form>Vaglia</form>
+                <def>Nel linguaggio letterario, valore, merito, eccellenza.</def>
+                <ref target="https://www.treccani.it/vocabolario/vaglia1/"/>
+            </entry>
+            <entry xml:id="definizione_ciurmatore">
+                <form>Ciurmatore</form>
+                <def>Chi incanta o inganna con chiacchiere e raggiri.</def>
+                <ref target="https://www.treccani.it/vocabolario/ciurmatore/"/>
+            </entry>
+            <entry xml:id="definizione_celia">
+                <form>Celia</form>
+                <def>Motto o atto scherzoso.</def>
+                <ref target="https://www.treccani.it/vocabolario/celia/"/>
+            </entry>
+            <entry xml:id="definizione_tapinello">
+                <form>Tapinello</form>
+                <def>Diminutivo di tapino. Persona meschina o infelice.</def>
+                <ref target="https://www.treccani.it/vocabolario/tapino/"/>
+            </entry>
+            <entry xml:id="definizione_savio">
+                <form>Savio</form>
+                <def>Che ha o dimostra senno e saggezza.</def>
+                <ref target="https://www.treccani.it/vocabolario/savio/"/>
+            </entry>
+
+            <entry xml:id="definizione_macarus">
+                <form>macarus</form>
+                <def>Forse dal gr. μάκαρ «beato», epiteto che si dà ai morti: in origine si sarebbe indicato con questo nome un cibo che si consumava nei banchetti funebri</def>
+                <ref target="https://www.treccani.it/vocabolario/maccherone/"/>
+            </entry>
+
+            <entry xml:id="definizione_conchiudere">
+                <form>Conchiudere</form>
+                <def>Variante arcaica di concludere.</def>
+                <ref target="https://www.treccani.it/vocabolario/conchiudere/"/>
+            </entry>
+            <entry xml:id="definizione_talentato">
+                <form>Talentare</form>
+                <def>Verbo letterario: andare a genio, piacere.</def>
+                <ref target="https://www.treccani.it/vocabolario/talentare/"/>
+            </entry>
+
+
+
+
+
+            <listPerson>
+                <person xml:id="Cicho">
+                    <persName>
+                        <forename>Cicho</forename>
+                        <addName type="epithet">il mago</addName>
+                        <ref target="https://it.wikisource.org/wiki/Leggende_napoletane/Il_segreto_di_Cicho">
+                            Cicho il mago in Leggende Napoletane
+                        </ref>
+                    </persName>
+                    <note>Protagonista della leggenda di Matilde Serao; inventore segreto dei maccheroni, creduto erroneamente uno stregone dai suoi contemporanei.</note>
+                </person>
+
+                <person xml:id="AlaeddinKayqubadI">
+                    <persName>
+                        <forename>Alaeddin</forename>
+                        <surname>Kayqubad I</surname>
+                        <ref target="https://www.treccani.it/enciclopedia/alaeddin-kaigubad-i">Alaeddin Kaigubad I su Treccani</ref>
+                    </persName>
+                    <note>Sultano dei Selgiuchidi di Rum dal 1220 al 1237, spesso identificato nelle cronache occidentali come il Gran Turco del tempo.</note>
+                </person>
+
+                <person xml:id="Archimede">
+                    <persName>
+                        <forename>Archimede</forename>
+                        <ref target="https://www.treccani.it/enciclopedia/archimede">Archimede su Treccani</ref>
+                    </persName>
+                    <note>Matematico, fisico e inventore siracusano; citato nel testo per il suo celebre esclamativo "Eureka".</note>
+                </person>
+
+                <person xml:id="Jovanuella">
+                    <persName>
+                        <forename>Jovanuella</forename>
+                        <nameLink>di</nameLink>
+                        <surname>Canzio</surname>
+                        <ref target="https://it.wikisource.org/wiki/Leggende_napoletane/Il_segreto_di_Cicho">
+                            Jovanuella in Leggende Napoletane
+                        </ref>
+                    </persName>
+                    <note>Personaggio della leggenda "Il segreto di Cicho" di Matilde Serao; moglie del guattero Giacomo e responsabile del furto della ricetta dei maccheroni.</note>
+                </person>
+
+                <person xml:id="Cervantes">
+                    <persName>
+                        <forename>Miguel</forename>
+                        <surname>de Cervantes Saavedra</surname>
+                        <ref target="https://www.treccani.it/enciclopedia/miguel-de-cervantes-saavedra">Miguel de Cervantes su Treccani</ref>
+                    </persName>
+                    <note>Autore del Don Chisciotte.</note>
+                </person>
+
+                <person xml:id="Creso">
+                    <persName>
+                        <name>Creso</name>
+                        <ref target="https://www.treccani.it/enciclopedia/creso">Creso su Treccani</ref>
+                    </persName>
+                    <note>Re di Lidia, simbolo di ricchezza.</note>
+                </person>
+
+                <person xml:id="Don_Chisciotte">
+                    <persName>
+                        <name>Don Chisciotte</name>
+                        <ref target="https://www.treccani.it/enciclopedia/don-chisciotte-della-mancia">Don Chisciotte su Treccani</ref>
+                    </persName>
+                </person>
+
+                <person xml:id="Sancio_Panza">
+                    <persName>
+                        <forename>Sancho</forename>
+                        <surname>Panza</surname>
+                        <ref target="https://www.treccani.it/enciclopedia/sancho-panza">Sancho Panza su Treccani</ref>
+                    </persName>
+                </person>
+
+                <person xml:id="Tartufo">
+                    <persName>
+                        <name>Tartufo</name>
+                        <ref target="https://www.treccani.it/enciclopedia/tartuffe">Tartufo su Treccani</ref>
+                    </persName>
+                </person>
+
+                <person xml:id="Centopie">
+                    <persName>
+                        <name>Centopie</name>
+                    </persName>
+                </person>
+
+                <person xml:id="Bill_Nye">
+                    <persName>
+                        <forename>Edgar Wilson</forename>
+                        <surname>Nye</surname>
+                        <addName type="pseudonym">Bill Nye</addName>
+                        <ref target="https://www.britannica.com/biography/Bill-Nye">Bill Nye su Britannica</ref>
+                    </persName>
+                </person>
+
+                <person xml:id="Dio">
+                    <persName>
+                        Dio
+                        <ref target="https://www.treccani.it/enciclopedia/dio/">Voce Treccani: Dio</ref>
+                    </persName>
+                    <note>Divinità nella tradizione religiosa monoteistica.</note>
+                </person>
+
+            </listPerson>
+
+            <!--LUOGHI-->
+            <listPlace>
+
+                <!-- Principali città citate   -->
+                <place xml:id="Roma">
+                    <placeName type="city">Roma</placeName>
+                    <location><country key="IT">Italia</country></location>
+                    <note>Capitale d'Italia. Sede della direzione della Rassegna Settimanale dal fascicolo n. 44 (novembre 1878). Citata nel testo come luogo di provenienza dei fagiani serviti a tavola.</note>
+                    <ptr type="url" target="https://www.treccani.it/enciclopedia/roma/"/>
+                </place>
+
+                <place xml:id="FI">
+                    <placeName type="city">Firenze</placeName>
+                    <location><country key="IT">Italia</country></location>
+                    <note>Città di fondazione della Rassegna Settimanale (1878). Sede della Biblioteca Nazionale Centrale che conserva l'esemplare codificato.</note>
+                    <ptr type="url" target="https://www.treccani.it/enciclopedia/firenze/"/>
+                </place>
+
+                <!-- Alias: usato nel corpo con ref="#Firenze" -->
+                <place xml:id="Firenze">
+                    <placeName type="city">Firenze</placeName>
+                    <location><country key="IT">Italia</country></location>
+                    <note>Vedi voce principale: <ref target="#FI"/>.</note>
+                </place>
+
+                <place xml:id="PI">
+                    <placeName type="city">Pisa</placeName>
+                    <location>
+                        <country key="IT">Italia</country>
+                        <region>Toscana</region>
+                    </location>
+                    <note>Sede dell'Università di Pisa, istituzione promotrice dell'edizione digitale.</note>
+                    <ptr type="url" target="https://www.treccani.it/enciclopedia/pisa/"/>
+                </place>
+
+                <place xml:id="Napoli">
+                    <placeName type="city">Napoli</placeName>
+                    <location><country key="IT">Italia</country></location>
+                    <note>Città protagonista del primo articolo ("Un segreto"): ambientazione della leggenda di Cicho il mago e dell'invenzione dei maccheroni. Regnata nel 1220 da Federico II di Svevia.</note>
+                    <ptr type="url" target="https://www.treccani.it/enciclopedia/napoli/"/>
+                </place>
+
+                <place xml:id="Palermo">
+                    <placeName type="city">Palermo</placeName>
+                    <location><country key="IT">Italia</country><region>Sicilia</region></location>
+                    <note>Città del regno di Federico II di Svevia, citata all'inizio del primo articolo insieme a Napoli.</note>
+                    <ptr type="url" target="https://www.treccani.it/enciclopedia/palermo/"/>
+                </place>
+
+                <place xml:id="Parma">
+                    <placeName type="city">Parma</placeName>
+                    <location><country key="IT">Italia</country><region>Emilia-Romagna</region></location>
+                    <note>Citata nel primo articolo come luogo di produzione del formaggio grattugiato sui maccheroni ("formaggio che ha nome da Parma").</note>
+                    <ptr type="url" target="https://www.treccani.it/enciclopedia/parma/"/>
+                </place>
+
+                <place xml:id="Lodi">
+                    <placeName type="city">Lodi</placeName>
+                    <location><country key="IT">Italia</country><region>Lombardia</region></location>
+                    <note>Citata nel primo articolo come luogo di produzione del formaggio ("si fabbrica in Lodi"), riferimento al formaggio lodigiano.</note>
+                    <ptr type="url" target="https://www.treccani.it/enciclopedia/lodi/"/>
+                </place>
+
+                <place xml:id="Sorrento">
+                    <placeName type="city">Sorrento</placeName>
+                    <location><country key="IT">Italia</country><region>Campania</region></location>
+                    <note>Citata nel secondo articolo come provenienza del vitello servito alla mensa dell'amico dell'aristocratico di Don Chisciotte.</note>
+                    <ptr type="url" target="https://www.treccani.it/enciclopedia/sorrento/"/>
+                </place>
+
+                <!-- Luoghi stranieri -->
+                <place xml:id="Svevia">
+                    <placeName type="region">Svevia</placeName>
+                    <location><country key="DE">Germania</country></location>
+                    <note>Regione storica della Germania meridionale, casa della dinastia degli Hohenstaufen. Federico II era detto "di Svevia" per la sua appartenenza a questa casata.</note>
+                    <ptr type="url" target="https://www.treccani.it/enciclopedia/svevia/"/>
+                </place>
+
+                <place xml:id="Moron">
+                    <placeName type="city">Morón de la Frontera</placeName>
+                    <location><country key="ES">Spagna</country><region>Andalusia</region></location>
+                    <note>Città spagnola citata nel secondo articolo come provenienza delle pernici servite a tavola, in un passo tratto o adattato dallo Spectator.</note>
+                </place>
+
+                <!-- Luoghi urbani napoletani (spazi interni al racconto) -->
+                <place xml:id="vicoCortellari">
+                    <placeName type="street">Vico dei Cortellari</placeName>
+                    <location>
+                        <settlement ref="#Napoli">Napoli</settlement>
+                    </location>
+                    <note>Vicolo medievale di Napoli appartenente al Seggio di Portanova, ambientazione principale della leggenda di Cicho il mago nel primo articolo.</note>
+                </place>
+
+                <place xml:id="portaDelCaputo">
+                    <placeName type="urban">Porta del Caputo</placeName>
+                    <location>
+                        <settlement ref="#Napoli">Napoli</settlement>
+                    </location>
+                    <note>Porta cittadina di Napoli nei pressi della quale Cicho sente per la prima volta l'odore dei maccheroni già diffusi in tutta la città.</note>
+                </place>
+
+                <place xml:id="viaDelMolo">
+                    <placeName type="street">Via del Molo</placeName>
+                    <location>
+                        <settlement ref="#Napoli">Napoli</settlement>
+                    </location>
+                    <note>Via napoletana sulla quale passeggia Cicho il mago nel momento in cui scopre che il suo segreto è stato divulgato.</note>
+                </place>
+
+                <place xml:id="palazzoReale">
+                    <placeName type="building">Palazzo Reale</placeName>
+                    <location>
+                        <settlement ref="#Napoli">Napoli</settlement>
+                    </location>
+                    <note>Palazzo reale di Napoli, il cui custode conferma a Cicho il diffondersi della ricetta dei maccheroni fino alla corte di Federico II.</note>
+                </place>
+
+            </listPlace>
+
+            <!-- ORGANIZZAZIONI -->
+            <listOrg>
+
+                <!-- Istituzioni accademiche -->
+                <org xml:id="UniPi">
+                    <orgName full="yes">Università di Pisa</orgName>
+                    <orgName type="short">UniPi</orgName>
+                    <orgName type="url">unipi.it</orgName>
+                    <location><settlement ref="#PI">Pisa</settlement></location>
+                    <note>Istituzione accademica promotrice del progetto di edizione digitale per il corso di Codifica di Testi.</note>
+                    <ptr type="url" target="https://www.unipi.it/"/>
+                </org>
+
+
+                <!-- Editori e tipografi -->
+                <org xml:id="CEB">
+                    <orgName full="yes">Casa Editrice Barbéra</orgName>
+                    <orgName type="short">Barbéra</orgName>
+                    <location><settlement ref="#FI">Firenze</settlement></location>
+                    <note>Casa editrice fiorentina fondata da Gaspero Barbéra nel 1854. Editrice e tipografa della Rassegna Settimanale nella sua fase iniziale a Firenze; si occupava anche della stampa del periodico.</note>
+                    <ptr type="url" target="https://www.treccani.it/enciclopedia/gasparo-barbera_%28Dizionario-Biografico%29/"/>
+                </org>
+
+                <!-- Istituzioni civili storiche -->
+                <org xml:id="SeggioDiPortanova">
+                    <orgName full="yes">Seggio di Portanova</orgName>
+                    <location><settlement ref="#Napoli">Napoli</settlement></location>
+                    <note>Uno dei cinque Seggi (o Sedili) del patriziato napoletano medievale, ovvero le circoscrizioni nobiliari che governavano i rioni della città. Il vico dei Cortellari, ambientazione del primo articolo, apparteneva alla giurisdizione di questo Seggio.</note>
+                    <ptr type="url" target="https://www.treccani.it/enciclopedia/napoli-storia_res-b67e0f28-8869-11dc-8e9d-0016357eee51_%28Enciclopedia-Italiana%29/"/>
+                </org>
+
+            </listOrg>
+
+            <!-- OPERE BIBLIOGRAFICHE CITATE -->
+            <listBibl>
+
+
+                <bibl xml:id="The_Spectator">
+                    <title>The Spectator</title>
+                    <date when="1711">1711</date>
+                    <note>Celebre periodico britannico di costume e politica fondato da Joseph Addison e Richard Steele nel 1711. Il secondo articolo ("L'essere troppo stimati") è una traduzione/adattamento da questo periodico.</note>
+                    <ref target="https://en.wikipedia.org/wiki/The_Spectator_(1711_magazine)"/>
+                </bibl>
+
+            </listBibl>
+
+        </div>
+    </back>
+    </text>
+</TEI>

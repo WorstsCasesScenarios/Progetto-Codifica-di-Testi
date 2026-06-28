@@ -1,0 +1,808 @@
+/* RASSEGNA SETTIMANALE — Foglio di stile */
+
+/* --- RESET & BASE --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background-color: #f9f9f9;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+
+/* BANNER */
+.banner {
+  background-color: #ffffff;
+  border-bottom: 3px solid #1a1a1a;
+  padding: 2rem 0 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.banner h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.4rem;
+}
+
+.banner p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Navigazione articoli */
+#opere-ancoraggio {
+  margin-top: 1.2rem;
+}
+
+#opere-ancoraggio ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+#opere-ancoraggio a {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 2px;
+  transition: background-color 0.2s;
+}
+
+#opere-ancoraggio a:hover {
+  background-color: #444;
+}
+
+
+/* SCHEDA INFORMAZIONI */
+#informazioni-rassegna {
+  margin-bottom: 3rem;
+}
+
+.scheda-card,
+.scheda-card-secondary {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.scheda-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.scheda-titolo-principale {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.scheda-titolo-categoria {
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* Griglia due colonne (fondatori + editore) */
+.scheda-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .scheda-grid-2 { grid-template-columns: 1fr; }
+}
+
+/* Tabella esemplare */
+.scheda-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.scheda-table tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.scheda-table tr:last-child {
+  border-bottom: none;
+}
+
+.scheda-table-key {
+  width: 35%;
+  font-weight: 600;
+  color: #555;
+  padding: 0.45rem 0.5rem 0.45rem 0;
+  vertical-align: top;
+}
+
+.scheda-table td:not(.scheda-table-key) {
+  padding: 0.45rem 0;
+  color: #1a1a1a;
+}
+
+/* Timeline storia */
+.scheda-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid #e0e0e0;
+  margin-top: 0.5rem;
+}
+
+.scheda-evento {
+  padding-left: 0.8rem;
+}
+
+.scheda-evento-data {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+
+.scheda-evento-luogo {
+  font-size: 0.88rem;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 0.2rem;
+}
+
+.scheda-evento-testo {
+  font-size: 0.92rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Footer scheda */
+.scheda-footer {
+  background: #f4f4f4;
+  border-radius: 4px;
+  padding: 0.9rem 1.2rem;
+  font-size: 0.88rem;
+  color: #555;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  align-items: center;
+}
+
+.scheda-footer a {
+  color: #1a1a1a;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.scheda-footer a:hover {
+  color: #555;
+}
+
+
+/* FRONTESPIZIO */
+#front {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#front-titolo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+#front-sottotitolo {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+#front-colophon {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+/* ARTICOLI */
+#storia_un_segreto,
+#articolo_essere_troppo_stimati,
+#sezione_notizie,
+#sezione_bibliografia {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 2rem 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Titoli articolo */
+#storia_un_segreto h2,
+#articolo_essere_troppo_stimati h2,
+#sezione_notizie h2,
+#sezione_bibliografia h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-bottom: 0.3rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+/* Paragrafi */
+.paragrafo {
+  margin-bottom: 1.1rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Cambio pagina */
+.page-break {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #aaa;
+  letter-spacing: 1px;
+  margin: 1.2rem 0;
+  border-top: 1px dashed #ddd;
+  padding-top: 0.5rem;
+}
+
+/* Firma autore */
+.firma {
+  text-align: right;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #e0e0e0;
+  color: #333;
+}
+
+/* Chiusura / fonte */
+.chiusura.fonte {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: right;
+  margin-top: 1rem;
+}
+
+
+/* SEZIONI NOTIZIE / BIBLIOGRAFIA */
+.sezione-corpo {
+  margin-top: 1.5rem;
+}
+
+/* --- Notizie: ogni voce è un trafiletto --- */
+.notizia {
+  padding: 0.4rem 0 0.9rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.notizia:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.notizia .paragrafo {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* --- Bibliografia: citazione + commento --- */
+.bibl-entry {
+  font-size: 0.97rem;
+  line-height: 1.6;
+  margin: 1.6rem 0 0.6rem;
+  padding: 0.6rem 1rem;
+  border-left: 3px solid #1a1a1a;
+  background: #fafafa;
+}
+
+.bibl-entry:first-child {
+  margin-top: 0;
+}
+
+.bibl-author {
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.biblScope {
+  color: #444;
+}
+
+/* Paragrafi di commento sotto una voce bibliografica */
+.bibliografia-corpo .paragrafo {
+  font-size: 0.95rem;
+  color: #2a2a2a;
+}
+
+
+/* INSERTI POETICI */
+.inserto-poetico {
+  margin: 1.5rem auto;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #1a1a1a;
+  background-color: #fafafa;
+  max-width: 600px;
+}
+
+.strofa {
+  margin-bottom: 0.8rem;
+}
+
+.verso {
+  margin: 0;
+  line-height: 1.7;
+  font-style: italic;
+  font-size: 0.97rem;
+}
+
+.paragrafo.poesia .verso,
+.paragrafo.poesia {
+  font-style: italic;
+}
+
+
+/* ELEMENTI INLINE NEL TESTO */
+
+/* Nome di persona — evidenziato con sottolineatura discreta */
+.persName,
+span.persName {
+  color: #1a1a1a;
+  border-bottom: 2px solid #aac4e0;
+  padding-bottom: 1px;
+  cursor: default;
+}
+
+/* Nome di luogo — colore discreto */
+.placeName,
+span.placeName {
+  color: #1a1a1a;
+  border-bottom: 2px solid #b5d4b5;
+  padding-bottom: 1px;
+  cursor: default;
+}
+
+/* Nome di organizzazione */
+.orgName,
+span.orgName {
+  font-style: italic;
+}
+
+/* Termine tecnico / arcaico */
+.term,
+span.term {
+  color: #333;
+}
+
+/* Correzione (sic/corr) */
+.choice {
+  border-bottom: 1px dotted #e06060;
+  cursor: help;
+}
+
+/* Lingua straniera */
+.foreign {
+  font-style: italic;
+  color: #555;
+}
+
+/* Distinzione arcaica/letteraria */
+.distinct {
+  font-style: italic;
+}
+
+/* Citazione inline */
+span.quote {
+  font-style: italic;
+}
+
+/* Riferimento generico rs */
+.rs { }
+
+/* Misura (ricchezza, tempo, età...) */
+.measure {
+  color: #1a1a1a;
+  border-bottom: 1px dashed #bbb;
+  cursor: default;
+}
+
+/* Ruolo sociale o professionale */
+.roleName {
+  color: #444;
+}
+
+/* Data nel testo */
+.date {
+  color: #1a1a1a;
+}
+
+/* Distinzione arcaica — corsivo sobrio */
+.distinct[data-type="arcaico"] {
+  font-style: italic;
+  color: #666;
+}
+
+/* Distinzione letteraria — corsivo con leggero colore */
+.distinct[data-type="letterario"] {
+  font-style: italic;
+  color: #555;
+  border-bottom: 1px dotted #aaa;
+}
+
+/* Frase idiomatica */
+.phr {
+  font-style: italic;
+}
+
+
+/*
+   BACK: APPENDICE (glossario + indice nomi)
+ */
+#back {
+  margin-top: 3rem;
+}
+
+#appendice-titolo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+/* Layout quattro sezioni (2x2) */
+#appendice-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 650px) {
+  #appendice-layout { grid-template-columns: 1fr; }
+}
+
+#glossario h3,
+#indice-persone h3,
+#indice-luoghi h3,
+#indice-organizzazioni h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* VOCI GLOSSARIO */
+.glossario-entry {
+  margin-bottom: 1.1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.glossario-entry:last-child {
+  border-bottom: none;
+}
+
+.glossario-form {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.glossario-def {
+  font-size: 0.88rem;
+  color: #444;
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+
+.glossario-ref {
+  font-size: 0.78rem;
+  color: #888;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.glossario-ref:hover {
+  color: #1a1a1a;
+}
+
+/* SCHEDE PERSONA */
+.persona-card {
+  margin-bottom: 1.1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.persona-card:last-child {
+  border-bottom: none;
+}
+
+.persona-nome {
+  font-weight: 700;
+  font-size: 0.97rem;
+  margin-bottom: 0.2rem;
+}
+
+.persona-epiteto,
+.persona-nome-reale {
+  font-weight: 400;
+  font-style: italic;
+  color: #666;
+}
+
+.persona-cognome {
+  font-weight: 700;
+}
+
+.persona-nota {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 0.3rem;
+}
+
+.persona-ref {
+  font-size: 0.78rem;
+  color: #888;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.persona-ref:hover {
+  color: #1a1a1a;
+}
+
+
+/*
+   LAYOUT FACSIMILE (immagine + testo affiancati)
+*/
+.facsimile-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 750px) {
+  .facsimile-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.facsimile-immagini {
+  position: sticky;
+  top: 1rem;
+}
+
+.facsimile-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.6rem;
+}
+
+.facsimile-img {
+  width: 100%;
+  display: block;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  margin-bottom: 0.8rem;
+  cursor: zoom-in;
+  transition: box-shadow 0.2s;
+}
+
+.facsimile-img:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Zoom immagine al click */
+.facsimile-img.zoomed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* transform gestito da script.js (drag + scale) */
+  transform: translate(-50%, -50%) scale(1);
+  width: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  z-index: 1001;
+  cursor: grab;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+  border-radius: 4px;
+  transition: none; /* disabilita transition durante drag */
+  user-select: none;
+}
+
+.facsimile-img.zoomed:active {
+  cursor: grabbing;
+}
+
+.facsimile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 999;
+  cursor: zoom-out;
+  display: none; /* gestito da script.js */
+}
+
+.facsimile-overlay.active {
+  display: block;
+}
+
+
+/*
+   TOOLBAR
+*/
+.toolbar-gruppo {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#toolbar-highlight {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.toolbar-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 0.5px;
+    margin-right: 0.4rem;
+}
+
+.highlight-select,
+.highlight-btn {
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 0.35rem 0.7rem;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background: #fff;
+    color: #444;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.highlight-select:hover,
+.highlight-btn:hover {
+    border-color: #222;
+    color: #222;
+}
+
+.highlight-select:focus {
+    outline: none;
+    border-color: #222;
+}
+
+.highlight-btn.attivo {
+    background-color: #333;
+    color: #fff;
+    border-color: #000;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* HIGHLIGHT GENERALE */
+.highlight-on {
+    border-radius: 3px;
+    padding: 1px 2px;
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+/* PERSONE (persName) - Toni Blu/Giallo */
+.persName.highlight-on[data-ana="#persName.reale"]    { background: #ddeeff; border-bottom: 2px solid #5599cc; }
+.persName.highlight-on[data-ana="#persName.fittizia"] { background: #fff59d; border-bottom: 2px solid #fbc02d; color: #000; }
+.persName.highlight-on[data-ana="#persName.storico"]  { background: #e1bee7; border-bottom: 2px solid #8e24aa; }
+.persName.highlight-on[data-ana="#persName.generico"] { background: #f5f5f5; border-bottom: 2px solid #9e9e9e; }
+
+/* LUOGHI (placeName) - Toni Verdi */
+.placeName.highlight-on[data-ana="#placeName.citta"]   { background: #ddffdd; border-bottom: 2px solid #55aa55; }
+.placeName.highlight-on[data-ana="#placeName.urbano"]  { background: #c8e6c9; border-bottom: 2px solid #81c784; }
+.placeName.highlight-on[data-ana="#placeName.natura"]  { background: #a5d6a7; border-bottom: 2px solid #66bb6a; }
+.placeName.highlight-on[data-ana="#placeName.nazione"] { background: #81c784; border-bottom: 2px solid #43a047; }
+.placeName.highlight-on[data-ana="#placeName.storico"] { background: #dfedda; border-bottom: 2px solid #99aa88; }
+.placeName.highlight-on[data-ana="#placeName.via"]     { background: #e8f5e9; border-bottom: 2px solid #a5d6a7; }
+.placeName.highlight-on[data-ana="#placeName.regione"] { background: #f1f8e9; border-bottom: 2px solid #aed581; }
+.placeName.highlight-on[data-ana="#placeName.montagna"]   { background: #dcedc8; border-bottom: 2px solid #7cb342; }
+.placeName.highlight-on[data-ana="#placeName.territorio"] { background: #e6ee9c; border-bottom: 2px solid #c0ca33; }
+
+/* ORGANIZZAZIONI (orgName) - Toni Arancio/Oro */
+.orgName.highlight-on[data-ana="#orgName.militare"]    { background: #fff0cc; border-bottom: 2px solid #ccaa00; }
+.orgName.highlight-on[data-ana="#orgName.istituzione"] { background: #ffecb3; border-bottom: 2px solid #ffb300; }
+.orgName.highlight-on[data-ana="#orgName.editore"]     { background: #ffe082; border-bottom: 2px solid #ffa000; }
+.orgName.highlight-on[data-ana="#orgName.giornale"]    { background: #ffd54f; border-bottom: 2px solid #ff8f00; }
+.orgName.highlight-on[data-ana="#orgName.tipografia"]  { background: #ffca28; border-bottom: 2px solid #f57c00; }
+.orgName.highlight-on[data-ana="#orgName.accademia"]   { background: #ffe0b2; border-bottom: 2px solid #ef6c00; }
+
+/* TERMINI E GIUDIZI (term/moral/socialclass) */
+.term.highlight-on[data-ana="#term.genere"]         { background: #f0ddff; border-bottom: 2px solid #9955cc; }
+.term.highlight-on[data-ana="#term.etnia"]          { background: #e1f5fe; border-bottom: 2px solid #03a9f4; }
+.term.highlight-on[data-ana="#term.animale"]        { background: #f1f8e9; border-bottom: 2px solid #8bc34a; }
+.term.highlight-on[data-ana="#term.cibo"]           { background: #fff3e0; border-bottom: 2px solid #ff9800; }
+.term.highlight-on[data-ana="#term.ruolo"]          { background: #f3e5f5; border-bottom: 2px solid #ab47bc; }
+.term.highlight-on[data-ana="#term.caratteristica"] { background: #ede7f6; border-bottom: 2px solid #7e57c2; }
+.term.highlight-on[data-ana="#term.volume"]         { background: #ede7f6; border-bottom: 2px solid #5e35b1; }
+.term.highlight-on[data-ana="#term.numero"]         { background: #e8eaf6; border-bottom: 2px solid #3949ab; }
+
+.term.highlight-on[data-ana="#moral.positivo"] { background: #ccff90; border-bottom: 2px solid #64dd17; }
+.term.highlight-on[data-ana="#moral.negativo"] { background: #ff9e80; border-bottom: 2px solid #ff3d00; }
+
+.term.highlight-on[data-ana="#socialclass.nobilta"]   { background: #d1c4e9; border-bottom: 2px solid #673ab7; }
+.term.highlight-on[data-ana="#socialclass.borghesia"] { background: #cfd8dc; border-bottom: 2px solid #607d8b; }
+.term.highlight-on[data-ana="#socialclass.indigente"] { background: #d7ccc8; border-bottom: 2px solid #795548; }
+.term.highlight-on[data-ana="#socialclass.militare"]  { background: #dcedc8; border-bottom: 2px solid #558b2f; }
+
+/* MISURE E DATE */
+.measure.highlight-on[data-ana="#measure.ricchezza"] { background: #fff9c4; border-bottom: 2px solid #fbc02d; }
+.measure.highlight-on[data-ana="#measure.tempo"]     { background: #e0f7fa; border-bottom: 2px solid #00bcd4; }
+.measure.highlight-on[data-ana="#measure.durata"]    { background: #b2ebf2; border-bottom: 2px solid #00acc1; }
+.measure.highlight-on[data-ana="#measure.eta"]       { background: #e0f2f1; border-bottom: 2px solid #009688; }
+.date.highlight-on[data-ana="#date.anno"]            { background: #f5f5f5; border-bottom: 2px solid #212121; }
+
+/* TITOLI */
+.title.highlight-on[data-ana="#title.principale"] { background: #ffccbc; border-bottom: 2px solid #ff5722; font-style: italic; }
+.title.highlight-on[data-ana="#title.secondario"] { background: #ffe0b2; border-bottom: 2px solid #ff9800; font-style: italic; }
+.title.highlight-on[data-ana="#title.tradotto"]   { background: #fbe9e7; border-bottom: 2px solid #d84315; font-style: italic; }
+
+/* LINGUA, VERSI */
+.term.highlight-on[data-ana^="#ling_"] {
+    background: #fdf5e6;
+    border-bottom: 1px dashed #8b4513;
+}
